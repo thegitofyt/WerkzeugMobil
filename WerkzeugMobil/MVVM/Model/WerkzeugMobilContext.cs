@@ -64,21 +64,15 @@ namespace WerkzeugMobil.MVVM.Model
 
                 entity.Property(e => e.Art).HasColumnName("Art");
 
-                entity.Property(e => e.Batterie).HasColumnName("Batterie");
 
                 entity.Property(e => e.Bemerkung).HasColumnName("Bemerkung");
 
-                entity.Property(e => e.GerätGröße).HasColumnName("GerätGröße");
 
-                entity.Property(e => e.Koffer).HasColumnName("Koffer");
 
-                entity.Property(e => e.Ladegerät).HasColumnName("Ladegerät");
 
-                entity.Property(e => e.Länge).HasColumnName("Länge");
 
                 entity.Property(e => e.Marke).HasColumnName("Marke");
 
-                entity.Property(e => e.Mm2).HasColumnName("Mm2");
 
                 entity.Property(e => e.Name).HasColumnName("Name");
             });
@@ -104,12 +98,7 @@ namespace WerkzeugMobil.MVVM.Model
             werkzeug.Marke = "Marke 1";
             werkzeug.Art = "Art 1";
             werkzeug.Bemerkung = "Bemerkung 1";
-            werkzeug.GerätGröße = Werkzeug.Gerät.Groß;
-            werkzeug.Koffer = true;
-            werkzeug.Ladegerät = true;
-            werkzeug.Batterie = 1;
-            werkzeug.Länge = 1;
-            werkzeug.Mm2 = 1;
+            
             werkzeug.Straße = straße;
             Werkzeug.Add(werkzeug);
 
