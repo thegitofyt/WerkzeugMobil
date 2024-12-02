@@ -8,8 +8,9 @@ namespace WerkzeugMobil.MVVM.Model
 {
     public class Benutzer
     {
-        public int ID { get; set; }
-        public bool isAdmin { get; set; }
-
+        public string Benutzername { get; set; }
+        public string Passwort { get; set; }
+        public bool KannBearbeiten { get; set; }
     }
 }
+

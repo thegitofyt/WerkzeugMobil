@@ -1,13 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace WerkzeugMobil.Dto
+namespace WerkzeugMobil.DTO
 {
-    class WerkzeugDto
+    public class WerkzeugDto
     {
-
+        public string GeräteID { get; set; }
+        public string WerkzeugId { get; set; }
+        public string Marke { get; set; }
+        public string Art { get; set; }
+        public string Beschreibung { get; set; }
+        public string ProjektAddresse { get; set; }
+        public List<string> Historie { get; set; }
     }
 }

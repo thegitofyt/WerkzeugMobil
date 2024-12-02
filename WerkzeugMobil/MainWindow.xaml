@@ -1,12 +1,62 @@
 ﻿<Window x:Class="WerkzeugMobil.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WerkzeugMobil"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="PRAN Bau Management" Height="600" Width="900"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
+        <!-- Sidebar -->
+        <DockPanel Background="#f0f0f0">
+            <StackPanel Background="#00264d" Width="200" DockPanel.Dock="Left">
+                <!-- Logo -->
+                <Image Source="Images/logo.png" Height="100" Margin="10" HorizontalAlignment="Center" />
 
+                <!-- Buttons -->
+                <Button Content="Werkzeuge" x:Name="WerkzeugButton" 
+                        Background="#004080" Foreground="White" 
+                        Margin="10" Height="40" Click="WerkzeugButton_Click" />
+                <Button Content="Projekte" x:Name="ProjektButton" 
+                        Background="#004080" Foreground="White" 
+                        Margin="10" Height="40" Click="ProjektButton_Click" />
+                <Button Content="History" x:Name="HistoryButton" 
+                        Background="#004080" Foreground="White" 
+                        Margin="10" Height="40" Click="HistoryButton_Click" />
+                <Button Content="+" x:Name="AddButton" 
+                        Background="#008000" Foreground="White" 
+                        Margin="10" Height="40" VerticalAlignment="Bottom" Click="AddButton_Click" />
+            </StackPanel>
+
+            <!-- Main Content Area -->
+            <Grid DockPanel.Dock="Right" Margin="10">
+                <!-- Werkzeug List -->
+                <Grid x:Name="WerkzeugList" Visibility="Visible">
+                    <TextBlock Text="Werkzeug Liste" FontSize="20" FontWeight="Bold" Margin="10" />
+                    <ListView x:Name="WerkzeugListView" Margin="10" Background="#f0f0f0">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Werkzeug ID" DisplayMemberBinding="{Binding WerkzeugId}" Width="100" />
+                                <GridViewColumn Header="Werkzeug Name" DisplayMemberBinding="{Binding WerkzeugName}" Width="200" />
+                                <GridViewColumn Header="Standort" DisplayMemberBinding="{Binding Standort}" Width="150" />
+                                <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" Width="150" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+
+                <!-- History View -->
+                <Grid x:Name="HistoryView" Visibility="Collapsed">
+                    <TextBlock Text="History" FontSize="20" FontWeight="Bold" Margin="10" />
+                    <ListView x:Name="HistoryList" Margin="10" Background="#f0f0f0">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Werkzeug ID" DisplayMemberBinding="{Binding WerkzeugId}" Width="100" />
+                                <GridViewColumn Header="Werkzeug Name" DisplayMemberBinding="{Binding WerkzeugName}" Width="200" />
+                                <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding Datum}" Width="150" />
+                                <GridViewColumn Header="Standort" DisplayMemberBinding="{Binding Standort}" Width="150" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </Grid>
+        </DockPanel>
     </Grid>
 </Window>

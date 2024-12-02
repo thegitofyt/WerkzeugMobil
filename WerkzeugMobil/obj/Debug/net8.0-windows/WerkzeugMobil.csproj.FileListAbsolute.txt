@@ -1,0 +1,9 @@
+C:\Users\lidij\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil.csproj.AssemblyReference.cache
+C:\Users\lidij\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\DataEntry.baml
+C:\Users\lidij\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\lidij\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\ProjektÜbersichtWindow.baml
+C:\Users\lidij\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\DataEntry.g.cs
+C:\Users\lidij\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\lidij\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\ProjektÜbersichtWindow.g.cs
+C:\Users\lidij\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\lidij\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil_MarkupCompile.cache

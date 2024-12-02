@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj": {}
+    "C:\\Users\\lidij\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj": {
+    "C:\\Users\\lidij\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
+        "projectUniqueName": "C:\\Users\\lidij\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
         "projectName": "WerkzeugMobil",
-        "projectPath": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
-        "packagesPath": "C:\\Users\\ermuu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\obj\\",
+        "projectPath": "C:\\Users\\lidij\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
+        "packagesPath": "C:\\Users\\lidij\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lidij\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ermuu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lidij\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,7 +79,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
