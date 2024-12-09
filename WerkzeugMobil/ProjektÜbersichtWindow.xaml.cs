@@ -32,6 +32,11 @@ namespace WerkzeugMobil
         {
             this.Close();
         }
+
+        private void ProjektListView_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
     }
 
     public class Projekt

@@ -1,20 +1,26 @@
 ﻿<Window x:Class="WerkzeugMobil.AddWerkzeugWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Neues Werkzeug Hinzufügen" Height="300" Width="400"
+        Title="Neues Werkzeug Hinzufügen" Height="400" Width="400"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <TextBlock Text="Neues Werkzeug Hinzufügen" FontSize="20" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" />
 
         <StackPanel Margin="20,50,20,20">
-            <Label Content="Werkzeug Name:" />
-            <TextBox x:Name="WerkzeugNameInput" />
+            <Label Content="Werkzeug Nummer:" />
+            <TextBox x:Name="WerkzeugNummerInput" />
 
-            <Label Content="Standort:" />
-            <TextBox x:Name="StandortInput" />
+            <Label Content="Marke:" />
+            <TextBox x:Name="MarkeInput" />
 
-            <Label Content="Status:" />
-            <TextBox x:Name="StatusInput" />
+            <Label Content="Art:" />
+            <TextBox x:Name="ArtInput" />
+            <Label Content="ProjektAdresse:" />
+            <TextBox x:Name="ProjektAdresseInput" />
+            <Label Content="Beschreibung:" />
+            <TextBox x:Name="BeschreibungInput" />
+            <Label Content="Lager?"/>
+            <CheckBox x:Name="LagerInput" />
 
             <Button Content="Speichern" HorizontalAlignment="Right" Width="80" Height="30" Margin="0,10,0,0"
                     Click="SaveButton_Click" />

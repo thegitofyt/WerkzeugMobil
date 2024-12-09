@@ -25,9 +25,12 @@ namespace WerkzeugMobil
             // Create new Werkzeug from inputs
             NewWerkzeug = new Werkzeug
             {
-                WerkzeugNummer = WerkzeugNummer.Text,
-                Standort = StandortInput.Text,
-                Status = StatusInput.Text
+                WerkzeugNummer = WerkzeugNummerInput.Text,
+                Marke = MarkeInput.Text,
+                Art = ArtInput.Text,
+                ProjektAdresse = ProjektAdresseInput.Text,
+                Beschreibung = BeschreibungInput.Text,
+                Lager = LagerInput.IsChecked ?? false
             };
 
             DialogResult = true;

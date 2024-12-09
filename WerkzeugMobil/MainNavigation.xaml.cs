@@ -20,7 +20,7 @@ namespace WerkzeugMobil
 
         private void Search_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.WerkzeugeSuchen(SearchBox.Text);
+            _viewModel.WerkzeugeSuchen(SearchBar.Text);
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)

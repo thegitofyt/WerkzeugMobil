@@ -5,7 +5,7 @@
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
 	<Grid>
 		<TextBlock Text="Projekt Management" FontSize="20" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" />
-		<ListView x:Name="ProjektListView" Margin="10,50,10,60" Background="#f0f0f0">
+		<ListView x:Name="ProjektListView" Margin="10,50,10,60" Background="#f0f0f0" SelectionChanged="ProjektListView_SelectionChanged">
 			<ListView.View>
 				<GridView>
 					<GridViewColumn Header="Projekt ID" DisplayMemberBinding="{Binding ProjektId}" Width="100" />
