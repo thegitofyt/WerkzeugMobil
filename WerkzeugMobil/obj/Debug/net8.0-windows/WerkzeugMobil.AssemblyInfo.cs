@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WerkzeugMobil")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eba4acfe91864edfd683f4d54703a580789e8386")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4c30206237661779c3dfa1cdc06391ac5ca9251")]
 [assembly: System.Reflection.AssemblyProductAttribute("WerkzeugMobil")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WerkzeugMobil")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,44 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\werkzeug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\werkzeug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\benutzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\benutzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\addwerkzeug.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addwerkzeug.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\benutzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\benutzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\services\\werkzeugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\werkzeugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\dto\\werkzeugdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\werkzeugdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\werkzeug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\werkzeug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\projekt\u00FCbersichtwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekt\u00FCbersichtwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\projekt\u00FCbersichtwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekt\u00FCbersichtwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\werkzeugverwaltung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,18 +87,6 @@
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -71,24 +95,8 @@
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\services\\werkzeugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\werkzeugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\dto\\werkzeugdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\werkzeugdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\projekt\u00FCbersichtwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekt\u00FCbersichtwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\projekt\u00FCbersichtwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekt\u00FCbersichtwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,11 +106,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "AddWerkzeug.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
+              "RelativeDocumentMoniker": "AddWerkzeug.xaml.cs",
+              "ToolTip": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
+              "RelativeToolTip": "AddWerkzeug.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T20:02:46.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddWerkzeug.xaml",
+              "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
+              "RelativeDocumentMoniker": "AddWerkzeug.xaml",
+              "ToolTip": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
+              "RelativeToolTip": "AddWerkzeug.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-16T18:30:09.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "LoginPage.xaml.cs",
@@ -110,24 +142,22 @@
               "RelativeToolTip": "LoginPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T01:29:22.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T01:29:22.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
               "RelativeDocumentMoniker": "LoginPage.xaml",
               "ToolTip": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
               "RelativeToolTip": "LoginPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-08T20:31:41.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T20:31:41.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -135,12 +165,11 @@
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:36:05.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:36:05.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 16,
               "Title": "MainNavigation.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml.cs",
               "RelativeDocumentMoniker": "MainNavigation.xaml.cs",
@@ -148,8 +177,7 @@
               "RelativeToolTip": "MainNavigation.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T20:42:15.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T20:42:15.397Z"
             },
             {
               "$type": "Document",
@@ -165,31 +193,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-16T21:33:21.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:21.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 12,
               "Title": "Projekt\u00DCbersichtWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\Projekt\u00DCbersichtWindow.xaml",
               "RelativeDocumentMoniker": "Projekt\u00DCbersichtWindow.xaml",
               "ToolTip": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\Projekt\u00DCbersichtWindow.xaml",
               "RelativeToolTip": "Projekt\u00DCbersichtWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-01T11:35:45.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T11:35:45.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 8,
               "Title": "WerkzeugService.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugService.cs",
               "RelativeDocumentMoniker": "Services\\WerkzeugService.cs",
@@ -197,12 +223,11 @@
               "RelativeToolTip": "Services\\WerkzeugService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:37:34.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T21:37:34.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "BenutzerServices.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\Services\\BenutzerServices.cs",
               "RelativeDocumentMoniker": "Services\\BenutzerServices.cs",
@@ -210,12 +235,11 @@
               "RelativeToolTip": "Services\\BenutzerServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:30:47.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T21:30:47.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "WerkzeugVerwaltung.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\WerkzeugVerwaltung.cs",
               "RelativeDocumentMoniker": "MVVM\\Viewmodel\\WerkzeugVerwaltung.cs",
@@ -223,12 +247,11 @@
               "RelativeToolTip": "MVVM\\Viewmodel\\WerkzeugVerwaltung.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAxwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T21:55:40.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T21:55:40.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\Viewmodel\\MainViewModel.cs",
@@ -236,12 +259,11 @@
               "RelativeToolTip": "MVVM\\Viewmodel\\MainViewModel.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAIwBgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:20.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "WerkzeugMobilContext.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\WerkzeugMobilContext.cs",
               "RelativeDocumentMoniker": "MVVM\\Model\\WerkzeugMobilContext.cs",
@@ -249,12 +271,11 @@
               "RelativeToolTip": "MVVM\\Model\\WerkzeugMobilContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:20.183Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Werkzeug.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Werkzeug.cs",
               "RelativeDocumentMoniker": "MVVM\\Model\\Werkzeug.cs",
@@ -262,12 +283,11 @@
               "RelativeToolTip": "MVVM\\Model\\Werkzeug.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAwAkAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:20.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Projekt.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Projekt.cs",
               "RelativeDocumentMoniker": "MVVM\\Model\\Projekt.cs",
@@ -275,12 +295,11 @@
               "RelativeToolTip": "MVVM\\Model\\Projekt.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:21.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:21.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Benutzer.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Benutzer.cs",
               "RelativeDocumentMoniker": "MVVM\\Model\\Benutzer.cs",
@@ -288,12 +307,11 @@
               "RelativeToolTip": "MVVM\\Model\\Benutzer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:21.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:21.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 10,
               "Title": "WerkzeugDto.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\DTO\\WerkzeugDto.cs",
               "RelativeDocumentMoniker": "DTO\\WerkzeugDto.cs",
@@ -301,12 +319,11 @@
               "RelativeToolTip": "DTO\\WerkzeugDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:20.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -314,12 +331,11 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:21.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:21.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -331,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 13,
               "Title": "Projekt\u00DCbersichtWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\Projekt\u00DCbersichtWindow.xaml.cs",
               "RelativeDocumentMoniker": "Projekt\u00DCbersichtWindow.xaml.cs",
@@ -339,12 +355,11 @@
               "RelativeToolTip": "Projekt\u00DCbersichtWindow.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAD4vyUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T22:13:30.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T22:13:30.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
@@ -352,12 +367,11 @@
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T11:50:19.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T11:50:19.446Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\RelayCommand.cs",
               "RelativeDocumentMoniker": "MVVM\\Viewmodel\\RelayCommand.cs",
@@ -365,12 +379,11 @@
               "RelativeToolTip": "MVVM\\Viewmodel\\RelayCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:20.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "WerkzeugMobil.csproj",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
               "RelativeDocumentMoniker": "WerkzeugMobil.csproj",
@@ -378,8 +391,7 @@
               "RelativeToolTip": "WerkzeugMobil.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-16T21:33:21.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T21:33:21.368Z"
             }
           ]
         }
