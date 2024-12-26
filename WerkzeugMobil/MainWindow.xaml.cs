@@ -17,14 +17,14 @@ namespace WerkzeugMobil
         {
             InitializeComponent();
 
-       
+
             Werkzeuge = new ObservableCollection<Werkzeug>
             {
                 new Werkzeug { WerkzeugId = 1, WerkzeugName = "Hammer", Standort = "Lager", Status = "Verfügbar" },
                 new Werkzeug { WerkzeugId = 2, WerkzeugName = "Bohrmaschine", Standort = "Baustelle", Status = "In Benutzung" }
             };
 
-           
+
             HistoryEntries = new ObservableCollection<HistoryEntry>
             {
                 new HistoryEntry { WerkzeugId = 1, WerkzeugName = "Hammer", Datum = "2024-11-30", Standort = "Lager" },
@@ -53,31 +53,32 @@ namespace WerkzeugMobil
             projektWindow.ShowDialog();
         }
 
-        private void AddButton_Click(object sender, RoutedEventArgs e)
-        {
-            AddWerkzeugWindow addWerkzeugWindow = new AddWerkzeugWindow();
+        //private void AddButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    AddWerkzeugWindow addWerkzeugWindow = new AddWerkzeugWindow();
 
-            if (addWerkzeugWindow.ShowDialog() == true)
-            {
-                // Add the new Werkzeug to the list
-                Werkzeuge.Add(addWerkzeugWindow.NewWerkzeug);
-            }
-        }
+        //    if (addWerkzeugWindow.ShowDialog() == true)
+        //    {
+        //        // Add the new Werkzeug to the list
+        //        Werkzeuge.Add(addWerkzeugWindow.NewWerkzeug);
+        //    }
+        //}
 
 
         public class Werkzeug
-    {
-        public int WerkzeugId { get; set; }
-        public string WerkzeugName { get; set; }
-        public string Standort { get; set; }
-        public string Status { get; set; }
-    }
+        {
+            public int WerkzeugId { get; set; }
+            public string WerkzeugName { get; set; }
+            public string Standort { get; set; }
+            public string Status { get; set; }
+        }
 
-    public class HistoryEntry
-    {
-        public int WerkzeugId { get; set; }
-        public string WerkzeugName { get; set; }
-        public string Datum { get; set; }
-        public string Standort { get; set; }
+        public class HistoryEntry
+        {
+            public int WerkzeugId { get; set; }
+            public string WerkzeugName { get; set; }
+            public string Datum { get; set; }
+            public string Standort { get; set; }
+        }
     }
 }
