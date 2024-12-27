@@ -1,4 +1,7 @@
 ﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
 using WerkzeugMobil.MVVM.Model;
 using WerkzeugMobil.MVVM.Viewmodel;
 using WerkzeugMobil.Services;
@@ -6,35 +9,52 @@ using WerkzeugMobil.Services;
 
 namespace WerkzeugMobil.MVVM.Viewmodel
 {
-    public class MainViewModel
+    public class MainViewModel : INotifyPropertyChanged
     {
-        public WerkzeugVerwaltung WerkzeugVerwaltung { get; set; }
-        public Benutzer AngemeldeterBenutzer { get; set; }
+        private readonly WerkzeugServices _werkzeugService;
+        private Werkzeug _selectedWerkzeug;
+
         public ObservableCollection<Werkzeug> Werkzeuge { get; set; }
+        public ObservableCollection<string> History { get; set; }
 
-        public MainViewModel(WerkzeugMobilContext context)
+        public Werkzeug SelectedWerkzeug
         {
-            WerkzeugVerwaltung = new WerkzeugVerwaltung(context);
-            Werkzeuge = new ObservableCollection<Werkzeug>(context.Werkzeuge);
-        }
-
-        public void WerkzeugeHinzufügen(Werkzeug werkzeug)
-        {
-            if (AngemeldeterBenutzer.KannBearbeiten)
+            get => _selectedWerkzeug;
+            set
             {
-                WerkzeugVerwaltung.Werkzeuge.Add(werkzeug);
-                Werkzeuge.Add(werkzeug);
+                _selectedWerkzeug = value;
+                OnPropertyChanged();
+                UpdateAddressHistory();
             }
         }
 
-        public void WerkzeugeSuchen(string kriterium)
+        public MainViewModel()
         {
-            var gefundeneWerkzeuge = WerkzeugVerwaltung.SucheWerkzeuge(kriterium);
-            Werkzeuge.Clear();
-            foreach (var werkzeug in gefundeneWerkzeuge)
+           
+            _werkzeugService = new WerkzeugServices();
+            Werkzeuge = new ObservableCollection<Werkzeug>(_werkzeugService.GetAllWerkzeuge());
+#pragma warning disable IDE0028 // Initialisierung der Sammlung vereinfachen
+            History = new ObservableCollection<string>();
+#pragma warning restore IDE0028 // Initialisierung der Sammlung vereinfachen
+        }
+
+        private void UpdateAddressHistory()
+        {
+            History.Clear();
+            if (SelectedWerkzeug != null)
             {
-                Werkzeuge.Add(werkzeug);
+                foreach (var address in SelectedWerkzeug.History)
+                {
+                    History.Add(address);
+                }
             }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

@@ -25,7 +25,7 @@ namespace WerkzeugMobil
             // Create new Werkzeug from inputs
             NewWerkzeug = new Werkzeug
             {
-                WerkzeugNummer = WerkzeugNummerInput.Text,
+                WerkzeugId = WerkzeugNummerInput.Text,
                 Marke = MarkeInput.Text,
                 Art = ArtInput.Text,
                 ProjektAdresse = ProjektAdresseInput.Text,

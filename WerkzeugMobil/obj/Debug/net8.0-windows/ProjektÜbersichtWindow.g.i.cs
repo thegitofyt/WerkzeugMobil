@@ -60,7 +60,7 @@ namespace WerkzeugMobil {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WerkzeugMobil;component/projekt%c3%9cbersichtwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WerkzeugMobil;V1.0.0.0;component/projekt%c3%9cbersichtwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ProjektÜbersichtWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

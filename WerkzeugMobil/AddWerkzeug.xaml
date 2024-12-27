@@ -21,7 +21,7 @@
                 Cursor="Hand" Margin="0,6,0,0"/>
         </Border>
         <!-- Form Container with Rounded Corners -->
-        <Border Background="White" CornerRadius="20" Padding="30" Margin="60,80,60,80">
+        <Border Background="White" CornerRadius="20" Padding="30" Margin="60,80,60,54">
             <Grid>
                 <StackPanel VerticalAlignment="Top" HorizontalAlignment="Stretch">
                     <!-- Geräte Kennzahl -->

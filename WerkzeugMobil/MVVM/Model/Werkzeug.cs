@@ -7,12 +7,14 @@ namespace WerkzeugMobil.MVVM.Model
     public class Werkzeug
     {
         [Key]
-        public string WerkzeugNummer { get; set; } // Required
+        public string WerkzeugId{ get; set; } // Required
         public string Marke { get; set; }
         public string Art { get; set; }
         public string ProjektAdresse { get; set; }
         public string Beschreibung { get; set; }
         public bool Lager { get; set; }
+
+        public List<string> History { get; set; }
     }
 
 
