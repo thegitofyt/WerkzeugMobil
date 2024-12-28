@@ -173,3 +173,6 @@ C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\n
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil.pdb
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil.genruntimeconfig.cache
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\ref\WerkzeugMobil.dll
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Debug\net8.0-windows\BackgroundImagePran.jpg
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil_Content.g.cs
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Debug\net8.0-windows\logo.jpg

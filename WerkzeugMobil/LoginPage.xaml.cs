@@ -19,6 +19,12 @@ namespace WerkzeugMobil
         {
             InitializeComponent();
         }
+        private void CloseWindow(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+   
 
         private void LoginButtonClick(object sender, RoutedEventArgs e)
         {
@@ -35,10 +41,19 @@ namespace WerkzeugMobil
                 Benutzername = BenutzernameInput.Text,
                 Passwort = PasswortInput.Password, // Use the Password property to get the entered password
                 KannBearbeiten = true // Assuming this is a default value
-            };
+            }; 
 
-            DialogResult = true; // Indicate that the dialog was successful
-            this.Close(); // Close the window
+           
+            MainNavigation mainNavigation = new MainNavigation();
+            mainNavigation.Show(); // Show the MainNavigation window
+            this.Close(); // Close the LoginUser  window
+           
+            
+        }
+
+        private void BenutzernameInput_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
         }
     }
 }
