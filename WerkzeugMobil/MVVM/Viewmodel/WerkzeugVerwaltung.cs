@@ -52,7 +52,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 return await Task.Run(() =>
                     _context.Projekte.Select(p => new ProjektDTO
                     {
-                        Id = p.Id.ToString(), // Assuming Id is an integer, convert it to string for the street name
+                        ProjektAddresse = p.ProjektAddresse.ToString(), // Assuming Id is an integer, convert it to string for the street name
                         Werkzeuge = p.Werkzeuge.Select(w => new WerkzeugDto
                         {
                             WerkzeugId = w.WerkzeugId,

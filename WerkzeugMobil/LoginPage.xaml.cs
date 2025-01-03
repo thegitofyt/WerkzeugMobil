@@ -40,7 +40,7 @@ namespace WerkzeugMobil
             {
                 Benutzername = BenutzernameInput.Text,
                 Passwort = PasswortInput.Password, // Use the Password property to get the entered password
-                KannBearbeiten = true // Assuming this is a default value
+               
             }; 
 
            

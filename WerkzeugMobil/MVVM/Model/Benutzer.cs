@@ -10,7 +10,7 @@ namespace WerkzeugMobil.MVVM.Model
     {
         public string Benutzername { get; set; }
         public string Passwort { get; set; }
-        public bool KannBearbeiten { get; set; }
+    
     }
 }
 

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using WerkzeugMobil.DTO;
 
 namespace WerkzeugMobil.MVVM.Model
 {
     public class Werkzeug
     {
-        [Key]
+        
         public string WerkzeugId{ get; set; } // Required
         public string Marke { get; set; }
         public string Art { get; set; }
@@ -15,6 +16,7 @@ namespace WerkzeugMobil.MVVM.Model
         public bool Lager { get; set; }
 
         public List<string> History { get; set; }
+        public ProjektDTO Projekt { get; internal set; }
     }
 
 
