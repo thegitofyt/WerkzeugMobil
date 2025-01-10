@@ -10,6 +10,25 @@ namespace ListDemo.ViewModels
     {
         private readonly Func<object?, bool> canExecute;
         private readonly Action<object?> execute;
+
+        private readonly Action _execute;
+        private readonly Func<bool> _canExecute;
+
+        public RelayCommand(Action execute, Func<bool> canExecute = null)
+        {
+            _execute = execute ?? throw new ArgumentNullException(nameof(execute), "Execute action cannot be null");
+            _canExecute = canExecute;
+        }
+
+        public bool CanExecute(object parameter) => _canExecute == null || _canExecute();
+
+        public void Execute(object parameter) => _execute();
+
+        public event EventHandler CanExecuteChanged
+        {
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
+        }
         /// <summary>
         /// Konstruktor für Funktionen, die einen Paramter von CommandParameter in XAML bekommen.
         /// </summary>
@@ -25,42 +44,44 @@ namespace ListDemo.ViewModels
         /// </summary>
         /// <param name="execute">Funktion, die ausgeführt wird, wenn der Button gedrückt wird.</param>
         /// <param name="canExecute">Funktion, die bestimmt, ob der Button aktiv ist.</param>
-        public RelayCommand(Action execute, Func<bool> canExecute) : this((param) => execute(), (param) => canExecute())
-        { }
+        //public RelayCommand(Action execute, Func<bool> canExecute) : this((param) => execute(), (param) => canExecute())
+        //{ }
 
         public RelayCommand(Action<object?> execute) : this(execute, (param) => true)
         { }
 
         public RelayCommand(Action execute) : this((param) => execute(), (param) => true)
         { }
+      
+
 
         /// <summary>
         /// Damit die Enabled Eigenschaft automatisch aktualisiert wird, wenn CanExecute aufgerufen
         /// wird.
         /// </summary>
-        public event EventHandler? CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
+        //public event EventHandler? CanExecuteChanged
+        //{
+        //    add { CommandManager.RequerySuggested += value; }
+        //    remove { CommandManager.RequerySuggested -= value; }
+        //}
 
         /// <summary>
         /// Bestimmt, ob der Button aktiv ist.
         /// </summary>
         /// <param name="parameter"></param>
         /// <returns></returns>
-        public bool CanExecute(object? parameter)
-        {
-            return canExecute?.Invoke(parameter) ?? true;
-        }
+        //public bool CanExecute(object? parameter)
+        //{
+        //    return canExecute?.Invoke(parameter) ?? true;
+        //}
 
         /// <summary>
         /// Funktion, die beim Klicken ausgeführt werden soll.
         /// </summary>
         /// <param name="parameter">Wird in XAML über CommandParameter übergeben.</param>
-        public void Execute(object? parameter)
-        {
-            execute?.Invoke(parameter);
-        }
+        //public void Execute(object? parameter)
+        //{
+        //    execute?.Invoke(parameter);
+        //}
     }
 }

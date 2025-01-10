@@ -26,4 +26,5 @@ namespace WerkzeugMobil.Data
                 .HasForeignKey(w => w.ProjektAdresse);
         }
     }
+    
 }

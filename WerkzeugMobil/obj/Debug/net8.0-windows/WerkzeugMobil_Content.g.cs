@@ -10,5 +10,6 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("backgroundimagepran.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("logo.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("logorech.png")]
 
 

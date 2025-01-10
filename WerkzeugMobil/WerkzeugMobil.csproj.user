@@ -10,12 +10,18 @@
     <Compile Update="AddWerkzeug.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Lager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="LoginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddWerkzeug.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lager.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

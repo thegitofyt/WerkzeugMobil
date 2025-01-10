@@ -12,17 +12,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil
 {
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class AddWerkzeug : Page
+    public partial class AddWerkzeug : Window
     {
         public AddWerkzeug()
         {
             InitializeComponent();
+            DataContext =  new AddWerkzeugViewModel(); ;
         }
+
+   
     }
 }
