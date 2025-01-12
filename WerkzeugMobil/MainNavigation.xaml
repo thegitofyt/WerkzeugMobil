@@ -33,8 +33,7 @@
 
                 <!-- Search Bar (Row 0) -->
                 <StackPanel VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.Row="0" Margin="10">
-                    <!-- Search Bar -->
-                    <Border  Background="White" BorderBrush="#CCCCCC" BorderThickness="1" Padding="5" Margin="0,0,0,20">
+                    <Border Background="White" BorderBrush="#CCCCCC" BorderThickness="1" Padding="5" Margin="0,0,0,20">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
@@ -45,29 +44,37 @@
 
                             <!-- Search Box -->
                             <TextBox Name="SearchTextBox"
-                 Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}"
-                 HorizontalAlignment="Stretch"
-                 VerticalAlignment="Center"
-                 Margin="5,0,5,0"
-                 BorderBrush="Transparent"
-                 Background="Transparent" />
+                     Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Center"
+                     Margin="5,0,5,0"
+                     BorderBrush="Transparent"
+                     Background="Transparent" />
 
-                            <!-- Werkzeuge List -->
-                            <ListBox Grid.Row="1"
-                 ItemsSource="{Binding Werkzeuge}">
-                                <ListBox.ItemTemplate>
-                                    <DataTemplate>
-                                        <TextBlock Text="{Binding Name}" />
-                                    </DataTemplate>
-                                </ListBox.ItemTemplate>
-                            </ListBox>
-
+                            <!-- Search Button -->
                             <Button Background="Transparent" BorderThickness="0" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Command="{Binding SearchCommand}">
-                                <TextBlock Text="🔍" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                <TextBlock Text="🔍" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
                             </Button>
                         </Grid>
                     </Border>
+
+                    <!-- Werkzeuge List -->
+                    <ListBox ItemsSource="{Binding FilteredWerkzeuge}" DisplayMemberPath="WerkzeugId">
+                        <ListBox>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding WerkzeugId}" FontWeight="Bold" />
+                                    <TextBlock Text=" - " />
+                                    <TextBlock Text="{Binding Art}" />
+                                    <TextBlock Text=" (" />
+                                    <TextBlock Text="{Binding Marke}" />
+                                    <TextBlock Text=")" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox>
+                    </ListBox>
                 </StackPanel>
+
 
                 <!-- Icon Section (User and Contract Icons) -->
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1">

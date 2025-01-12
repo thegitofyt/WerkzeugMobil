@@ -19,6 +19,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         private Werkzeug _currentWerkzeug;
 
 
+
         private string _searchTerm; // Property to hold the search term
         private ObservableCollection<Werkzeug> _filteredWerkzeuge;
 
@@ -47,6 +48,12 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
         public MainViewModel()
         {
+
+
+            Werkzeuge = new ObservableCollection<Werkzeug>();
+            FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
+            SearchCommand = new RelayCommand(ExecuteSearch);
+            LoadRandomWerkzeuge();
 
             currentWerkzeug = new Werkzeug
             {
@@ -81,16 +88,37 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             
             
         }
-        private void LoadRandomWerkzeuge()
+
+        //private void LoadRandomWerkzeuge()
+        //{
+        //    // Generate random Werkzeuge
+        //    var random = new Random();
+        //    var sampleWerkzeuge = Enumerable.Range(1, 20)
+        //                                    .Select(i => new Werkzeug {WerkzeugId = $"Werkzeug {random.Next(1, 100)}" })
+        //                                    .ToList();
+
+        //    Werkzeuge = new ObservableCollection<Werkzeug>(sampleWerkzeuge.Take(5));
+        //}
+
+        private void LoadRandomWerkzeuge(Random random = null)
         {
-            // Generate random Werkzeuge
-            var random = new Random();
+            random ??= new Random(); // Verwende Standard-Random, falls keiner übergeben wurde
+
             var sampleWerkzeuge = Enumerable.Range(1, 20)
-                                            .Select(i => new Werkzeug {WerkzeugId = $"Werkzeug {random.Next(1, 100)}" })
-                                            .ToList();
+                .Select(i => new Werkzeug
+                {
+                    WerkzeugId = $"Werkzeug {random.Next(1, 100)}",
+                    Marke = $"Marke {random.Next(1, 10)}",
+                    Art = "Säbelsäge",
+                    ProjektAdresse = $"Adresse {random.Next(1, 50)}",
+                    Beschreibung = "Testbeschreibung"
+                })
+                .ToList();
 
             Werkzeuge = new ObservableCollection<Werkzeug>(sampleWerkzeuge.Take(5));
+            FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
         }
+
         public ObservableCollection<Werkzeug> FilteredWerkzeuge
         {
             get => _filteredWerkzeuge;
@@ -100,25 +128,35 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 OnPropertyChanged();
             }
         }
+        //private void ExecuteSearch()
+        //{
+        //    if (string.IsNullOrWhiteSpace(SearchTerm))
+        //    {
+        //        // Show all Werkzeuge if search term is empty
+        //        FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
+        //    }
+        //    else
+        //    {
+        //        // Filter based on Marke, Art, or ProjektAdresse
+        //        var filtered = Werkzeuge.Where(w =>
+        //            (w.Marke?.StartsWith(SearchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
+        //            (w.Art?.StartsWith(SearchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
+        //            (w.ProjektAdresse?.StartsWith(SearchTerm, StringComparison.OrdinalIgnoreCase) ?? false)
+        //        ).ToList();
+
+        //        FilteredWerkzeuge = new ObservableCollection<Werkzeug>(filtered);
+        //    }
+        //}
+
         private void ExecuteSearch()
         {
-            if (string.IsNullOrWhiteSpace(SearchTerm))
-            {
-                // Show all Werkzeuge if search term is empty
-                FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
-            }
-            else
-            {
-                // Filter based on Marke, Art, or ProjektAdresse
-                var filtered = Werkzeuge.Where(w =>
-                    (w.Marke?.StartsWith(SearchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
-                    (w.Art?.StartsWith(SearchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
-                    (w.ProjektAdresse?.StartsWith(SearchTerm, StringComparison.OrdinalIgnoreCase) ?? false)
-                ).ToList();
-
-                FilteredWerkzeuge = new ObservableCollection<Werkzeug>(filtered);
-            }
+            FilteredWerkzeuge = new ObservableCollection<Werkzeug>(GetFilteredWerkzeuge(SearchTerm));
         }
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
         public string SearchTerm
         {
             get => _searchTerm;
@@ -129,7 +167,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             }
         }
         public ICommand SearchCommand { get; private set; }
-       
+
 
         //private void UpdateAddressHistory()
         ////{
@@ -142,12 +180,20 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         ////        }
         ////    }
         //}
-       
+        private IEnumerable<Werkzeug> GetFilteredWerkzeuge(string searchTerm)
+        {
+            if (string.IsNullOrWhiteSpace(searchTerm))
+                return Werkzeuge;
+
+            return Werkzeuge.Where(w =>
+                (w.Marke?.StartsWith(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (w.Art?.StartsWith(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (w.ProjektAdresse?.StartsWith(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false)
+            );
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        
     }
 }
