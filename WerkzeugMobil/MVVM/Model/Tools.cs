@@ -10,5 +10,6 @@ namespace WerkzeugMobil.MVVM.Model
     {
         public List <Werkzeug> ListeWerkzeuge { get; set; }
         public Dictionary <string, Werkzeug> keyValuePairs { get; set; }
+        public 
     }
 }
