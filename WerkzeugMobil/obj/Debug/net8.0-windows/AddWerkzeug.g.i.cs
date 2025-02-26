@@ -54,7 +54,7 @@ namespace WerkzeugMobil {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WerkzeugMobil;component/addwerkzeug.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WerkzeugMobil;V1.0.0.0;component/addwerkzeug.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddWerkzeug.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

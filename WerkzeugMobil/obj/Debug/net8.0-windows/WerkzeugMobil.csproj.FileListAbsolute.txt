@@ -396,12 +396,3 @@ C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net
 C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil.pdb
 C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil.genruntimeconfig.cache
 C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\ref\WerkzeugMobil.dll
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\AddWerkzeug.g.cs
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\Lager.g.cs
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\MainNavigation.g.cs
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil_Content.g.cs
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil_MarkupCompile.lref
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil.dll
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\refint\WerkzeugMobil.dll
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil.pdb
