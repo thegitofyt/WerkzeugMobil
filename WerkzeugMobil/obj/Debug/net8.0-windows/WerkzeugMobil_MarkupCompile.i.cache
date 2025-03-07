@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\
+C:\Users\vicky\Downloads\WerkzeugMobil (4)\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\
 WerkzeugMobil
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\ermuu\Schule\WerkzeugMobil\WerkzeugMobil\App.xaml
+C:\Users\vicky\Downloads\WerkzeugMobil (4)\WerkzeugMobil\WerkzeugMobil\App.xaml
 5-1879972220
 31499579739
 32681656021
-2371437822208
+198-1431420039
 AddWerkzeug.xaml;DataEntry.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;
 
-False
+True
 
