@@ -59,8 +59,9 @@
                     </Border>
 
                     <!-- Werkzeuge List -->
-                    <ListBox ItemsSource="{Binding FilteredWerkzeuge}" DisplayMemberPath="WerkzeugId">
-                        <ListBox>
+                    <ListBox ItemsSource="{Binding FilteredWerkzeuge}" 
+         SelectedItem="{Binding SelectedWerkzeug, Mode=TwoWay}">
+                        <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="{Binding WerkzeugId}" FontWeight="Bold" />
@@ -71,8 +72,9 @@
                                     <TextBlock Text=")" />
                                 </StackPanel>
                             </DataTemplate>
-                        </ListBox>
+                        </ListBox.ItemTemplate>
                     </ListBox>
+
                 </StackPanel>
 
 

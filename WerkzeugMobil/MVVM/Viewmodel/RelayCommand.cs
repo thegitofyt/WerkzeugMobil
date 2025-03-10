@@ -8,80 +8,46 @@ namespace ListDemo.ViewModels
     /// </summary>
     class RelayCommand : ICommand
     {
-        private readonly Func<object?, bool> canExecute;
-        private readonly Action<object?> execute;
+        private readonly Action<object?> _executeWithParam;
+        private readonly Func<object?, bool>? _canExecuteWithParam;
+        private readonly Action? _execute;
+        private readonly Func<bool>? _canExecute;
 
-        private readonly Action _execute;
-        private readonly Func<bool> _canExecute;
+        /// <summary>
+        /// Constructor for commands that take a parameter.
+        /// </summary>
+        public RelayCommand(Action<object?> execute, Func<object?, bool>? canExecute = null)
+        {
+            _executeWithParam = execute ?? throw new ArgumentNullException(nameof(execute), "Execute action cannot be null");
+            _canExecuteWithParam = canExecute;
+        }
 
-        public RelayCommand(Action execute, Func<bool> canExecute = null)
+        /// <summary>
+        /// Constructor for parameterless commands.
+        /// </summary>
+        public RelayCommand(Action execute, Func<bool>? canExecute = null)
         {
             _execute = execute ?? throw new ArgumentNullException(nameof(execute), "Execute action cannot be null");
             _canExecute = canExecute;
         }
 
-        public bool CanExecute(object parameter) => _canExecute == null || _canExecute();
+        public bool CanExecute(object? parameter)
+        {
+            if (_canExecuteWithParam != null) return _canExecuteWithParam(parameter);
+            if (_canExecute != null) return _canExecute();
+            return true; // Default to executable if no condition is provided
+        }
 
-        public void Execute(object parameter) => _execute();
+        public void Execute(object? parameter)
+        {
+            if (_executeWithParam != null) _executeWithParam(parameter);
+            else _execute?.Invoke();
+        }
 
-        public event EventHandler CanExecuteChanged
+        public event EventHandler? CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
         }
-        /// <summary>
-        /// Konstruktor für Funktionen, die einen Paramter von CommandParameter in XAML bekommen.
-        /// </summary>
-        /// <param name="execute">Funktion, die ausgeführt wird, wenn der Button gedrückt wird.</param>
-        /// <param name="canExecute">Funktion, die bestimmt, ob der Button aktiv ist.</param>
-        public RelayCommand(Action<object?> execute, Func<object?, bool> canExecute)
-        {
-            this.execute = execute;
-            this.canExecute = canExecute;
-        }
-        /// <summary>
-        /// Konstruktor für Funktionen ohne CommandParameter.
-        /// </summary>
-        /// <param name="execute">Funktion, die ausgeführt wird, wenn der Button gedrückt wird.</param>
-        /// <param name="canExecute">Funktion, die bestimmt, ob der Button aktiv ist.</param>
-        //public RelayCommand(Action execute, Func<bool> canExecute) : this((param) => execute(), (param) => canExecute())
-        //{ }
-
-        public RelayCommand(Action<object?> execute) : this(execute, (param) => true)
-        { }
-
-        public RelayCommand(Action execute) : this((param) => execute(), (param) => true)
-        { }
-      
-
-
-        /// <summary>
-        /// Damit die Enabled Eigenschaft automatisch aktualisiert wird, wenn CanExecute aufgerufen
-        /// wird.
-        /// </summary>
-        //public event EventHandler? CanExecuteChanged
-        //{
-        //    add { CommandManager.RequerySuggested += value; }
-        //    remove { CommandManager.RequerySuggested -= value; }
-        //}
-
-        /// <summary>
-        /// Bestimmt, ob der Button aktiv ist.
-        /// </summary>
-        /// <param name="parameter"></param>
-        /// <returns></returns>
-        //public bool CanExecute(object? parameter)
-        //{
-        //    return canExecute?.Invoke(parameter) ?? true;
-        //}
-
-        /// <summary>
-        /// Funktion, die beim Klicken ausgeführt werden soll.
-        /// </summary>
-        /// <param name="parameter">Wird in XAML über CommandParameter übergeben.</param>
-        //public void Execute(object? parameter)
-        //{
-        //    execute?.Invoke(parameter);
-        //}
     }
 }

@@ -15,6 +15,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddProjekt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -22,6 +25,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Lager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjektDetailsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjekteViewModel.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,9 +1,12 @@
 ﻿using ListDemo.ViewModels;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
+using WerkzeugMobil.Data;
+using WerkzeugMobil.DTO;
 using WerkzeugMobil.MVVM.Model;
 using WerkzeugMobil.MVVM.Viewmodel;
 using WerkzeugMobil.Services;
@@ -100,23 +103,47 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         //    Werkzeuge = new ObservableCollection<Werkzeug>(sampleWerkzeuge.Take(5));
         //}
 
-        private void LoadRandomWerkzeuge(Random random = null)
+
+      
+        public Werkzeug SelectedWerkzeug
         {
-            random ??= new Random(); // Verwende Standard-Random, falls keiner übergeben wurde
+            get => _selectedWerkzeug;
+            set
+            {
+                _selectedWerkzeug = value;
+                currentWerkzeug = value; // Update the displayed Werkzeug
+                OnPropertyChanged(nameof(SelectedWerkzeug));
+            }
+        }
 
-            var sampleWerkzeuge = Enumerable.Range(1, 20)
-                .Select(i => new Werkzeug
+        private void LoadRandomWerkzeuge()
+        {
+            using (var context = new WerkzeugDbContext())
+            {
+                // First, retrieve all the Werkzeuge from the database (client-side evaluation)
+                var werkzeugeList = context.Werkzeuge
+                                           .ToList() // Retrieve all items first
+                                           .ToList(); // Make sure it's in a list for randomization
+
+                // Create an instance of Random
+                Random random = new Random();
+
+                // Shuffle the list randomly
+                werkzeugeList = werkzeugeList.OrderBy(x => random.Next()).Take(5).ToList();
+
+                // Now assign the randomized items to ObservableCollection
+                Werkzeuge = new ObservableCollection<Werkzeug>(werkzeugeList.Select(w => new Werkzeug
                 {
-                    WerkzeugId = $"Werkzeug {random.Next(1, 100)}",
-                    Marke = $"Marke {random.Next(1, 10)}",
-                    Art = "Säbelsäge",
-                    ProjektAdresse = $"Adresse {random.Next(1, 50)}",
-                    Beschreibung = "Testbeschreibung"
-                })
-                .ToList();
+                    WerkzeugId = w.WerkzeugId,
+                    Marke = w.Marke,
+                    Art = w.Art,
+                    ProjektAdresse = w.ProjektAdresse,
+                    Beschreibung = w.Beschreibung
+                }));
 
-            Werkzeuge = new ObservableCollection<Werkzeug>(sampleWerkzeuge.Take(5));
-            FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
+                // Apply filtering if needed
+                FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
+            }
         }
 
         public ObservableCollection<Werkzeug> FilteredWerkzeuge
@@ -147,11 +174,44 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         //        FilteredWerkzeuge = new ObservableCollection<Werkzeug>(filtered);
         //    }
         //}
-
         private void ExecuteSearch()
         {
-            FilteredWerkzeuge = new ObservableCollection<Werkzeug>(GetFilteredWerkzeuge(SearchTerm));
+            if (string.IsNullOrWhiteSpace(SearchTerm))
+            {
+                LoadRandomWerkzeuge(); // Reload all Werkzeuge
+            }
+            else
+            {
+                using (var context = new WerkzeugDbContext())
+                {
+                    var filteredWerkzeuge = context.Werkzeuge
+                        .Where(w =>
+                            EF.Functions.Like(w.Marke, $"%{SearchTerm}%") ||
+                            EF.Functions.Like(w.Art, $"%{SearchTerm}%") ||
+                            EF.Functions.Like(w.ProjektAdresse, $"%{SearchTerm}%") ||
+                            EF.Functions.Like(w.WerkzeugId, $"%{SearchTerm}%") ||
+                            EF.Functions.Like(w.Beschreibung, $"%{SearchTerm}%")
+                        )
+                        .ToList(); // Execute the query and get the result
+
+                    // Assuming you have a mapping method for converting WerkzeugDto to Werkzeug
+                    var mappedWerkzeuge = filteredWerkzeuge.Select(dto => new Werkzeug
+                    {
+                        // Mapping properties from WerkzeugDto to Werkzeug
+                        Marke = dto.Marke,
+                        Art = dto.Art,
+                        ProjektAdresse = dto.ProjektAdresse,
+                        WerkzeugId = dto.WerkzeugId,
+                        Beschreibung = dto.Beschreibung
+                    }).ToList();
+
+                    // Update the ObservableCollection with the mapped result
+                    Werkzeuge = new ObservableCollection<Werkzeug>(mappedWerkzeuge);
+                    FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
+                }
+            }
         }
+
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -180,15 +240,18 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         ////        }
         ////    }
         //}
-        private IEnumerable<Werkzeug> GetFilteredWerkzeuge(string searchTerm)
+       
+       private IEnumerable<Werkzeug> GetFilteredWerkzeuge(string searchTerm)
         {
             if (string.IsNullOrWhiteSpace(searchTerm))
                 return Werkzeuge;
 
             return Werkzeuge.Where(w =>
-                (w.Marke?.StartsWith(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
-                (w.Art?.StartsWith(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
-                (w.ProjektAdresse?.StartsWith(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false)
+                (w.Marke?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (w.Art?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (w.ProjektAdresse?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (w.WerkzeugId?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (w.Beschreibung?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false)
             );
         }
 

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\vicky\Downloads\WerkzeugMobil (4)\WerkzeugMobil\WerkzeugMobil\App.xaml
-5-1879972220
+81185204875
 31499579739
-32681656021
-198-1431420039
-AddWerkzeug.xaml;DataEntry.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;
+38858875057
+237-1620891972
+AddProjekt.xaml;AddWerkzeug.xaml;DataEntry.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;ProjektDetailsView.xaml;ProjekteViewModel.xaml;
 
 True
 

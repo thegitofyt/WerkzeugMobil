@@ -3,12 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:WerkzeugMobil" xmlns:viewmodel="clr-namespace:WerkzeugMobil.MVVM.Viewmodel"
+        xmlns:local="clr-namespace:WerkzeugMobil" 
+        xmlns:viewmodel="clr-namespace:WerkzeugMobil.MVVM.Viewmodel"
         mc:Ignorable="d"
         Title="Add New Werkzeug" Height="750" Width="1200"
         WindowStartupLocation="CenterScreen"
         Background="#00254D">
-    
+
     <Window.DataContext>
         <viewmodel:AddWerkzeugViewModel />
     </Window.DataContext>
@@ -17,25 +18,27 @@
         <!-- Main Layout -->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <!-- Header -->
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
-            <!-- Main Content -->
         </Grid.RowDefinitions>
 
         <!-- Header Section -->
-        
-            <Grid>
-                <Image Source="pack://application:,,,/LogoRech.png" 
-           Width="150" Height="50" 
-           VerticalAlignment="Center" 
-           HorizontalAlignment="Left" 
-           Margin="20,0,0,0" UseLayoutRounding="True" />
+        <Grid Grid.Row="0" Background="#004D80" Height="60">
+            <Image Source="pack://application:,,,/LogoRech.png" 
+                   Width="150" Height="50" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Left" 
+                   Margin="20,0,0,0" UseLayoutRounding="True" />
+        </Grid>
 
-            </Grid>
-        
+        <!-- Navigation Bar -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Background="#E0E0E0" Height="50">
+            <Button Content="Werkzeug" Width="120" Height="40" Margin="10" Command="{Binding NavigateWerkzeugCommand}" />
+            <Button Content="Projekt" Width="120" Height="40" Margin="10" Command="{Binding NavigateProjektCommand}" />
+        </StackPanel>
 
         <!-- Main Content Section -->
-        <Grid Grid.Row="1" Margin="20">
+        <Grid Grid.Row="2" Margin="20">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="1*" />
