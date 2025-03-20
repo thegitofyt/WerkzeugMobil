@@ -12,9 +12,15 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\vicky\Downloads\WerkzeugMobil (4)\WerkzeugMobil\WerkzeugMobil\App.xaml
 81185204875
 31499579739
+<<<<<<< Updated upstream
 38858875057
 237-1620891972
 AddProjekt.xaml;AddWerkzeug.xaml;DataEntry.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;ProjektDetailsView.xaml;ProjekteViewModel.xaml;
+=======
+32681656021
+237-1082485169
+AddWerkzeug.xaml;DataEntry.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;
+>>>>>>> Stashed changes
 
 True
 

@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WerkzeugMobil")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5ca47ef58c596dbbe7bbdf14a8689a71ea4676a")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7bd7b1df48ff811228d760742d752685ddb7604")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("WerkzeugMobil")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WerkzeugMobil")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
