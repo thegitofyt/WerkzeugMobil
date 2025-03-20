@@ -52,12 +52,15 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\downloads\\werkzeugmobil (4)\\werkzeugmobil\\werkzeugmobil\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\downloads\\werkzeugmobil (4)\\werkzeugmobil\\werkzeugmobil\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
 =======
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\ermuu\\schule\\werkzeugmobil\\werkzeugmobil\\dto\\projektdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\projektdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -284,6 +287,9 @@
               "ToolTip": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Tools.cs",
               "RelativeToolTip": "MVVM\\Model\\Tools.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAgwCAAAAAiAAAAAAAAAA==",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T21:33:20.181Z",
@@ -291,6 +297,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "App.xaml.cs",
@@ -306,6 +313,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 17,
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 17,
 >>>>>>> Stashed changes
@@ -537,6 +547,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Title": "AddWerkzeugViewModel.cs",
               "DocumentMoniker": "C:\\Users\\vicky\\Downloads\\WerkzeugMobil (4)\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
@@ -551,7 +564,10 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 2,
               "Title": "AddWerkzeug.xaml",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
@@ -789,6 +805,9 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "DocumentIndex": 13,
               "Title": "Benutzer.cs",
@@ -1051,7 +1070,11 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 35,
+=======
+              "DocumentIndex": 7,
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 7,
 >>>>>>> Stashed changes
@@ -1067,6 +1090,7 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 36,
               "Title": "PranBackground.jpg - Bitmap [318x159, 24-Bit, JPG]",
               "DocumentMoniker": "C:\\Users\\vicky\\Downloads\\WerkzeugMobil (4)\\WerkzeugMobil\\WerkzeugMobil\\PranBackground.jpg",
@@ -1074,12 +1098,17 @@
               "ToolTip": "C:\\Users\\vicky\\Downloads\\WerkzeugMobil (4)\\WerkzeugMobil\\WerkzeugMobil\\PranBackground.jpg - Bitmap [318x159, 24-Bit, JPG]",
               "RelativeToolTip": "PranBackground.jpg - Bitmap [318x159, 24-Bit, JPG]",
 =======
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 34,
               "Title": "PranBackground.jpg -  [German (Germany)] - Bitmap [318x159, 24 bit, JPG]",
               "DocumentMoniker": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\PranBackground.jpg",
               "RelativeDocumentMoniker": "PranBackground.jpg",
               "ToolTip": "C:\\Users\\ermuu\\Schule\\WerkzeugMobil\\WerkzeugMobil\\PranBackground.jpg -  [German (Germany)] - Bitmap [318x159, 24 bit, JPG]",
               "RelativeToolTip": "PranBackground.jpg -  [German (Germany)] - Bitmap [318x159, 24 bit, JPG]",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2024-12-17T17:53:16.962Z",
