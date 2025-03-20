@@ -30,6 +30,9 @@
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\ermuu\.nuget\packages\microsoft.entityframeworkcore.tools\9.0.3</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgMaterialDesignThemes Condition=" '$(PkgMaterialDesignThemes)' == '' ">C:\Users\ermuu\.nuget\packages\materialdesignthemes\5.2.1</PkgMaterialDesignThemes>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

@@ -14,8 +14,13 @@
     "additionalProbingPaths": [
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "C:\\Users\\vicky\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\vicky\\.nuget\\packages",
+=======
+      "C:\\Users\\ermuu\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ermuu\\.nuget\\packages",
+>>>>>>> Stashed changes
 =======
       "C:\\Users\\ermuu\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\ermuu\\.nuget\\packages",
