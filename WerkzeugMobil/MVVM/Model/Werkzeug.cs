@@ -17,6 +17,11 @@ namespace WerkzeugMobil.MVVM.Model
 
         public List<string> History { get; set; }
         public ProjektDTO Projekt { get; internal set; }
+
+        public static implicit operator Werkzeug(WerkzeugDto v)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 

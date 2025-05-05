@@ -3,95 +3,194 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:WerkzeugMobil" 
+        xmlns:local="clr-namespace:WerkzeugMobil"
         xmlns:viewmodel="clr-namespace:WerkzeugMobil.MVVM.Viewmodel"
         mc:Ignorable="d"
-        Title="Add New Werkzeug" Height="750" Width="1200"
+        WindowState="Maximized"
+        Title="Add New Werkzeug"
         WindowStartupLocation="CenterScreen"
-        Background="#00254D">
+        Background="{DynamicResource AppBackground}">
 
     <Window.DataContext>
         <viewmodel:AddWerkzeugViewModel />
     </Window.DataContext>
 
-    <Grid>
-        <!-- Main Layout -->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+    <!-- Resources -->
+    <Window.Resources>
+        <Storyboard x:Key="ButtonHoverAnimation">
+            <DoubleAnimation Storyboard.TargetProperty="(Button.RenderTransform).(TranslateTransform.Y)"
+                             From="0" To="-5" Duration="0:0:0.2" AutoReverse="True"/>
+        </Storyboard>
 
-        <!-- Header Section -->
-        <Grid Grid.Row="0" Background="#004D80" Height="60">
-            <Image Source="pack://application:,,,/LogoRech.png" 
-                   Width="150" Height="50" 
-                   VerticalAlignment="Center" 
-                   HorizontalAlignment="Left" 
-                   Margin="20,0,0,0" UseLayoutRounding="True" />
+        <Style x:Key="ModernButtonStyle" TargetType="Button">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Background" Value="#004D80"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <TranslateTransform />
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Button.MouseEnter">
+                    <BeginStoryboard Storyboard="{StaticResource ButtonHoverAnimation}"/>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="ModernTextBoxStyle" TargetType="TextBox">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Cursor" Value="IBeam"/>
+            <Style.Triggers>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#004D80"/>
+                    <Setter Property="Background" Value="#F5F5F5"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="#004D80"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="ModernBorderStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style x:Key="ModernListViewItemStyle" TargetType="ListViewItem">
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#F1F1F1"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Theme colors -->
+        <SolidColorBrush x:Key="AppBackground" Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="AppText" Color="#000000"/>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Header -->
+        <Grid Background="#004D80" Height="80" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="pack://application:,,,/LogoRech.png" Width="150" Height="50"
+                   VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="2" VerticalAlignment="Center"
+                        HorizontalAlignment="Right" Margin="0,0,20,0">
+                <Button Content="Werkzeug" Style="{StaticResource ModernButtonStyle}"
+                        Command="{Binding NavigateWerkzeug}"/>
+                <Button Content="Projekt" Style="{StaticResource ModernButtonStyle}"
+                        Command="{Binding NavigateProjekt}"/>
+            </StackPanel>
         </Grid>
 
-        <!-- Navigation Bar -->
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Background="#E0E0E0" Height="50">
-            <Button Content="Werkzeug" Width="120" Height="40" Margin="10" Command="{Binding NavigateWerkzeugCommand}" />
-            <Button Content="Projekt" Width="120" Height="40" Margin="10" Command="{Binding NavigateProjektCommand}" />
-        </StackPanel>
-
-        <!-- Main Content Section -->
-        <Grid Grid.Row="2" Margin="20">
+        <!-- Main content -->
+        <Grid Margin="50,120,50,20">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
 
             <!-- Form Section -->
-            <Border Background="White" CornerRadius="10" Padding="30" Grid.Column="0">
-                <StackPanel>
-                    <!-- Geräte Kennzahl -->
-                    <TextBlock Text="Geräte Kennzahl" FontSize="16" FontWeight="Bold" Margin="0,0,0,10" />
-                    <TextBox Height="40" Background="#F0F0F0" BorderBrush="#CCCCCC" BorderThickness="1"
-                             Text="{Binding Werkzeug.WerkzeugId, UpdateSourceTrigger=PropertyChanged}" />
+            <Border Style="{StaticResource ModernBorderStyle}" Grid.Column="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
-                    <!-- Marke -->
-                    <TextBlock Text="Marke" FontSize="16" FontWeight="Bold" Margin="20,20,0,10" />
-                    <TextBox Height="40" Background="#F0F0F0" BorderBrush="#CCCCCC" BorderThickness="1"
-                             Text="{Binding Werkzeug.Marke, UpdateSourceTrigger=PropertyChanged}" />
+                    <StackPanel Grid.Row="0">
+                        <TextBlock Text="Geräte Kennzahl" FontSize="16" FontWeight="Bold"
+                                   Margin="0,0,0,10" Foreground="{DynamicResource AppText}"/>
+                        <TextBox Style="{StaticResource ModernTextBoxStyle}" Text="{Binding Werkzeug.WerkzeugId}"/>
+                    </StackPanel>
 
-                    <!-- Art -->
-                    <TextBlock Text="Art" FontSize="16" FontWeight="Bold" Margin="20,20,0,10" />
-                    <TextBox Height="40" Background="#F0F0F0" BorderBrush="#CCCCCC" BorderThickness="1"
-                             Text="{Binding Werkzeug.Art, UpdateSourceTrigger=PropertyChanged}" />
+                    <StackPanel Grid.Row="1">
+                        <TextBlock Text="Marke" FontSize="16" FontWeight="Bold"
+                                   Margin="20,20,0,10" Foreground="{DynamicResource AppText}"/>
+                        <TextBox Style="{StaticResource ModernTextBoxStyle}" Text="{Binding Werkzeug.Marke}"/>
+                    </StackPanel>
 
-                    <!-- Projekt Adresse -->
-                    <TextBlock Text="Projekt Adresse" FontSize="16" FontWeight="Bold" Margin="20,20,0,10" />
-                    <TextBox Height="40" Background="#F0F0F0" BorderBrush="#CCCCCC" BorderThickness="1"
-                             Text="{Binding Werkzeug.ProjektAdresse, UpdateSourceTrigger=PropertyChanged}" />
+                    <StackPanel Grid.Row="2">
+                        <TextBlock Text="Art" FontSize="16" FontWeight="Bold"
+                                   Margin="20,20,0,10" Foreground="{DynamicResource AppText}"/>
+                        <TextBox Style="{StaticResource ModernTextBoxStyle}" Text="{Binding Werkzeug.Art}"/>
+                    </StackPanel>
 
-                    <!-- Beschreibung -->
-                    <TextBlock Text="Beschreibung" FontSize="16" FontWeight="Bold" Margin="20,20,0,10" />
-                    <TextBox Height="80" TextWrapping="Wrap" Background="#F0F0F0" BorderBrush="#CCCCCC" BorderThickness="1"
-                             Text="{Binding Werkzeug.Beschreibung, UpdateSourceTrigger=PropertyChanged}" />
+                    <StackPanel Grid.Row="3">
+                        <TextBlock Text="Projekt Adresse" FontSize="16" FontWeight="Bold"
+                                   Margin="20,20,0,10" Foreground="{DynamicResource AppText}"/>
+                        <TextBox Style="{StaticResource ModernTextBoxStyle}" Text="{Binding Werkzeug.ProjektAdresse}"/>
+                    </StackPanel>
 
-                    <!-- Submit Button -->
-                    <Button Content="Submit" Width="150" Height="40" Background="#004D80" Foreground="White" FontSize="16"
-                            HorizontalAlignment="Right" Margin="20,40,0,0" BorderThickness="0"
-                            Command="{Binding SubmitCommand}" Cursor="Hand" />
-                    <Button Content="Reset" Command="{Binding AddNewCommand}" Width="150" Height="40" FontSize="16" Margin="20,-40,0,0" HorizontalAlignment="Left"/>
-                </StackPanel>
+                    <StackPanel Grid.Row="4">
+                        <TextBlock Text="Beschreibung" FontSize="16" FontWeight="Bold"
+                                   Margin="20,20,0,10" Foreground="{DynamicResource AppText}"/>
+                        <TextBox Style="{StaticResource ModernTextBoxStyle}" Height="64" TextWrapping="Wrap"
+                                 Text="{Binding Werkzeug.Beschreibung}" Margin="0,0,0,20"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Grid.Row="5" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <Button Content="Submit" Style="{StaticResource ModernButtonStyle}" Command="{Binding SubmitCommand}" Width="281" Height="42"/>
+                        <Button Content="Reset" Style="{StaticResource ModernButtonStyle}" Command="{Binding AddNewCommand}" Width="150" Height="31" Margin="20,0"/>
+                    </StackPanel>
+                </Grid>
             </Border>
 
-            <!-- Preview/Instructions Section -->
-            <Border Background="#E8F0F8" CornerRadius="10" Padding="30" Grid.Column="1" Margin="20,0,0,0">
+            <!-- Preview Section -->
+            <Border Style="{StaticResource ModernBorderStyle}" Grid.Column="1" Margin="50,48,0,57">
                 <StackPanel>
-                    <TextBlock Text="Werkzeuge" FontSize="18" FontWeight="Bold" Margin="0,0,0,20" />
-                    <TextBlock Text="Existierende Maschinen "
-                               TextWrapping="Wrap" FontSize="14" Foreground="#555555" />
-                    <Border Height="300" Background="White" BorderBrush="#CCCCCC" BorderThickness="1" CornerRadius="5" Margin="0,20,0,0">
-                        <ScrollViewer VerticalScrollBarVisibility="Auto">
-                            <TextBlock Text="(Existing Maschines)"
-                                       FontSize="14" Foreground="#888888" Padding="10" />
-                        </ScrollViewer>
-                    </Border>
+                    <TextBlock Text="Existing Werkzeuge" FontSize="18" FontWeight="Bold" Margin="0,0,0,20" Foreground="{DynamicResource AppText}"/>
+                    <ListView ItemsSource="{Binding Tools}" SelectedItem="{Binding SelectedTool}"
+                              BorderBrush="#E0E0E0" BorderThickness="1" Height="401"
+                              ItemContainerStyle="{StaticResource ModernListViewItemStyle}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Name}" FontSize="14" FontWeight="Bold" Margin="0,0,0,5"/>
+                                    <TextBlock Text="{Binding Description}" FontSize="12" Foreground="#6B6B6B"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
                 </StackPanel>
             </Border>
         </Grid>

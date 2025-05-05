@@ -11,10 +11,11 @@ namespace WerkzeugMobil.DTO
     {
         [Key]
         public string ProjektAddresse { get; set; } // Street name as the ID
-        public List<WerkzeugDto> Werkzeuge { get; set; } // List of tools in the project/street
+        public List<WerkzeugDto>? Werkzeuge { get; set; } // List of tools in the project/street
 
         public ProjektDTO()
         {
+
             Werkzeuge = new List<WerkzeugDto>(); // Initialize the list
         }
     }

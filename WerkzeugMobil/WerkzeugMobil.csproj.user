@@ -30,7 +30,7 @@
     <Page Update="ProjektDetailsView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ProjekteViewModel.xaml">
+    <Page Update="ProjekteView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

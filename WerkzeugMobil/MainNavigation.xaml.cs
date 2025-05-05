@@ -5,16 +5,19 @@ using WerkzeugMobil.MVVM.Model;
 using System.Windows;
 using System.Windows.Navigation;
 using WerkzeugMobil.MVVM.Viewmodel;
+using WerkzeugMobil.DTO;
 
 namespace WerkzeugMobil
 {
     public partial class MainNavigation : Window
     {
+        private ProjektDTO _projekt;
         public MainNavigation()
         {
-            InitializeComponent();
+            
             DataContext = new MainViewModel();
-
+            InitializeComponent();
+            this.WindowState = WindowState.Maximized;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -27,11 +30,18 @@ namespace WerkzeugMobil
             addWerkzeug.Show(); // Show the MainNavigation window
             this.Close(); // Close the LoginUser  window
         }
+
+        private void Projekt_Click(object sender, RoutedEventArgs e)
+        {
+            ProjektDetailsView projektDetailsView = new ProjektDetailsView();
+            projektDetailsView.Show(); // Show the MainNavigation window
+            this.Close(); // Close the LoginUser  window
+        }
         private void Maschine_Lager(object sender, RoutedEventArgs e)
         {
             Lager lager = new Lager();
-            lager.Show(); // Show the MainNavigation window
-            this.Close(); // Close the LoginUser  window
+            lager.Show(); // Show the Lager window
+            this.Close(); // Close the MainNavigation  window
         }
     }
 }

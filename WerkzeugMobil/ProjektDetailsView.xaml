@@ -1,30 +1,36 @@
 <Window x:Class="WerkzeugMobil.ProjektDetailsView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:viewmodel="clr-namespace:WerkzeugMobil.MVVM.Viewmodel"
         Title="Projekt Details" Height="500" Width="600"
         Background="#00254D">
 
-	<Grid>
+    <Window.DataContext>
+        <viewmodel:ProjekteViewModel/>
+    </Window.DataContext>
+
+    <Grid>
 		<TextBlock Text="Projekt Details" Foreground="White" FontSize="20"
                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
 
-		<ListBox ItemsSource="{Binding Werkzeuge}" Margin="20,60,20,80" Background="White">
-			<ListBox.ItemTemplate>
-				<DataTemplate>
-					<Border BorderBrush="Gray" BorderThickness="1" Margin="5" Padding="10">
-						<StackPanel>
-							<TextBlock Text="{Binding WerkzeugId}" FontSize="16" FontWeight="Bold"/>
-							<TextBlock Text="{Binding Marke}" FontSize="14"/>
-							<TextBlock Text="{Binding Art}" FontSize="14"/>
-						</StackPanel>
-					</Border>
-				</DataTemplate>
-			</ListBox.ItemTemplate>
-		</ListBox>
+        <ListBox ItemsSource="{Binding Projekte}" Margin="20,60,20,80" Background="White">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Gray" BorderThickness="1" Margin="5" Padding="10">
+                        <StackPanel>
+                            <!-- Display Project Address -->
+                            <TextBlock Text="{Binding ProjektAddresse}" FontSize="16" FontWeight="Bold"/>
 
-		<!-- Finish Button -->
+                            <!-- Display the Count of Werkzeuge for each project -->
+                            <TextBlock Text="{Binding Werkzeuge.Count, StringFormat='Werkzeuge: {0}'}" FontSize="14" Foreground="Gray"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!-- Finish Button -->
 		<Button Content="Fertigstellen" Width="150" Height="40"
-                Background="#FFD700" Foreground="Black" FontWeight="Bold"
+                Background="#FFFFFF" Foreground="Black" FontWeight="Bold"
                 VerticalAlignment="Bottom" HorizontalAlignment="Center"
                 Margin="0,0,0,20"
                 Command="{Binding FinishProjektCommand}"/>

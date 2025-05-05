@@ -1,41 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
-
+using WerkzeugMobil.Data;
+using WerkzeugMobil.DTO;
 namespace WerkzeugMobil.MVVM.Model
 {
     public class Tools
     {
-        public List <Werkzeug> ListeWerkzeuge { get; set; }
-        // Dictionary to store tool categories and their corresponding lists of Werkzeuge
-        public Dictionary <string, List<Werkzeug>> WerkzeugKategorien { get; set; }
+       
+        public int Id { get; set; }
 
-        public Tools()
-        {
-            WerkzeugKategorien = new Dictionary<string, List<Werkzeug>>();
-        }
-        // Method to add a tool to the appropriate category
-        public void AddTool(string werkzeugArt,Werkzeug werkzeug )
-        {
-            if(!WerkzeugKategorien.ContainsKey(werkzeugArt))
-            {
-                WerkzeugKategorien[werkzeugArt] = new List<Werkzeug>();
-            }
-            WerkzeugKategorien[werkzeugArt].Add(werkzeug);
-        }
-        // Method to get all tools of a specific type
-        public List<Werkzeug> GetToolsByType(string werkzeugArt)
-        {
-            return WerkzeugKategorien.ContainsKey(werkzeugArt) ? WerkzeugKategorien[werkzeugArt] : new List<Werkzeug>();
-        }
-        // Method to get all tools
-        public List<Werkzeug> GetAllTools()
-        {
-            return WerkzeugKategorien.Values.SelectMany(toolList => toolList).ToList();
-        }
+        public String Name;
 
-
+       
+        public List<Tuple<string, int>> ToolTypeCounts { get; set; } = new List<Tuple<string, int>>();
+        //public Dictionary<string, Werkzeug> KeyValuePairs { get; set; }
+        // public Dictionary<string, int> LastUsedIds { get; set; } // Track last used ID for each Art
+        // Create a mapped property to store serialized data
+       
     }
 }
