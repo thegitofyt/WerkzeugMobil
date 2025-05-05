@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WerkzeugMobil.Data;
 using WerkzeugMobil.DTO;
+using WerkzeugMobil.MVVM.Model;
 using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil
@@ -33,13 +34,6 @@ namespace WerkzeugMobil
             this.WindowState = WindowState.Maximized;
         }
 
-        private void DataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            if (DataContext is LagerViewModel viewModel && viewModel.SelectedWerkzeug != null)
-            {
-                viewModel.NavigateToAddWerkzeug();
-            }
-        }
         private void LoadWerkzeuge()
         {
             try
@@ -56,6 +50,19 @@ namespace WerkzeugMobil
                 MessageBox.Show($"Error loading Werkzeuge: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        private void WerkzeugDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var viewModel = DataContext as LagerViewModel;
+
+            if (viewModel?.SelectedWerkzeug != null)
+            {
+                viewModel.NavigateToAddWerkzeug();
+
+                // Optional: Auswahl zurücksetzen, damit man dasselbe Element nochmal klicken kann
+                ((DataGrid)sender).SelectedItem = null;
+            }
+        }
+
     }
 
 }

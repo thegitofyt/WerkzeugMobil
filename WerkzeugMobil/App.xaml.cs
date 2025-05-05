@@ -17,7 +17,6 @@ namespace WerkzeugMobil
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            ThemeManager.SetLightTheme(this);
 
             // Initialize the database
             try
@@ -28,8 +27,7 @@ namespace WerkzeugMobil
                     // Ensure migrations are applied
                     context.Database.Migrate();
 
-                    context.Werkzeuge.RemoveRange(context.Werkzeuge);
-                    context.SaveChanges(); // Commit deletion before inserting new records
+
 
 
                     if (!context.Projekte.Any())
@@ -108,8 +106,8 @@ namespace WerkzeugMobil
                                 };
                         context.Tools.AddRange(tools);
                         context.SaveChanges();
-                        }
-                        
+                    }
+
                     // Seed User data if not already present
                     if (!context.Benutzer.Any())
                     {
