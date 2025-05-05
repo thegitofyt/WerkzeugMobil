@@ -20,7 +20,8 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         private ObservableCollection<Werkzeug>  werkzeugService;
         private Werkzeug _selectedWerkzeug;
         private Werkzeug _currentWerkzeug;
-
+        private ProjektDTO _selectedProjekt;
+        public ProjekteViewModel ProjekteViewModel { get; set; }
 
 
         private string _searchTerm; // Property to hold the search term
@@ -49,13 +50,17 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         //    }
         //}
 
+        
         public MainViewModel()
         {
 
-
+            ProjekteViewModel = new ProjekteViewModel();
+            ProjekteViewModel.SetMainViewModel(this);
             Werkzeuge = new ObservableCollection<Werkzeug>();
             FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
             SearchCommand = new RelayCommand(ExecuteSearch);
+            SelectProjektCommand = new RelayCommand(SelectProjekt);
+            LoadWerkzeugeForProject(SelectedProjekt);
             LoadRandomWerkzeuge();
 
             currentWerkzeug = new Werkzeug
@@ -78,13 +83,13 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
 
             // Initialize the search command
-            SearchCommand = new RelayCommand(ExecuteSearch);
+           
 
             //_werkzeugService = new WerkzeugServices();
 
             // Initialize Werkzeug collection with sample data
-           
-    ;
+
+            ;
 
             // Copy all Werkzeuge to the filtered list initially
             //FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);// Initialize with all Werkzeuge
@@ -104,7 +109,23 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         //}
 
 
-      
+        public ProjektDTO SelectedProjekt
+        {
+            get => _selectedProjekt;
+            set
+            {
+                _selectedProjekt = value;
+                OnPropertyChanged(nameof(SelectedProjekt));
+                LoadWerkzeugeForProject(SelectedProjekt);
+            }
+        }
+        private void SelectProjekt()
+        {
+            if (SelectedProjekt != null)
+            {
+                LoadWerkzeugeForProject(SelectedProjekt);
+            }
+        }
         public Werkzeug SelectedWerkzeug
         {
             get => _selectedWerkzeug;
@@ -118,31 +139,72 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
         private void LoadRandomWerkzeuge()
         {
+            if (SelectedProjekt == null || string.IsNullOrWhiteSpace(SelectedProjekt.ProjektAddresse))
+            {
+                return;
+            }
+
             using (var context = new WerkzeugDbContext())
             {
-                // First, retrieve all the Werkzeuge from the database (client-side evaluation)
                 var werkzeugeList = context.Werkzeuge
-                                           .ToList() // Retrieve all items first
-                                           .ToList(); // Make sure it's in a list for randomization
+                                           .Where(w => w.ProjektAdresse == SelectedProjekt.ProjektAddresse)
+                                           .ToList();
 
-                // Create an instance of Random
-                Random random = new Random();
+                if (werkzeugeList.Any())
+                {
+                    Random random = new Random();
+                    werkzeugeList = werkzeugeList.OrderBy(x => random.Next()).Take(5).ToList();
 
-                // Shuffle the list randomly
-                werkzeugeList = werkzeugeList.OrderBy(x => random.Next()).Take(5).ToList();
+                    var mappedWerkzeuge = werkzeugeList.Select(w => new Werkzeug
+                    {
+                        WerkzeugId = w.WerkzeugId,
+                        Marke = w.Marke,
+                        Art = w.Art,
+                        ProjektAdresse = w.ProjektAdresse,
+                        Beschreibung = w.Beschreibung
+                    }).ToList();
 
-                // Now assign the randomized items to ObservableCollection
-                Werkzeuge = new ObservableCollection<Werkzeug>(werkzeugeList.Select(w => new Werkzeug
+                    Werkzeuge = new ObservableCollection<Werkzeug>(mappedWerkzeuge);
+                    FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
+
+                    OnPropertyChanged(nameof(Werkzeuge));
+                    OnPropertyChanged(nameof(FilteredWerkzeuge));
+                }
+                else
+                {
+                    Werkzeuge.Clear();
+                    FilteredWerkzeuge.Clear();
+
+                    OnPropertyChanged(nameof(Werkzeuge));
+                    OnPropertyChanged(nameof(FilteredWerkzeuge));
+                }
+            }
+        }
+
+
+        public void LoadWerkzeugeForProject(ProjektDTO selectedProjekt)
+        {
+            if (selectedProjekt == null) return;
+
+            using (var context = new WerkzeugDbContext())
+            {
+                var werkzeugeList = context.Werkzeuge
+                    .Where(w => w.ProjektAdresse == selectedProjekt.ProjektAddresse)
+                    .ToList();
+
+                var mappedWerkzeuge = werkzeugeList.Select(w => new Werkzeug
                 {
                     WerkzeugId = w.WerkzeugId,
                     Marke = w.Marke,
                     Art = w.Art,
                     ProjektAdresse = w.ProjektAdresse,
                     Beschreibung = w.Beschreibung
-                }));
+                }).ToList();
 
-                // Apply filtering if needed
+                Werkzeuge = new ObservableCollection<Werkzeug>(mappedWerkzeuge);
                 FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
+                OnPropertyChanged(nameof(Werkzeuge));
+                OnPropertyChanged(nameof(FilteredWerkzeuge));
             }
         }
 
@@ -155,6 +217,9 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 OnPropertyChanged();
             }
         }
+
+
+
         //private void ExecuteSearch()
         //{
         //    if (string.IsNullOrWhiteSpace(SearchTerm))
@@ -176,39 +241,33 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         //}
         private void ExecuteSearch()
         {
-            if (string.IsNullOrWhiteSpace(SearchTerm))
+            if (SelectedProjekt == null || string.IsNullOrWhiteSpace(SelectedProjekt.ProjektAddresse))
             {
-                LoadRandomWerkzeuge(); // Reload all Werkzeuge
+                FilteredWerkzeuge = new ObservableCollection<Werkzeug>();
+                return;
             }
-            else
+
+            using (var context = new WerkzeugDbContext())
             {
-                using (var context = new WerkzeugDbContext())
+                var filteredWerkzeuge = context.Werkzeuge
+                    .Where(w => w.ProjektAdresse == SelectedProjekt.ProjektAddresse &&
+                        (EF.Functions.Like(w.Marke, $"%{SearchTerm}%") ||
+                         EF.Functions.Like(w.Art, $"%{SearchTerm}%") ||
+                         EF.Functions.Like(w.WerkzeugId.ToString(), $"%{SearchTerm}%") ||
+                         EF.Functions.Like(w.Beschreibung, $"%{SearchTerm}%")))
+                    .ToList();
+
+                var mappedWerkzeuge = filteredWerkzeuge.Select(w => new Werkzeug
                 {
-                    var filteredWerkzeuge = context.Werkzeuge
-                        .Where(w =>
-                            EF.Functions.Like(w.Marke, $"%{SearchTerm}%") ||
-                            EF.Functions.Like(w.Art, $"%{SearchTerm}%") ||
-                            EF.Functions.Like(w.ProjektAdresse, $"%{SearchTerm}%") ||
-                            EF.Functions.Like(w.WerkzeugId, $"%{SearchTerm}%") ||
-                            EF.Functions.Like(w.Beschreibung, $"%{SearchTerm}%")
-                        )
-                        .ToList(); // Execute the query and get the result
+                    WerkzeugId = w.WerkzeugId,
+                    Marke = w.Marke,
+                    Art = w.Art,
+                    ProjektAdresse = w.ProjektAdresse,
+                    Beschreibung = w.Beschreibung
+                }).ToList();
 
-                    // Assuming you have a mapping method for converting WerkzeugDto to Werkzeug
-                    var mappedWerkzeuge = filteredWerkzeuge.Select(dto => new Werkzeug
-                    {
-                        // Mapping properties from WerkzeugDto to Werkzeug
-                        Marke = dto.Marke,
-                        Art = dto.Art,
-                        ProjektAdresse = dto.ProjektAdresse,
-                        WerkzeugId = dto.WerkzeugId,
-                        Beschreibung = dto.Beschreibung
-                    }).ToList();
-
-                    // Update the ObservableCollection with the mapped result
-                    Werkzeuge = new ObservableCollection<Werkzeug>(mappedWerkzeuge);
-                    FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
-                }
+                FilteredWerkzeuge = new ObservableCollection<Werkzeug>(mappedWerkzeuge);
+                OnPropertyChanged(nameof(FilteredWerkzeuge));
             }
         }
 
@@ -228,7 +287,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         }
         public ICommand SearchCommand { get; private set; }
 
-
+        public ICommand SelectProjektCommand { get; private set; }
         //private void UpdateAddressHistory()
         ////{
         ////    History.Clear();
@@ -240,8 +299,8 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         ////        }
         ////    }
         //}
-       
-       private IEnumerable<Werkzeug> GetFilteredWerkzeuge(string searchTerm)
+
+        private IEnumerable<Werkzeug> GetFilteredWerkzeuge(string searchTerm)
         {
             if (string.IsNullOrWhiteSpace(searchTerm))
                 return Werkzeuge;

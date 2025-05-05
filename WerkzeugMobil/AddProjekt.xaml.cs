@@ -12,6 +12,17 @@ namespace WerkzeugMobil
         public AddProjekt()
         {
             InitializeComponent();
+            this.WindowState = WindowState.Maximized;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ListView_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

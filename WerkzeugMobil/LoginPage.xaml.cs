@@ -78,8 +78,8 @@ namespace WerkzeugMobil
                     MessageBox.Show("Login erfolgreich!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
 
                     // Navigiere zur Hauptseite
-                    MainNavigation mainNavigation = new MainNavigation();
-                    mainNavigation.Show();
+                    ProjekteView projekteView = new ProjekteView();
+                    projekteView.Show();
                     this.Close(); // Schließt das Login-Fenster
                 }
                 else

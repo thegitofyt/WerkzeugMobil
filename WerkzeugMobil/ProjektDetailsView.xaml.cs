@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 using System.Windows;
 using WerkzeugMobil.DTO;
+using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil
 {
     public partial class ProjektDetailsView : Window
     {
-        public ProjektDetailsView(ProjektDTO projekt)
+        public ProjektDetailsView()
         {
             InitializeComponent();
-            DataContext = projekt; // Bind project details
+            DataContext = new ProjekteViewModel(); // Bind project details
         }
     }
 }

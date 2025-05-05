@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WerkzeugMobil.Data;
 using WerkzeugMobil.DTO;
+using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil
 {
@@ -27,10 +28,18 @@ namespace WerkzeugMobil
         public Lager()
         {
             InitializeComponent();
-            LoadWerkzeuge();
-            DataContext = this; // Bind the DataContext to this class
+            DataContext = new LagerViewModel();
+
+            this.WindowState = WindowState.Maximized;
         }
 
+        private void DataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (DataContext is LagerViewModel viewModel && viewModel.SelectedWerkzeug != null)
+            {
+                viewModel.NavigateToAddWerkzeug();
+            }
+        }
         private void LoadWerkzeuge()
         {
             try

@@ -16,6 +16,26 @@ namespace WerkzeugMobil.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
 
+            modelBuilder.Entity("ToolDTO", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ToolTypeCountsSerialized")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("ToolTypeCounts");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tools");
+                });
+
             modelBuilder.Entity("WerkzeugMobil.DTO.ProjektDTO", b =>
                 {
                     b.Property<string>("ProjektAddresse")
