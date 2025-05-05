@@ -9,10 +9,11 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WerkzeugMobil.Data;
+using WerkzeugMobil.MVVM.Model;
 using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil
@@ -23,57 +24,21 @@ namespace WerkzeugMobil
     public partial class AddWerkzeug : Window
     {
         private AddProjekt addProjekt; // Declare AddProjekt as a class member to keep track of it
-        private bool isDarkMode = false;
+
         public AddWerkzeug()
         {
+            //InitializeComponent();
+            //DataContext = new AddWerkzeugViewModel();
             InitializeComponent();
-            SetTheme(isDarkMode);
-            DataContext = new AddWerkzeugViewModel();
+            var viewModel = new AddWerkzeugViewModel();
+            this.DataContext = viewModel;
 
             this.WindowState = WindowState.Maximized;
 
             addProjekt = new AddProjekt();  // Initialize the AddProjekt window
         }
 
-       
 
-        private void AnimateThemeChange()
-        {
-            var anim = new DoubleAnimation(0, 1, new Duration(TimeSpan.FromMilliseconds(300)));
-            this.BeginAnimation(Window.OpacityProperty, anim);
-        }
-
-        private void ThemeToggle_Checked(object sender, RoutedEventArgs e)
-        {
-            isDarkMode = true;
-            SetTheme(isDarkMode);
-        }
-
-        private void ThemeToggle_Unchecked(object sender, RoutedEventArgs e)
-        {
-            isDarkMode = false;
-            SetTheme(isDarkMode);
-        }
-
-        private void SetTheme(bool darkMode)
-        {
-            if (darkMode)
-            {
-                // Dark mode settings
-                Resources["AppBackground"] = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#00254D"));
-                Resources["AppText"] = Brushes.White;  // White text for dark mode
-                Resources["AppCard"] = new SolidColorBrush(Color.FromRgb(30, 30, 47));  // Dark card color
-                Resources["AppBorder"] = new SolidColorBrush(Color.FromRgb(58, 58, 58));  // Dark border color
-            }
-            else
-            {
-                // Light mode settings
-                Resources["AppBackground"] = new SolidColorBrush(Colors.White);
-                Resources["AppText"] = Brushes.Black;  // Black text for light mode
-                Resources["AppCard"] = Brushes.White;  // White card color
-                Resources["AppBorder"] = new SolidColorBrush(Color.FromRgb(224, 224, 224));  // Light border color
-            }
-        }
 
         private void NavigateWerkzeug(object sender, RoutedEventArgs e)
         {
@@ -88,6 +53,56 @@ namespace WerkzeugMobil
             {
                 addProjekt.Close();
             }
+        }
+
+        //private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    try
+        //    {
+        //        using (var context = new WerkzeugDbContext())
+        //        {
+        //            // Ensure Werkzeug is properly referenced from the DataContext  
+        //            var viewModel = this.DataContext as AddWerkzeugViewModel;
+        //            if (viewModel?.Tools == null)
+        //            {
+        //                MessageBox.Show("Kein Werkzeug zum Aktualisieren gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //                return;
+        //            }
+
+        //            var werkzeugInDb = context.Werkzeuge.FirstOrDefault(w => w.WerkzeugId == viewModel.Werkzeug.WerkzeugId);
+        //            if (werkzeugInDb != null)
+        //            {
+        //                // Update values  
+        //                werkzeugInDb.Marke = viewModel.Werkzeug.Marke;
+        //                werkzeugInDb.Art = viewModel.Werkzeug.Art;
+        //                werkzeugInDb.ProjektAdresse = viewModel.Werkzeug.ProjektAdresse;
+        //                werkzeugInDb.Beschreibung = viewModel.Werkzeug.Beschreibung;
+
+        //                context.SaveChanges();
+        //                MessageBox.Show("Werkzeug erfolgreich aktualisiert!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
+        //            }
+        //            else
+        //            {
+        //                MessageBox.Show("Werkzeug nicht gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show($"Fehler beim Aktualisieren des Werkzeugs: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+        //    }
+        //}
+
+
+
+        public AddWerkzeug(Werkzeug selectedWerkzeug)
+        {
+            InitializeComponent();
+
+            // ViewModel erstellen und das übergebene Werkzeug zuweisen
+            var viewModel = new AddWerkzeugViewModel();
+            viewModel.Werkzeug = selectedWerkzeug; // Werkzeug an ViewModel übergeben
+            DataContext = viewModel;
         }
 
         private void NavigateProjekt(object sender, RoutedEventArgs e)

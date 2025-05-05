@@ -7,9 +7,11 @@
         WindowStartupLocation="CenterScreen"
         Background="#00254D" Width="1192">
 
+
     <Window.DataContext>
         <viewmodel:AddProjektViewModel />
     </Window.DataContext>
+
 
     <Grid>
         <!-- Header Section (Logo on the Left, Navigation on the Right) -->
@@ -63,6 +65,14 @@
                     <Button Content="Submit" Command="{Binding SubmitCommand}" Height="45" FontSize="16"
                             Background="#004D80" Foreground="White" BorderThickness="0" 
                             Margin="0,10,0,0" Cursor="Hand"/>
+
+                    <Button Content="Delete"
+        Command="{Binding DeleteProjektCommand}"
+        CommandParameter="{Binding SelectedProjekt}"
+        Height="45" FontSize="16"
+        Background="#004D80" Foreground="White" BorderThickness="0"
+        Margin="0,10,0,0" Cursor="Hand" />
+
                 </StackPanel>
             </Border>
 

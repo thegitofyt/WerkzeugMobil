@@ -17,12 +17,14 @@ namespace WerkzeugMobil.MVVM.Viewmodel
     public class MainViewModel : INotifyPropertyChanged
     {
         //private readonly WerkzeugServices _werkzeugService;
-        private ObservableCollection<Werkzeug>  werkzeugService;
+        private ObservableCollection<Werkzeug> werkzeugService;
         private Werkzeug _selectedWerkzeug;
         private Werkzeug _currentWerkzeug;
         private ProjektDTO _selectedProjekt;
         public ProjekteViewModel ProjekteViewModel { get; set; }
 
+        private ProjekteViewModel _projekteViewModel;
+        private AddProjektViewModel _addProjektViewModel;
 
         private string _searchTerm; // Property to hold the search term
         private ObservableCollection<Werkzeug> _filteredWerkzeuge;
@@ -30,6 +32,24 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         public ObservableCollection<Werkzeug> Werkzeuge { get; set; }
         public ObservableCollection<string> History { get; set; }
 
+        public ProjekteViewModel ProjekteViewModels
+        {
+            get { return _projekteViewModel; }
+            set
+            {
+                _projekteViewModel = value;
+                OnPropertyChanged(nameof(ProjekteViewModels));
+            }
+        }
+        public AddProjektViewModel AddProjektViewModel
+        {
+            get { return _addProjektViewModel; }
+            set
+            {
+                _addProjektViewModel = value;
+                OnPropertyChanged(nameof(AddProjektViewModel));
+            }
+        }
         public Werkzeug currentWerkzeug
         {
             get => _currentWerkzeug;
@@ -50,9 +70,11 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         //    }
         //}
 
-        
+
         public MainViewModel()
         {
+            _projekteViewModel = new ProjekteViewModel();
+            _addProjektViewModel = new AddProjektViewModel();
 
             ProjekteViewModel = new ProjekteViewModel();
             ProjekteViewModel.SetMainViewModel(this);
@@ -71,7 +93,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 ProjektAdresse = "123 Project St.",
                 Beschreibung = "High-quality tool for heavy-duty tasks."
             };
-           
+
 
             History = new ObservableCollection<string>
             {
@@ -83,7 +105,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
 
             // Initialize the search command
-           
+
 
             //_werkzeugService = new WerkzeugServices();
 
@@ -93,8 +115,8 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
             // Copy all Werkzeuge to the filtered list initially
             //FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);// Initialize with all Werkzeuge
-            
-            
+
+
         }
 
         //private void LoadRandomWerkzeuge()
@@ -316,6 +338,6 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        
+
     }
 }

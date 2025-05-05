@@ -15,16 +15,17 @@ namespace WerkzeugMobil.MVVM.Viewmodel
     public class ProjekteViewModel : BaseViewModel
     {
         private ProjektDTO _selectedProjekt;
-       
+
         private string _searchText;
-       
+        public ICommand DeleteProjektCommand { get; }
+
         public ICommand OpenProjektCommand { get; }
         public ICommand FinishProjektCommand { get; }
         public ICommand SearchCommand { get; }
         private MainViewModel _mainViewModel;
         private ObservableCollection<ProjektDTO> _everyProjekt;
         private ObservableCollection<ProjektDTO> _allProjekte;
-    
+
 
         // Property to set MainViewModel
         public MainViewModel MainViewModel
@@ -76,7 +77,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         }
 
         // ICommand for selecting a project
-       
+
 
         // Can execute logic for the command
         private bool CanExecuteSelectProjektCommand()
@@ -97,30 +98,81 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         public ProjekteViewModel()
         {
 
-            
-                LoadProjects();
-            
+
+            LoadProjects();
+
 
 
             OpenProjektCommand = new RelayCommand(OpenProjekt);
             FinishProjektCommand = new RelayCommand(FinishProjekt, CanFinishProjekt);
             SearchCommand = new RelayCommand(SearchProjects);
-           
+            DeleteProjektCommand = new RelayCommand(DeleteProjekt);
+
 
 
         }
 
 
-        private void LoadProjects()
+
+        private void DeleteProjekt(object parameter)
+        {
+            var projekt = parameter as ProjektDTO;
+
+            if (projekt != null)
+            {
+                try
+                {
+                    MessageBox.Show($"Projekt zum Löschen: {projekt.ProjektAddresse}");
+
+                    using (var context = new WerkzeugDbContext())
+                    {
+                        var projektToDelete = context.Projekte
+                            .FirstOrDefault(p => p.ProjektAddresse == projekt.ProjektAddresse);
+
+                        if (projektToDelete != null)
+                        {
+                            context.Projekte.Remove(projektToDelete);
+                            context.SaveChanges();
+
+                            // Entfernen aus der ObservableCollection
+                            Projekte.Remove(projekt);
+
+                            MessageBox.Show("Projekt erfolgreich gelöscht.", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Projekt nicht gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
+                    }
+                }
+                catch (DbUpdateException dbEx)
+                {
+                    MessageBox.Show($"Fehler bei der Datenbankaktualisierung: {dbEx.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Allgemeiner Fehler: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Kein Projekt zum Löschen ausgewählt.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+
+
+        public void LoadProjects()
         {
             try
             {
                 using (var context = new WerkzeugDbContext())
                 {
                     var projekte = context.Projekte.ToList();
-                    _everyProjekt= new ObservableCollection<ProjektDTO>(projekte);
-                    _allProjekte = new ObservableCollection<ProjektDTO>(projekte);
-                    Projekte = new ObservableCollection<ProjektDTO>(_allProjekte);
+                    _everyProjekt = new ObservableCollection<ProjektDTO>(projekte);
+                    Projekte = new ObservableCollection<ProjektDTO>(projekte);
+                    _everyProjekt = Projekte;
+                    _allProjekte = Projekte;
                     OnPropertyChanged(nameof(Projekte));
                 }
             }
@@ -139,7 +191,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             }
             if (SelectedProjekt != null)
             {
-               
+
                 MainNavigation mainNavigation = new MainNavigation();
                 MainViewModel = new MainViewModel();
                 MainViewModel.LoadWerkzeugeForProject(SelectedProjekt);
@@ -183,13 +235,14 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             {
                 Projekte = new ObservableCollection<ProjektDTO>(_everyProjekt);
             }
+
             else
             {
                 using (var context = new WerkzeugDbContext())
                 {
                     var filteredProjects = context.Projekte
                         .Include(p => p.Werkzeuge)
-                        .Where(p => p.ProjektAddresse.ToLower().Contains(SearchText.ToLower())) // Case-insensitive search
+                        .Where(p => p.ProjektAddresse.Contains(SearchText))
                         .ToList();
 
                     Projekte = new ObservableCollection<ProjektDTO>(filteredProjects);

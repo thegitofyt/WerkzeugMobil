@@ -8,10 +8,10 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 using WerkzeugMobil.Data;
 using WerkzeugMobil.DTO;
+using WerkzeugMobil.MVVM.Model;
 
 namespace WerkzeugMobil.MVVM.Viewmodel
 {
@@ -30,6 +30,21 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 OnPropertyChanged();
             }
         }
+        private WerkzeugDto _selectedWerkzeug;
+        public WerkzeugDto SelectedWerkzeug
+        {
+            get => _selectedWerkzeug;
+            set
+            {
+                if (_selectedWerkzeug != value)
+                {
+                    _selectedWerkzeug = value;
+                    OnPropertyChanged(nameof(SelectedWerkzeug));
+                }
+            }
+        }
+
+        public ICommand NavigateToAddWerkzeugCommand { get; }
 
         public ICommand FilterInLagerCommand { get; }
         public ICommand FilterMitAdresseCommand { get; }
@@ -44,43 +59,43 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             FilterMitAdresseCommand = new RelayCommand(FilterMitAdresse);
             SearchCommand = new RelayCommand(Search);
             ResetCommand = new RelayCommand(Reset);
-        }
-
-        private WerkzeugDto _selectedWerkzeug;
-
-        public WerkzeugDto SelectedWerkzeug
-        {
-            get => _selectedWerkzeug;
-            set
-            {
-                _selectedWerkzeug = value;
-                OnPropertyChanged();
-                NavigateToAddWerkzeug(); // Navigate when a Werkzeug is selected
-            }
+            NavigateToAddWerkzeugCommand = new RelayCommand(NavigateToAddWerkzeug);
         }
 
         public void NavigateToAddWerkzeug()
         {
-            if (SelectedWerkzeug == null)
+            if (SelectedWerkzeug != null)
             {
-               MessageBox.Show("Bitte ein Werkzeug auswählen.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
-                // If nothing is selected, create a new Add dialog
-                var addWerkzeug = new AddWerkzeug();
-                var addWerkzeugViewModel = new AddWerkzeugViewModel();  // Create new Werkzeug
-                addWerkzeug.DataContext = addWerkzeugViewModel;
-                addWerkzeug.Show();
+                // Konvertiere WerkzeugDto zu Werkzeug
+                var werkzeug = new Werkzeug
+                {
+                    WerkzeugId = SelectedWerkzeug.WerkzeugId,
+                    Marke = SelectedWerkzeug.Marke,
+                    Art = SelectedWerkzeug.Art,
+                    Beschreibung = SelectedWerkzeug.Beschreibung,
+                    ProjektAdresse = SelectedWerkzeug.ProjektAdresse,
+                    History = SelectedWerkzeug.History,
+                    Lager = SelectedWerkzeug.Lager,
+                    Projekt = SelectedWerkzeug.Projekt
+                };
+
+                // Erstelle das ViewModel und übergebe das Werkzeug
+                var addWerkzeugViewModel = new AddWerkzeugViewModel();
+                addWerkzeugViewModel.PopulateWerkzeug(werkzeug);
+
+                // Erstelle das AddWerkzeug-Fenster und setze den DataContext
+                var addWerkzeugWindow = new AddWerkzeug();
+                addWerkzeugWindow.DataContext = addWerkzeugViewModel;
+
+                // Zeige das neue Fenster an
+                addWerkzeugWindow.Show();
             }
             else
             {
-                // If an existing Werkzeug is selected, open it for editing
-                var addWerkzeug = new AddWerkzeug();
-                var addWerkzeugViewModel = new AddWerkzeugViewModel(SelectedWerkzeug); // Pass the DTO to the constructor
-                addWerkzeug.DataContext = addWerkzeugViewModel;
-                addWerkzeug.Show();
+                MessageBox.Show("Bitte wähle zuerst ein Werkzeug aus.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
-        
         private void LoadWerkzeugeFromDatabase()
         {
             try
