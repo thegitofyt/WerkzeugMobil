@@ -118,6 +118,7 @@
             </StackPanel>
         </Grid>
 
+
         <!-- Main content -->
         <Grid Margin="50,120,50,20">
             <Grid.ColumnDefinitions>
@@ -172,6 +173,13 @@
                         <Button Content="Submit" Style="{StaticResource ModernButtonStyle}" Command="{Binding SubmitCommand}" Width="281" Height="42"/>
                         <Button Content="Reset" Style="{StaticResource ModernButtonStyle}" Command="{Binding AddNewCommand}" Width="150" Height="31" Margin="20,0"/>
                     </StackPanel>
+                    <Button Width="50" Height="50" Background="#1A3C5F" BorderBrush="#33475B" BorderThickness="1"
+        Cursor="Hand" Click="BackButton_Click" Margin="320,63,121,-41"
+        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="5">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE72B;" FontSize="20" Foreground="White"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Button>
+
                 </Grid>
             </Border>
 

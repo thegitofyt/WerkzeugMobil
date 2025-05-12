@@ -3,6 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+=======
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\addprojekt.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addprojekt.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+>>>>>>> Stashed changes
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -19,6 +36,7 @@
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\projektdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projektdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,10 +53,6 @@
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -51,6 +65,12 @@
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:tests\\werkzeugdtohistorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\addprojekt.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addprojekt.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\projekteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\projekteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -85,10 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\dataentry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dataentry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\projekteview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -212,8 +228,13 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< Updated upstream
           "DockedWidth": 244,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
+=======
+          "DockedWidth": 165,
+          "SelectedChildIndex": 9,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Bookmark",
@@ -233,55 +254,246 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
+              "DocumentIndex": 2,
+=======
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
+              "Title": "Lager.xaml",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
+              "RelativeDocumentMoniker": "Lager.xaml",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
+              "RelativeToolTip": "Lager.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+<<<<<<< Updated upstream
+              "WhenOpened": "2025-05-07T13:48:50.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+=======
+              "WhenOpened": "2025-01-04T18:44:58.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Lager.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
+              "RelativeDocumentMoniker": "Lager.xaml.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
+              "RelativeToolTip": "Lager.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T18:40:38.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAswMcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T14:30:58.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-16T21:33:20.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddWerkzeug.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
+              "RelativeDocumentMoniker": "AddWerkzeug.xaml.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
+              "RelativeToolTip": "AddWerkzeug.xaml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAswHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T20:02:46.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddWerkzeug.xaml",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
+              "RelativeDocumentMoniker": "AddWerkzeug.xaml",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
+              "RelativeToolTip": "AddWerkzeug.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-21T16:10:49.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddProjekt.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml.cs",
+              "RelativeDocumentMoniker": "AddProjekt.xaml.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml.cs",
+              "RelativeToolTip": "AddProjekt.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T19:24:32.574Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AddProjekt.xaml",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml",
+              "RelativeDocumentMoniker": "AddProjekt.xaml",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml",
+              "RelativeToolTip": "AddProjekt.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T19:18:44.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProjekteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAswP4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T18:25:34.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\MainViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\MainViewModel.cs",
+              "ViewState": "AgIAABcBAAAAAAAAAAAswFcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:33:20.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LagerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\LagerViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\LagerViewModel.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\LagerViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\LagerViewModel.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T19:31:31.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\BaseViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:53:56.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddWerkzeugViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "ViewState": "AgIAALACAAAAAAAAAAAswPACAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T20:53:53.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddProjektViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAswJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T18:42:18.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WerkzeugMobil.csproj",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
+              "RelativeDocumentMoniker": "WerkzeugMobil.csproj",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
+              "RelativeToolTip": "WerkzeugMobil.csproj",
+              "ViewState": "AgIAAC8AAABA9aY3vSkGwBMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-16T21:33:21.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ToolTypeCountToStringConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\ToolTypeCountToStringConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\ToolTypeCountToStringConverter.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\ToolTypeCountToStringConverter.cs",
+              "RelativeToolTip": "Converters\\ToolTypeCountToStringConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:42:55.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BackgroundImagePran.jpg -  [Deutsch (Deutschland)] - Bitmap [1024x1024, 24-Bit, JPG]",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\BackgroundImagePran.jpg",
+              "RelativeDocumentMoniker": "BackgroundImagePran.jpg",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\BackgroundImagePran.jpg -  [Deutsch (Deutschland)] - Bitmap [1024x1024, 24-Bit, JPG]",
+              "RelativeToolTip": "BackgroundImagePran.jpg -  [Deutsch (Deutschland)] - Bitmap [1024x1024, 24-Bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-05T16:21:34.543Z",
+              "EditorCaption": " -  [Deutsch (Deutschland)] - Bitmap [1024x1024, 24-Bit, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "ProjekteView.xaml",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
               "RelativeDocumentMoniker": "ProjekteView.xaml",
               "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
               "RelativeToolTip": "ProjekteView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T13:48:50.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T18:23:04.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Lager.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
-              "RelativeDocumentMoniker": "Lager.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml*",
-              "RelativeToolTip": "Lager.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T13:48:50.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjektDetailsView.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
-              "RelativeDocumentMoniker": "ProjektDetailsView.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml*",
-              "RelativeToolTip": "ProjektDetailsView.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T13:48:50.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
+>>>>>>> Stashed changes
               "Title": "MainNavigation.xaml",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
               "RelativeDocumentMoniker": "MainNavigation.xaml",
               "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
               "RelativeToolTip": "MainNavigation.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T13:48:50.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:48:50.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ProjektDetailsView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml.cs",
               "RelativeDocumentMoniker": "ProjektDetailsView.xaml.cs",
@@ -289,12 +501,11 @@
               "RelativeToolTip": "ProjektDetailsView.xaml.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAIwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T13:48:50.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:48:50.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MainNavigation.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml.cs",
               "RelativeDocumentMoniker": "MainNavigation.xaml.cs",
@@ -302,12 +513,11 @@
               "RelativeToolTip": "MainNavigation.xaml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAywDIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T13:48:50.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:48:50.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ProjekteViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\ProjekteViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
@@ -315,12 +525,24 @@
               "RelativeToolTip": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
               "ViewState": "AgIAAKcAAAAAAAAAAAAqwK8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T13:48:50.022Z",
+              "WhenOpened": "2025-05-07T13:48:50.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lager.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
+              "RelativeDocumentMoniker": "Lager.xaml.cs",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
+              "RelativeToolTip": "Lager.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:48:50.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -332,19 +554,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "ProjektDetailsView.xaml",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
+              "RelativeDocumentMoniker": "ProjektDetailsView.xaml",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
+              "RelativeToolTip": "ProjektDetailsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-07T13:48:50.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjekteView.xaml",
+              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
+              "RelativeDocumentMoniker": "ProjekteView.xaml",
+              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
+              "RelativeToolTip": "ProjekteView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-07T13:48:50.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
               "RelativeDocumentMoniker": "LoginPage.xaml",
               "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
               "RelativeToolTip": "LoginPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T13:48:50.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:48:50.423Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "LoginPage.xaml.cs",
@@ -352,12 +595,11 @@
               "RelativeToolTip": "LoginPage.xaml.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAgwFEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T13:48:50.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:48:50.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\Viewmodel\\MainViewModel.cs",
@@ -369,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "WerkzeugDtoHistoryTests.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Tests\\WerkzeugDtoHistoryTests.cs",
               "RelativeDocumentMoniker": "Tests\\WerkzeugDtoHistoryTests.cs",
@@ -381,7 +623,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "WerkzeugMobil.csproj",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
               "RelativeDocumentMoniker": "WerkzeugMobil.csproj",
@@ -389,12 +631,11 @@
               "RelativeToolTip": "WerkzeugMobil.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T13:48:50.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:48:50.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "App.g.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\obj\\Debug\\net8.0-windows\\App.g.cs",
               "RelativeDocumentMoniker": "obj\\Debug\\net8.0-windows\\App.g.cs",
@@ -406,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AddWerkzeug.xaml",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
               "RelativeDocumentMoniker": "AddWerkzeug.xaml",
@@ -417,7 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -429,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AddWerkzeug.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
               "RelativeDocumentMoniker": "AddWerkzeug.xaml.cs",
@@ -441,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AddProjekt.xaml",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml",
               "RelativeDocumentMoniker": "AddProjekt.xaml",
@@ -452,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "AddWerkzeugViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
@@ -464,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "LagerViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\LagerViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\Viewmodel\\LagerViewModel.cs",
@@ -476,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DataEntry.xaml",
               "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DataEntry.xaml",
               "RelativeDocumentMoniker": "DataEntry.xaml",
@@ -484,18 +725,6 @@
               "RelativeToolTip": "DataEntry.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-07T13:48:50.302Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Lager.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
-              "RelativeDocumentMoniker": "Lager.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
-              "RelativeToolTip": "Lager.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T13:48:50.306Z"
             },
             {
               "$type": "Document",
@@ -782,8 +1011,7 @@
               "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
               "RelativeToolTip": "WerkzeugMobil.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T13:48:50.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:48:50.459Z"
             },
             {
               "$type": "Document",

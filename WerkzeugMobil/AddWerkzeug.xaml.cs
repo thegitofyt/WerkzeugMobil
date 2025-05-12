@@ -104,5 +104,12 @@ namespace WerkzeugMobil
                 this.Close();
             }
         }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            var projekteView = new ProjekteView();
+            projekteView.Show();
+            this.Close(); // Schließt das aktuelle Fenster
+        }
+
     }
 }
