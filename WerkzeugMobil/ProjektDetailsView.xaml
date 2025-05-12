@@ -6,9 +6,12 @@
 
     <Window.DataContext>
         <viewmodel:ProjekteViewModel/>
+        
     </Window.DataContext>
+    
 
     <Grid>
+        
 		<TextBlock Text="Projekt Details" Foreground="White" FontSize="20"
                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
 
@@ -22,17 +25,31 @@
 
                             <!-- Display the Count of Werkzeuge for each project -->
                             <TextBlock Text="{Binding Werkzeuge.Count, StringFormat='Werkzeuge: {0}'}" FontSize="14" Foreground="Gray"/>
+                       
                         </StackPanel>
+                        
                     </Border>
                 </DataTemplate>
+                
             </ListBox.ItemTemplate>
+            
         </ListBox>
 
+        
         <!-- Finish Button -->
 		<Button Content="Fertigstellen" Width="150" Height="40"
                 Background="#FFFFFF" Foreground="Black" FontWeight="Bold"
                 VerticalAlignment="Bottom" HorizontalAlignment="Center"
                 Margin="0,0,0,20"
                 Command="{Binding FinishProjektCommand}"/>
-	</Grid>
+        
+        <Button Width="50" Height="50" Background="#1A3C5F" BorderBrush="#33475B" BorderThickness="1"
+Cursor="Hand" Click="BackButton_Click"
+HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="141,419,409,15">
+            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE72B;" FontSize="20" Foreground="White"
+       VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        </Button>
+
+
+    </Grid>
 </Window>

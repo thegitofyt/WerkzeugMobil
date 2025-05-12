@@ -85,7 +85,10 @@
                             Width="120" Height="40"
                             Style="{StaticResource ModernButtonStyle}"
                             Command="{Binding FilterMitAdresseCommand}"/>
+
                 </StackPanel>
+
+
             </Grid>
         </Border>
 
@@ -116,6 +119,14 @@
                         Command="{Binding ResetCommand}"/>
             </StackPanel>
 
+            <Button Width="50" Height="50" Background="#1A3C5F" BorderBrush="#33475B" BorderThickness="1"
+        Cursor="Hand" Click="BackButton_Click" Margin="65,-89,272,99"
+        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1">
+                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE72B;" FontSize="20" Foreground="White"
+               VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            </Button>
+
+
             <!-- Data Grid -->
             <DataGrid Grid.Row="1"
                       ItemsSource="{Binding Werkzeuge}"
@@ -137,4 +148,5 @@
             </DataGrid>
         </Grid>
     </Grid>
+
 </Window>

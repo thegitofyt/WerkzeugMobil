@@ -84,6 +84,8 @@
                             HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                         <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xECC8;" FontSize="22" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </Button>
+                    
+                    
                 </StackPanel>
             </Grid>
         </Border>
@@ -97,6 +99,7 @@
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="1.2*"/>
             </Grid.ColumnDefinitions>
+            
 
             <Border Background="#132F4C" CornerRadius="12" Padding="30" Grid.ColumnSpan="2">
                 <Grid>
@@ -104,6 +107,8 @@
                         <ColumnDefinition Width="2*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
+                    
+                    
 
                     <!-- Form Section -->
                     <StackPanel Margin="10" Grid.Column="0">
@@ -131,7 +136,17 @@
                         <TextBox Text="{Binding currentWerkzeug.Beschreibung, UpdateSourceTrigger=PropertyChanged}"
                                  IsReadOnly="True" Height="120" TextWrapping="Wrap" Background="#1A3C5F" BorderThickness="0"
                                  Foreground="White" Margin="0 0 0 15"/>
+                     
+
                     </StackPanel>
+
+                    <Button Width="50" Height="50" Background="#1A3C5F" BorderBrush="#33475B" BorderThickness="1"
+Cursor="Hand" Click="BackButton_Click"
+HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="268,584,268,0">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE72B;" FontSize="20" Foreground="White"
+       VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                    </Button>
+
 
                     <!-- History Section -->
                     <Border Background="#1A3C5F" CornerRadius="10" Grid.Column="1" Padding="15">
@@ -150,6 +165,7 @@
                                 </ListView.ItemTemplate>
                             </ListView>
                         </StackPanel>
+
                     </Border>
                 </Grid>
             </Border>

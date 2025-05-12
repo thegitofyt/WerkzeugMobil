@@ -43,5 +43,12 @@ namespace WerkzeugMobil
             lager.Show(); // Show the Lager window
             this.Close(); // Close the MainNavigation  window
         }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            var projekteView = new ProjekteView();
+            projekteView.Show();
+            this.Close(); // Schließt das aktuelle Fenster
+        }
+
     }
 }
