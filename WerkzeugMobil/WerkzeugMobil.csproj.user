@@ -13,6 +13,9 @@
     <Compile Update="Lager.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PasswordResetWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddProjekt.xaml">
@@ -31,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ProjekteView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PasswordResetWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

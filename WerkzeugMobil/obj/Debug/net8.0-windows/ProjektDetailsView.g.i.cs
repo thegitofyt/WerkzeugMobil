@@ -53,7 +53,7 @@ namespace WerkzeugMobil {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WerkzeugMobil;V1.0.0.0;component/projektdetailsview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WerkzeugMobil;component/projektdetailsview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ProjektDetailsView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

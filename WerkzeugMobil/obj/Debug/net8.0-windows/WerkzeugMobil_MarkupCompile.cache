@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml
-8-1414278677
+91735115750
 31499579739
-451973209531
+46-881663
 242664127663
-AddProjekt.xaml;AddWerkzeug.xaml;DataEntry.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;ProjektDetailsView.xaml;ProjekteView.xaml;
+AddProjekt.xaml;AddWerkzeug.xaml;DataEntry.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;PasswordResetWindow.xaml;ProjektDetailsView.xaml;ProjekteView.xaml;
 
 False
 

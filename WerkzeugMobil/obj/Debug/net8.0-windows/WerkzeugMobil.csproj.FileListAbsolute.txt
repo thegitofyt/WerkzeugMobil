@@ -398,3 +398,5 @@ C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net
 C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil.pdb
 C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\WerkzeugMobil.genruntimeconfig.cache
 C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\ref\WerkzeugMobil.dll
+C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\PasswordResetWindow.baml
+C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\PasswordResetWindow.g.cs
