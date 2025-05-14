@@ -1,9 +1,13 @@
-﻿using ListDemo.ViewModels;
+﻿using AutoMapper;
+using ListDemo.ViewModels;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Input;
 using WerkzeugMobil.Data;
 using WerkzeugMobil.DTO;
@@ -21,10 +25,14 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         private Werkzeug _selectedWerkzeug;
         private Werkzeug _currentWerkzeug;
         private ProjektDTO _selectedProjekt;
+        private bool _isDarkMode;
+        private string _lastKnownAdresse;
+        private readonly WerkzeugDbContext _context;
         public ProjekteViewModel ProjekteViewModel { get; set; }
 
         private ProjekteViewModel _projekteViewModel;
         private AddProjektViewModel _addProjektViewModel;
+        public ICommand ToggleThemeCommand { get; }
 
         private string _searchTerm; // Property to hold the search term
         private ObservableCollection<Werkzeug> _filteredWerkzeuge;
@@ -39,6 +47,20 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             {
                 _projekteViewModel = value;
                 OnPropertyChanged(nameof(ProjekteViewModels));
+            }
+        }
+
+        public bool IsDarkMode
+        {
+            get => _isDarkMode;
+            set
+            {
+                if (_isDarkMode != value)
+                {
+                    _isDarkMode = value;
+                    OnPropertyChanged();
+                    ApplyTheme();
+                }
             }
         }
         public AddProjektViewModel AddProjektViewModel
@@ -73,18 +95,19 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
         public MainViewModel()
         {
-            _projekteViewModel = new ProjekteViewModel();
-            _addProjektViewModel = new AddProjektViewModel();
-
-            ProjekteViewModel = new ProjekteViewModel();
-            ProjekteViewModel.SetMainViewModel(this);
+            //_projekteViewModel = new ProjekteViewModel();
+            //_addProjektViewModel = new AddProjektViewModel();
+            
+            //ProjekteViewModel = new ProjekteViewModel();
+            //ProjekteViewModel.SetMainViewModel(this);
             Werkzeuge = new ObservableCollection<Werkzeug>();
             FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
             SearchCommand = new RelayCommand(ExecuteSearch);
             SelectProjektCommand = new RelayCommand(SelectProjekt);
-            LoadWerkzeugeForProject(SelectedProjekt);
+            
             LoadRandomWerkzeuge();
-
+            ToggleThemeCommand = new RelayCommand(ToggleTheme);
+            IsDarkMode = false; // Default: light mode
             currentWerkzeug = new Werkzeug
             {
                 WerkzeugId = "HS-1",
@@ -130,6 +153,88 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         //    Werkzeuge = new ObservableCollection<Werkzeug>(sampleWerkzeuge.Take(5));
         //}
 
+        private void ToggleTheme()
+        {
+            // Toggle the dark mode
+            IsDarkMode = !IsDarkMode;
+        }
+        private void ApplyTheme()
+        {
+            // Apply the theme based on IsDarkMode
+            var dict = new ResourceDictionary
+            {
+                Source = new Uri(IsDarkMode ? "Theme/DarkTheme.xaml" : "Theme/LightTheme.xaml", UriKind.Relative)
+            };
+
+            // Clear and apply new theme
+            Application.Current.Resources.MergedDictionaries.Clear();
+            Application.Current.Resources.MergedDictionaries.Add(dict);
+        }
+        private void UpdateAddressHistory(Werkzeug werkzeug)
+        {
+            using (var context = new WerkzeugDbContext())
+            {
+                if (string.IsNullOrWhiteSpace(werkzeug.ProjektAdresse))
+                    return;
+
+                // Initialize History if it's null
+                if (werkzeug.History == null)
+                    werkzeug.History = new List<string>();
+
+                // Check if the address already has a timestamp format
+                bool alreadyHasTimestamp = werkzeug.History != null &&
+                 werkzeug.History.Any(h =>
+                    h.StartsWith(werkzeug.ProjektAdresse + " (") &&
+                 h.Contains("(") && h.Contains(")")
+                    );
+
+
+                if (!alreadyHasTimestamp)
+                {
+                    var now = DateTime.Now.ToString("dd.MM.yyyy HH:mm");
+                    var entry = $"{werkzeug.ProjektAdresse} ({now})";
+
+                    bool addressExists = werkzeug.History.Any(h => h.StartsWith(werkzeug.ProjektAdresse + " ("));
+                    if (!addressExists)
+                    {
+                        werkzeug.History.Insert(0, entry);
+
+                        // Limit history to 5 entries
+                        if (werkzeug.History.Count > 5)
+                        {
+                            werkzeug.History = werkzeug.History.Take(5).ToList();
+                        }
+
+                            
+
+                            // Map Werkzeug to WerkzeugDto
+                            var werkzeugDto = new WerkzeugDto
+                            {
+                                WerkzeugId = werkzeug.WerkzeugId,
+                                Marke = werkzeug.Marke,
+                                Art = werkzeug.Art,
+                                ProjektAdresse = werkzeug.ProjektAdresse,
+                                Beschreibung = werkzeug.Beschreibung,
+                                History = werkzeug.History,
+                                Lager = werkzeug.Lager,
+                                Projekt = werkzeug.Projekt
+                            };
+
+                            // Tell EF that the property has been modified
+                            var entryEntity = context.Entry(werkzeugDto);
+                            entryEntity.Property(w => w.History).IsModified = true;
+
+                            context.Werkzeuge.Update(werkzeugDto);
+                            // Save changes
+                            context.SaveChanges();
+                        
+                    }
+                }
+            }
+        }
+
+
+
 
         public ProjektDTO SelectedProjekt
         {
@@ -153,9 +258,21 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             get => _selectedWerkzeug;
             set
             {
-                _selectedWerkzeug = value;
-                currentWerkzeug = value; // Update the displayed Werkzeug
-                OnPropertyChanged(nameof(SelectedWerkzeug));
+                if (_selectedWerkzeug != value)
+                {
+                    // Check if the address has changed
+                   
+
+                    _selectedWerkzeug = value;
+                    currentWerkzeug = value;
+                    _lastKnownAdresse = _selectedWerkzeug?.ProjektAdresse;
+
+                if (_selectedWerkzeug != null )
+                    {
+                        UpdateAddressHistory(_selectedWerkzeug);
+                    }
+                    OnPropertyChanged(nameof(SelectedWerkzeug));
+                }
             }
         }
 
@@ -183,7 +300,8 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                         Marke = w.Marke,
                         Art = w.Art,
                         ProjektAdresse = w.ProjektAdresse,
-                        Beschreibung = w.Beschreibung
+                        Beschreibung = w.Beschreibung,
+                        History=w.History
                     }).ToList();
 
                     Werkzeuge = new ObservableCollection<Werkzeug>(mappedWerkzeuge);
@@ -206,7 +324,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
         public void LoadWerkzeugeForProject(ProjektDTO selectedProjekt)
         {
-            if (selectedProjekt == null) return;
+            if (selectedProjekt == null || string.IsNullOrEmpty(selectedProjekt.ProjektAddresse)) return;
 
             using (var context = new WerkzeugDbContext())
             {
@@ -220,11 +338,13 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                     Marke = w.Marke,
                     Art = w.Art,
                     ProjektAdresse = w.ProjektAdresse,
-                    Beschreibung = w.Beschreibung
+                    Beschreibung = w.Beschreibung,
+                    History=w.History
                 }).ToList();
 
                 Werkzeuge = new ObservableCollection<Werkzeug>(mappedWerkzeuge);
                 FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
+
                 OnPropertyChanged(nameof(Werkzeuge));
                 OnPropertyChanged(nameof(FilteredWerkzeuge));
             }

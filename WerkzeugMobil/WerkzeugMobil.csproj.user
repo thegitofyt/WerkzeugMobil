@@ -33,5 +33,11 @@
     <Page Update="ProjekteView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Theme\DarkTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\LightTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

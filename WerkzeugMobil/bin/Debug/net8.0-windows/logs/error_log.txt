@@ -1,0 +1,80 @@
+[12.05.2025 10:31:22] ERROR in Application Startup
+System.IO.FileNotFoundException: Excel file not found at: C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Debug\net8.0-windows\Inventurliste.xlsx
+   at WerkzeugMobil.Helpers.ExcelImporter.Import(String filePath) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Helpers\ExcelImporter.cs:line 22
+   at WerkzeugMobil.Services.DataSeeder.SeedWerkzeugeFromExcel() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 82
+   at WerkzeugMobil.Services.DataSeeder.Seed() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 33
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 47
+
+[12.05.2025 10:33:38] ERROR in Application Startup
+System.InvalidCastException: Unable to cast object of type 'System.Collections.Generic.List`1[WerkzeugMobil.MVVM.Model.Tools]' to type 'System.Collections.Generic.IEnumerable`1[ToolDTO]'.
+   at WerkzeugMobil.Services.DataSeeder.SeedWerkzeugeFromExcel() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 103
+   at WerkzeugMobil.Services.DataSeeder.Seed() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 33
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 47
+
+[12.05.2025 11:57:27] ERROR in Application Startup
+System.InvalidOperationException: The instance of entity type 'WerkzeugDto' cannot be tracked because another instance with the key value '{WerkzeugId: nein}' is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NullableKeyIdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.AddRange(IEnumerable`1 entities)
+   at WerkzeugMobil.Services.DataSeeder.SeedWerkzeugeFromExcel() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 98
+   at WerkzeugMobil.Services.DataSeeder.Seed() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 33
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 47
+
+[12.05.2025 12:58:16] ERROR in Application Startup
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at ExcelImporterHelpers.Import(String filePath) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Helpers\ExcelImporterHelpers.cs:line 12
+   at WerkzeugMobil.Services.DataSeeder.SeedWerkzeugeFromExcel() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 84
+   at WerkzeugMobil.Services.DataSeeder.Seed() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 35
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 47
+
+[12.05.2025 13:01:07] ERROR in Application Startup
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at ExcelImporterHelpers.Import(String filePath) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Helpers\ExcelImporterHelpers.cs:line 12
+   at WerkzeugMobil.Services.DataSeeder.SeedWerkzeugeFromExcel() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 84
+   at WerkzeugMobil.Services.DataSeeder.Seed() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 35
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 47
+
+[12.05.2025 13:13:37] ERROR in Application Startup
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at ExcelImporterHelpers.Import(String filePath) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Helpers\ExcelImporterHelpers.cs:line 12
+   at WerkzeugMobil.Services.DataSeeder.SeedWerkzeugeFromExcel() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 84
+   at WerkzeugMobil.Services.DataSeeder.Seed() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 35
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 47
+
+[12.05.2025 14:41:38] ERROR in Application Startup
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at ExcelImporterHelpers.Import(String filePath) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Helpers\ExcelImporterHelpers.cs:line 12
+   at WerkzeugMobil.Services.DataSeeder.SeedWerkzeugeFromExcel() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 84
+   at WerkzeugMobil.Services.DataSeeder.Seed() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 35
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 47
+
+[12.05.2025 18:23:59] ERROR in Application Startup
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at ExcelImporterHelpers.Import(String filePath) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Helpers\ExcelImporterHelpers.cs:line 12
+   at WerkzeugMobil.Services.DataSeeder.SeedWerkzeugeFromExcel() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 85
+   at WerkzeugMobil.Services.DataSeeder.Seed() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 36
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 51
+
+[12.05.2025 18:27:28] ERROR in Application Startup
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at ExcelImporterHelpers.Import(String filePath) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Helpers\ExcelImporterHelpers.cs:line 12
+   at WerkzeugMobil.Services.DataSeeder.SeedWerkzeugeFromExcel() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 85
+   at WerkzeugMobil.Services.DataSeeder.Seed() in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Services\DataSeeder.cs:line 36
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 51
+

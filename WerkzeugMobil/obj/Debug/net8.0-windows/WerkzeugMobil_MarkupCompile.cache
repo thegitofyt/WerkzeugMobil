@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Debug\net8.0-windows\
 WerkzeugMobil
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Layal Shegaa\Documents\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml
-8-1414278677
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml
+101229501837
 31499579739
-46168514504
-240-432796415
-AddProjekt.xaml;AddWerkzeug.xaml;DataEntry.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;ProjektDetailsView.xaml;ProjekteView.xaml;
+5336292299
+263-988635105
+AddProjekt.xaml;AddWerkzeug.xaml;DataEntry.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;ProjektDetailsView.xaml;ProjekteView.xaml;Theme\DarkTheme.xaml;Theme\LightTheme.xaml;
 
 False
 

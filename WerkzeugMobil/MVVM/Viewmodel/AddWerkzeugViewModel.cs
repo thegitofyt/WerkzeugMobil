@@ -15,6 +15,8 @@ using System.Collections.ObjectModel;
 using WerkzeugMobil.Data;
 using System.Text.Json;
 using System.Diagnostics;
+using WerkzeugMobil.MVVM.Viewmodel;
+using Microsoft.EntityFrameworkCore;
 
 namespace WerkzeugMobil.MVVM.Viewmodel
 {
@@ -113,7 +115,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                         if (Werkzeug == null)
                             Werkzeug = new Werkzeug();
 
-                        Werkzeug.WerkzeugId = _selectedTool.Id.ToString();
+                        Werkzeug.WerkzeugId = TransformToolTypeCountsToString(_selectedTool.ToolTypeCounts);
                         Werkzeug.Art = _selectedTool.Name;
 
                         IsEditing = true; // ← hier!
@@ -178,23 +180,64 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             }
         }
 
+        private void UpdateAddressHistory(Werkzeug werkzeug)
+        {
+            if (string.IsNullOrWhiteSpace(werkzeug.ProjektAdresse))
+                return;
 
+            // Initialize History if it's null
+            if (werkzeug.History == null)
+                werkzeug.History = new List<string>();
+
+            // Check if the address already contains a timestamp to prevent duplication
+            bool alreadyHasTimestamp = werkzeug.ProjektAdresse.Contains("(") && werkzeug.ProjektAdresse.Contains(")");
+
+            if (!alreadyHasTimestamp)
+            {
+                // Get current date and time
+                var now = DateTime.Now.ToString("dd.MM.yyyy HH:mm");
+
+                // Create new entry with timestamp
+                var entry = $"{werkzeug.ProjektAdresse} ({now})";
+
+                // Avoid duplicates (ignore timestamp in comparison)
+                bool addressExists = werkzeug.History.Any(h => h.StartsWith(werkzeug.ProjektAdresse + " ("));
+                if (!addressExists)
+                {
+                    // Insert new entry at the top of the list
+                    werkzeug.History.Insert(0, entry);
+
+                    // Keep only the latest 5 address entries (optional, adjust as needed)
+                    if (werkzeug.History.Count > 5)
+                        werkzeug.History = werkzeug.History.Take(5).ToList();
+                }
+            }
+
+            // Save changes to the database (assuming you're using Entity Framework)
+            using (var context = new WerkzeugDbContext())
+            {
+                context.Entry(werkzeug).State = EntityState.Modified;
+                context.SaveChanges();
+            }
+        }
         private void UpdateWerkzeug()
         {
             try
             {
-                // Remove the incorrect usage of DataContext  
-                // Directly use the current instance of AddWerkzeugViewModel  
-
+                // Check if the Werkzeug is available
                 if (Werkzeug == null)
                 {
                     MessageBox.Show("Kein Werkzeug zum Aktualisieren gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
+                // Update the address history first (before updating the Werkzeug)
+                UpdateAddressHistory(Werkzeug);
+
+                // Now update the Werkzeug itself
                 using (var context = new WerkzeugDbContext())
                 {
-                    // Fetch the Werkzeug from the database  
+                    // Fetch the existing Werkzeug from the database
                     var existingWerkzeug = context.Werkzeuge
                         .FirstOrDefault(w => w.WerkzeugId == Werkzeug.WerkzeugId);
 
@@ -204,26 +247,24 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                         return;
                     }
 
-                    // Update the Werkzeug properties  
+                    // Update the Werkzeug properties
                     existingWerkzeug.Marke = Werkzeug.Marke;
                     existingWerkzeug.Art = Werkzeug.Art;
                     existingWerkzeug.ProjektAdresse = Werkzeug.ProjektAdresse;
                     existingWerkzeug.Beschreibung = Werkzeug.Beschreibung;
                     existingWerkzeug.Lager = Werkzeug.Lager;
-                    existingWerkzeug.History = Werkzeug.History;
+                    existingWerkzeug.History = Werkzeug.History; // Make sure the History is updated after the address is changed
 
+                    // Mark the entity as modified
+                    context.Werkzeuge.Update(existingWerkzeug);
 
-
-                    context.Werkzeuge.Update(existingWerkzeug); // Update the existing Werkzeug entity
-
-
-                    // Save changes to the database  
+                    // Save changes to the database
                     var result = context.SaveChanges();
 
                     if (result > 0)
                     {
                         MessageBox.Show("Werkzeug erfolgreich aktualisiert!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
-                        LoadTools(); // Reload the list  
+                        LoadTools(); // Reload the list to reflect the changes
                     }
                     else
                     {
@@ -364,20 +405,28 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                     Marke = Werkzeug.Marke,
                     Art = Werkzeug.Art,
                     ProjektAdresse = Werkzeug.ProjektAdresse,
-                    Beschreibung = Werkzeug.Beschreibung
+                    Beschreibung = Werkzeug.Beschreibung,
+                    History = new List<string>(Werkzeug.History)
                 };
 
-                // Werkzeug in der Datenbank speichern
+
+                // Add current project address to history (if not already in it)
+                if (!string.IsNullOrWhiteSpace(Werkzeug.ProjektAdresse) && !Werkzeug.History.Contains(Werkzeug.ProjektAdresse))
+                {
+                    Werkzeug.History.Add(Werkzeug.ProjektAdresse);
+                }
+
+                // Save to database
                 _werkzeugService.AddWerkzeug(werkzeugDto);
 
-                // Das Werkzeug direkt zur Liste hinzufügen, um die UI sofort zu aktualisieren
+                // Also add to Tools table
                 var newTool = new ToolDTO
                 {
                     Name = Werkzeug.Art,
                     ToolTypeCounts = new List<Tuple<string, int>>
-                    {
-                        new Tuple<string, int>(Werkzeug.Art, 1)
-                    }
+            {
+                new Tuple<string, int>(Werkzeug.Art, 1)
+            }
                 };
 
                 using (var context = new WerkzeugDbContext())
@@ -386,11 +435,10 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                     context.SaveChanges();
                 }
 
-                Tools.Add(newTool); // UI-Liste aktualisieren
+                Tools.Add(newTool);
                 MessageBox.Show("Werkzeug erfolgreich hinzugefügt!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                // Formular zurücksetzen
-                AddNew();
+                AddNew(); // reset form
             }
             catch (Exception ex)
             {
@@ -734,6 +782,14 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        private string TransformToolTypeCountsToString(List<Tuple<string, int>> toolTypeCounts)
+        {
+            if (toolTypeCounts == null || !toolTypeCounts.Any())
+                return string.Empty;
+
+            return string.Join(", ", toolTypeCounts.Select(t => $"{t.Item1}-{t.Item2}"));
         }
 
         public ObservableCollection<ToolDTO> Tools

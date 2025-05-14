@@ -191,10 +191,19 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             }
             if (SelectedProjekt != null)
             {
+                var mainViewModel = new MainViewModel();
+                mainViewModel.SelectedProjekt = SelectedProjekt;
+                mainViewModel.LoadWerkzeugeForProject(SelectedProjekt);
 
-                MainNavigation mainNavigation = new MainNavigation();
-                MainViewModel = new MainViewModel();
-                MainViewModel.LoadWerkzeugeForProject(SelectedProjekt);
+                // 2. Create the MainNavigation window and set its DataContext
+                var mainNavigation = new MainNavigation
+                {
+                    DataContext = mainViewModel
+                };
+
+                // 3. Show the MainNavigation window
+                
+
                 mainNavigation.Show();
                 var currentWindow = Application.Current.Windows.OfType<Window>().FirstOrDefault(w => w.DataContext == this);
                 currentWindow?.Close();

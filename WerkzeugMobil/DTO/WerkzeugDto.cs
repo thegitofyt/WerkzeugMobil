@@ -16,12 +16,12 @@ namespace WerkzeugMobil.DTO
 
         public bool Lager { get; set; }
        
-        public ProjektDTO Projekt { get; internal set; }
+        public ProjektDTO? Projekt { get; internal set; }
         // Method to set default values
         public WerkzeugDto()
         {
             // If History is null or empty, set it to the default value
-            if (History == null || History.Count == 0)
+            if (History == null )
             {
                 History = new List<string> { "Keine Adressen" };
             }

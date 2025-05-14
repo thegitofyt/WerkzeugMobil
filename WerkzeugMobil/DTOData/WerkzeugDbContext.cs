@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System.Text.Json;
 using WerkzeugMobil.DTO;
 using WerkzeugMobil.MVVM.Model;
 
@@ -27,6 +29,19 @@ namespace WerkzeugMobil.Data
                 .HasOne(w => w.Projekt)
                 .WithMany(p => p.Werkzeuge)
                 .HasForeignKey(w => w.ProjektAdresse);
+
+            var historyComparer = new ValueComparer<List<string>>(
+         (c1, c2) => c1.SequenceEqual(c2), // Vergleich der Elemente
+         c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())), // Hashcode-Berechnung
+         c => c.ToList() // Kopie der Liste erstellen
+     );
+
+            modelBuilder.Entity<WerkzeugDto>()
+                .Property(w => w.History)
+                .HasConversion(
+                    v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null), // Serialisierung
+                    v => JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null)) // Deserialisierung
+                .Metadata.SetValueComparer(historyComparer); // ValueComparer setzen
 
             modelBuilder.Entity<ToolDTO>()
             .Ignore(t => t.ToolTypeCounts) // Ignore the List<Tuple<string, int>>

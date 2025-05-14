@@ -14,7 +14,7 @@ namespace WerkzeugMobil.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.5");
 
             modelBuilder.Entity("ToolDTO", b =>
                 {
@@ -72,7 +72,7 @@ namespace WerkzeugMobil.Migrations
                     b.Property<string>("Beschreibung")
                         .HasColumnType("TEXT");
 
-                    b.PrimitiveCollection<string>("History")
+                    b.Property<string>("History")
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("Lager")
