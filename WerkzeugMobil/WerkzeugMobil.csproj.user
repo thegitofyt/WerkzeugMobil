@@ -27,6 +27,9 @@
     <Page Update="Lager.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="PasswordResetWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ProjektDetailsView.xaml">
       <SubType>Designer</SubType>
     </Page>

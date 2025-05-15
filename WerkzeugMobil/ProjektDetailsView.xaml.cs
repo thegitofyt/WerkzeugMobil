@@ -17,5 +17,11 @@ namespace WerkzeugMobil
             InitializeComponent();
             DataContext = new ProjekteViewModel(); // Bind project details
         }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            var mainnav = new MainNavigation();
+            mainnav.Show();
+            this.Close(); // Schließt das aktuelle Fenster
+        }
     }
 }

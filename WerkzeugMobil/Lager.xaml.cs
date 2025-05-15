@@ -63,6 +63,13 @@ namespace WerkzeugMobil
             }
         }
 
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            var Mainnav = new MainNavigation();
+            Mainnav.Show();
+            this.Close(); // Schließt das aktuelle Fenster
+        }
+
     }
 
 }

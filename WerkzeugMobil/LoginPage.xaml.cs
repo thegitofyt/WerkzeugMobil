@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 using WerkzeugMobil.Data;
 using WerkzeugMobil.DTO;
 using WerkzeugMobil.MVVM.Model;
@@ -112,9 +113,26 @@ namespace WerkzeugMobil
             // Speicherung in Konfigurationsdatei
         }
 
-        private void ForgotPasswordClick(object sender, RoutedEventArgs e)
+        private void ForgotPasswordClick(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Benachrichtigen sie den Administrator.");
+            string benutzername = BenutzernameInput.Text.Trim();
+
+            if (string.IsNullOrEmpty(benutzername))
+            {
+                MessageBox.Show("Bitte geben Sie zuerst einen Benutzernamen ein.", "Hinweis", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+
+            // Optional: prüfen, ob Benutzer existiert
+            //if (!UserExists(benutzername))
+            //{
+            //    MessageBox.Show("Benutzername nicht gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            //    return;
+            //}
+
+            // Fenster öffnen und Benutzernamen übergeben
+            PasswordResetWindow resetWindow = new PasswordResetWindow(benutzername);
+            resetWindow.ShowDialog();
         }
     }
 

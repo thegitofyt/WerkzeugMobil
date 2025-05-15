@@ -34,5 +34,12 @@
                 VerticalAlignment="Bottom" HorizontalAlignment="Center"
                 Margin="0,0,0,20"
                 Command="{Binding FinishProjektCommand}"/>
-	</Grid>
+        <Button Width="50" Height="50" Background="#1A3C5F" BorderBrush="#33475B" BorderThickness="1"
+Cursor="Hand" Click="BackButton_Click"
+HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="141,419,409,15">
+            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE72B;" FontSize="20" Foreground="White"
+       VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        </Button>
+
+    </Grid>
 </Window>
