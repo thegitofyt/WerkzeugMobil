@@ -3,12 +3,12 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy the project file and restore dependencies
-COPY ["WerkzeugMobil/WerkzeugMobil.csproj", "WerkzeugMobil/"]
-RUN dotnet restore "WerkzeugMobil/WerkzeugMobil.csproj"
+COPY ["WerkzeugMobil/WerkzeugMobil/WerkzeugMobil.csproj", "WerkzeugMobil/WerkzeugMobil/"]
+RUN dotnet restore "WerkzeugMobil/WerkzeugMobil/WerkzeugMobil.csproj"
 
 # Copy the rest of the code
 COPY . .
-WORKDIR "/src/WerkzeugMobil"
+WORKDIR "/src/WerkzeugMobil/WerkzeugMobil"
 RUN dotnet publish -c Release -o /app/publish
 
 # Use ASP.NET runtime image
