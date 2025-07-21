@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <None Remove="BackgroundImagePran.jpg" />
-    <None Remove="Dockerfile" />
     <None Remove="favicon.ico" />
     <None Remove="Fonts\verdana-bold-italic.ttf" />
     <None Remove="Fonts\verdana-bold.ttf" />
@@ -125,18 +124,6 @@
   <ItemGroup>
     <Folder Include="NewFolder\" />
     <Folder Include="Tests\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EditorConfigFiles Remove="C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Dockerfile" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\.editorconfig" />
   </ItemGroup>
 
 </Project>
