@@ -13,6 +13,12 @@ using WerkzeugMobil.Data;
 using WerkzeugMobil.DTO;
 using WerkzeugMobil.MVVM.Model;
 
+using System.Diagnostics;
+using System.Linq;
+using WerkzeugMobil.Services;
+using Microsoft.EntityFrameworkCore;
+
+
 namespace WerkzeugMobil.MVVM.Viewmodel
 {
     public class LagerViewModel : INotifyPropertyChanged
@@ -95,17 +101,47 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 MessageBox.Show("Bitte wähle zuerst ein Werkzeug aus.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
-
-        private void LoadWerkzeugeFromDatabase()
+        private async Task RefreshWerkzeugeFromApiAsync()
         {
             try
             {
-                using (var context = new WerkzeugDbContext())
+                var api = new WerkzeugApiService();
+                var neueWerkzeuge = await api.GetWerkzeugeAsync();
+
+                Werkzeuge.Clear();
+                foreach (var werkzeug in neueWerkzeuge)
+                {
+                    Werkzeuge.Add(werkzeug);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Laden der Werkzeuge von der API: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private WerkzeugDbContext CreateDbContext()
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+
+            // Adjust path if needed - example using local app data folder
+            var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var dbPath = System.IO.Path.Combine(localAppData, "WerkzeugMobil", "WerkzeugMobilDb.sqlite");
+
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+
+            return new WerkzeugDbContext(optionsBuilder.Options);
+        }
+        private async void LoadWerkzeugeFromDatabase()
+        {
+            try
+            {
+                using (var context = CreateDbContext())
                 {
                     var werkzeuge = context.Werkzeuge.ToList();
                     _allWerkzeuge = new ObservableCollection<WerkzeugDto>(werkzeuge);
                     Werkzeuge = new ObservableCollection<WerkzeugDto>(_allWerkzeuge);
                     OnPropertyChanged(nameof(Werkzeuge));
+                    await RefreshWerkzeugeFromApiAsync();
                 }
             }
             catch (Exception ex)

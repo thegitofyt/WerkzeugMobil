@@ -19,6 +19,13 @@ namespace WerkzeugMobil
             this.WindowState = WindowState.Maximized;
         }
 
+        private void Maschine_Lager(object sender, RoutedEventArgs e)
+        {
+            Lager lager = new Lager();
+            Application.Current.MainWindow = lager;
+            lager.Show();
+            this.Close();
+        }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 

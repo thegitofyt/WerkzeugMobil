@@ -10,6 +10,7 @@ public class ToolDTO
     public int Id { get; set; }
 
     public string Name { get; set; }  // Make this a property
+   
 
     [NotMapped]
     public List<Tuple<string, int>> ToolTypeCounts { get; set; } = new();
@@ -27,23 +28,8 @@ public class ToolDTO
     {
         Name = name;
         ToolTypeCounts = new List<Tuple<string, int>> { toolType };
+      
     }
 
-    public List<Werkzeug> GetWerkzeugeByArt(string art)
-    {
-        using (var context = new WerkzeugDbContext())
-        {
-            return context.Werkzeuge
-                          .Where(w => w.Art == art)
-                          .Select(w => new Werkzeug
-                          {
-                              WerkzeugId = w.WerkzeugId,
-                              Marke = w.Marke,
-                              Art = w.Art,
-                              ProjektAdresse = w.ProjektAdresse,
-                              Beschreibung = w.Beschreibung
-                          })
-                          .ToList();
-        }
-    }
+   
 }

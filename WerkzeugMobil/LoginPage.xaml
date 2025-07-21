@@ -4,6 +4,7 @@
         Title="" Height="750" Width="1200"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         Background="White"
+        Loaded="Window_Loaded"
         WindowStyle="None">
 
     <Grid>

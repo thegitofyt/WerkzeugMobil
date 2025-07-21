@@ -1,0 +1,32 @@
+[
+  {
+    "ContainingType": "WerkzeugMobil.WerkzeugApi.Controllers.WerkzeugeController",
+    "Method": "GetAllWerkzeuge",
+    "RelativePath": "Werkzeuge",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WerkzeugMobil.WerkzeugApi.Controllers.WerkzeugeController",
+    "Method": "GetProjekte",
+    "RelativePath": "Werkzeuge/projekte",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WerkzeugMobil.WerkzeugApi.Controllers.WerkzeugeController",
+    "Method": "GetTools",
+    "RelativePath": "Werkzeuge/tools",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

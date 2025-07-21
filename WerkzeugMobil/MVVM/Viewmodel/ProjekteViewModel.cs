@@ -8,6 +8,7 @@ using System.Windows.Input;
 using WerkzeugMobil.Data;
 using WerkzeugMobil.DTO;
 using WerkzeugMobil.MVVM.Model;
+using WerkzeugMobil.Services;
 
 
 namespace WerkzeugMobil.MVVM.Viewmodel
@@ -25,6 +26,8 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         private MainViewModel _mainViewModel;
         private ObservableCollection<ProjektDTO> _everyProjekt;
         private ObservableCollection<ProjektDTO> _allProjekte;
+        private Dictionary<string, int> _werkzeugCounts = new();
+        public Dictionary<string, int> WerkzeugCounts => _werkzeugCounts;
 
 
         // Property to set MainViewModel
@@ -72,6 +75,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 {
                     _selectedProjekt = value;
                     OnPropertyChanged(nameof(SelectedProjekt));
+                    (FinishProjektCommand as RelayCommand)?.RaiseCanExecuteChanged();
                 }
             }
         }
@@ -114,7 +118,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
 
 
-        private void DeleteProjekt(object parameter)
+        private async void DeleteProjekt(object parameter)
         {
             var projekt = parameter as ProjektDTO;
 
@@ -124,7 +128,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 {
                     MessageBox.Show($"Projekt zum Löschen: {projekt.ProjektAddresse}");
 
-                    using (var context = new WerkzeugDbContext())
+                    using (var context = CreateDbContext())
                     {
                         var projektToDelete = context.Projekte
                             .FirstOrDefault(p => p.ProjektAddresse == projekt.ProjektAddresse);
@@ -136,7 +140,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
                             // Entfernen aus der ObservableCollection
                             Projekte.Remove(projekt);
-
+                            await RefreshProjekteFromApiAsync();
                             MessageBox.Show("Projekt erfolgreich gelöscht.", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                         else
@@ -162,18 +166,27 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
 
 
-        public void LoadProjects()
+        public async void LoadProjects()
         {
             try
             {
-                using (var context = new WerkzeugDbContext())
+                using (var context = CreateDbContext())
                 {
+                    var werkzeuge = context.Werkzeuge.ToList();
                     var projekte = context.Projekte.ToList();
+
+                    _werkzeugCounts = projekte
+                        .ToDictionary(
+                            projekt => projekt.ProjektAddresse,
+                            projekt => werkzeuge.Count(w => w.ProjektAdresse == projekt.ProjektAddresse)
+                        );
+
                     _everyProjekt = new ObservableCollection<ProjektDTO>(projekte);
                     Projekte = new ObservableCollection<ProjektDTO>(projekte);
                     _everyProjekt = Projekte;
                     _allProjekte = Projekte;
                     OnPropertyChanged(nameof(Projekte));
+                    await RefreshProjekteFromApiAsync();
                 }
             }
             catch (Exception ex)
@@ -181,33 +194,58 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 MessageBox.Show($"Error loading Projekte: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        private async Task RefreshProjekteFromApiAsync()
+        {
+            try
+            {
+                var api = new WerkzeugApiService();
+                var neueProjekte = await api.GetProjekteAsync();
 
-        private void OpenProjekt(object parameter)
+                Projekte.Clear();
+                foreach (var projekt in neueProjekte)
+                {
+                    Projekte.Add(projekt);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Laden der Projekte von der API: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        public void OpenProjekt(object parameter)
         {
             if (parameter is ProjektDTO projekt)
             {
                 SelectedProjekt = projekt; // Set the selected project
+                App.Current.Properties["LastSelectedProjekt"] = projekt;
                 MessageBox.Show($"Selected Project: {SelectedProjekt.ProjektAddresse}");
             }
             if (SelectedProjekt != null)
             {
-                var mainViewModel = new MainViewModel();
-                mainViewModel.SelectedProjekt = SelectedProjekt;
+                // 1. Get the currently active window BEFORE showing the new one
+                var currentWindow = Application.Current.Windows
+                    .OfType<Window>()
+                    .FirstOrDefault(w => w.IsActive);
+
+                // 2. Create and configure the main view model
+                var mainViewModel = new MainViewModel
+                {
+                    SelectedProjekt = SelectedProjekt
+                };
                 mainViewModel.LoadWerkzeugeForProject(SelectedProjekt);
 
-                // 2. Create the MainNavigation window and set its DataContext
+                // 3. Create and show the new main window
                 var mainNavigation = new MainNavigation
                 {
                     DataContext = mainViewModel
                 };
 
-                // 3. Show the MainNavigation window
-                
-
+                Application.Current.MainWindow = mainNavigation;
                 mainNavigation.Show();
-                var currentWindow = Application.Current.Windows.OfType<Window>().FirstOrDefault(w => w.DataContext == this);
-                currentWindow?.Close();
 
+                // 4. Close the old window (captured before new one was shown)
+                currentWindow?.Close();
             }
             else
             {
@@ -226,18 +264,46 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
         private void FinishProjekt(object parameter)
         {
-            if (_selectedProjekt != null)
+            if (_selectedProjekt == null) return;
+
+            using (var context = CreateDbContext())
             {
-                _selectedProjekt.Werkzeuge.Clear();
-                MessageBox.Show("Alle Werkzeuge wurden ins Lager verschoben.", "Projekt abgeschlossen", MessageBoxButton.OK, MessageBoxImage.Information);
+                // Load all Werkzeuge that belong to the selected project
+                var werkzeuge = context.Werkzeuge
+                    .Where(w => w.ProjektAdresse == _selectedProjekt.ProjektAddresse)
+                    .ToList();
+
+                foreach (var werkzeug in werkzeuge)
+                {
+                    werkzeug.ProjektAdresse = null; // Remove from project
+                    werkzeug.Lager = true;          // Mark as in Lager
+                }
+
+                context.SaveChanges(); // Persist changes
             }
+
+            // Update in-memory ViewModel if necessary
+            _selectedProjekt.Werkzeuge.Clear(); // Or reload the project
+
+            MessageBox.Show("Alle Werkzeuge wurden ins Lager verschoben.", "Projekt abgeschlossen", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void SearchProjects(object parameter)
         {
             FilterProjects();
         }
+        private WerkzeugDbContext CreateDbContext()
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
 
+            // Adjust path if needed - example using local app data folder
+            var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var dbPath = System.IO.Path.Combine(localAppData, "WerkzeugMobil", "WerkzeugMobilDb.sqlite");
+
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+
+            return new WerkzeugDbContext(optionsBuilder.Options);
+        }
         private void FilterProjects()
         {
             if (string.IsNullOrEmpty(SearchText))
@@ -247,7 +313,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
             else
             {
-                using (var context = new WerkzeugDbContext())
+                using (var context = CreateDbContext())
                 {
                     var filteredProjects = context.Projekte
                         .Include(p => p.Werkzeuge)

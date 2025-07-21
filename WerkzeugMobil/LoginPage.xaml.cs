@@ -1,15 +1,14 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using WerkzeugMobil.Data;
 using WerkzeugMobil.DTO;
 using WerkzeugMobil.MVVM.Model;
 using WerkzeugMobil.MVVM.Viewmodel;
-
 
 namespace WerkzeugMobil
 {
@@ -19,100 +18,101 @@ namespace WerkzeugMobil
 
         private readonly List<UserDTO> benutzerListe;
 
-
         public LoginUser()
         {
             InitializeComponent();
-
-
+            Debug.WriteLine("LoginUser window initialized");
         }
+
         private void CloseWindow(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-
-
-        //// private void LoginButtonClick(object sender, RoutedEventArgs e)
-        //// {
-        //     // Validate inputs
-        //  //   if (string.IsNullOrWhiteSpace(BenutzernameInput.Text) || string.IsNullOrWhiteSpace(PasswortInput.Password))
-        //  //   {
-        //    ////''     MessageBox.Show("Bitte geben Sie sowohl Benutzername als auch Passwort ein.", "Eingabefehler", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //    //     return;
-        //    // }
-
-        //     // Create new Benutzer from inputs
-        //     NewUser = new Benutzer
-        //     {
-        //         Benutzername = BenutzernameInput.Text,
-        //         Passwort = PasswortInput.Password, // Use the Password property to get the entered password
-        //         KannBearbeiten = true // Assuming this is a default value
-        //     }; 
-
-
-        //    MainNavigation mainNavigation = new MainNavigation();
-        //    mainNavigation.Show(); // Show the MainNavigation window
-        //    this.Close(); // Close the LoginUser  window
-
-
-        //}
-
         private void BenutzernameInput_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
-
         }
+
         private void LoginButtonClick(object sender, RoutedEventArgs e)
         {
             string username = BenutzernameInput.Text;
             string password = PasswortInput.Password;
 
-            using (var context = new WerkzeugDbContext())
+            if (AuthenticateUser(username, password))
             {
-                // Überprüfen, ob Benutzername und Passwort in der Datenbank vorhanden sind
-                var user = context.Benutzer
-                    .FirstOrDefault(u => u.Benutzername == username && u.Passwort == password);
-
-                if (user != null)
-                {
-                    // Login erfolgreich
-                    MessageBox.Show("Login erfolgreich!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                    // Navigiere zur Hauptseite
-                    ProjekteView projekteView = new ProjekteView();
-                    projekteView.Show();
-                    this.Close(); // Schließt das Login-Fenster
-                }
+                if (RememberMeCheckbox.IsChecked == true)
+                    SaveCredentials(username, password);
                 else
-                {
-                    // Fehlgeschlagener Login
-                    MessageBox.Show("Ungültige Anmeldedaten!", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-                if (AuthenticateUser(username, password))
-                {
-                    if (RememberMeCheckbox.IsChecked == true)
-                    {
-                        SaveCredentials(username, password);
-                    }
+                    ClearSavedCredentials();
 
-                    MessageBox.Show("Login erfolgreich!");
-                    this.Close();
+                MessageBox.Show("Login erfolgreich!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                if (App.IsTemporaryLogin)
+                {
+                    ChangePasswordWindow changeWindow = new ChangePasswordWindow(username);
+                    changeWindow.ShowDialog();
+                    App.IsTemporaryLogin = false;
                 }
 
+                ProjekteView projekteView = new ProjekteView();
+                Application.Current.MainWindow = projekteView;
+                projekteView.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Ungültige Anmeldedaten!", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private bool AuthenticateUser(string username, string password)
         {
-            // Authentifizierungslogik hier
-            return username == "admin" && password == "password"; // Beispiel
+            using (var context =  CreateDbContext())
+            {
+                var user = context.Benutzer.FirstOrDefault(u => u.Benutzername == username);
+                if (user == null) return false;
+
+                return BCrypt.Net.BCrypt.Verify(password, user.Passwort);
+            }
         }
 
         private void SaveCredentials(string username, string password)
         {
-            // Speicherung in Konfigurationsdatei
+            Properties.Settings.Default.SavedUsername = username;
+            Properties.Settings.Default.SavedPassword = password;
+            Properties.Settings.Default.RememberMe = true;
+            Properties.Settings.Default.Save();
         }
 
+        private void ClearSavedCredentials()
+        {
+            Properties.Settings.Default.SavedUsername = "";
+            Properties.Settings.Default.RememberMe = false;
+            Properties.Settings.Default.Save();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (Properties.Settings.Default.RememberMe)
+            {
+                BenutzernameInput.Text = Properties.Settings.Default.SavedUsername;
+                PasswortInput.Password = Properties.Settings.Default.SavedPassword;
+                RememberMeCheckbox.IsChecked = true;
+            }
+        }
+        private WerkzeugDbContext CreateDbContext()
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+
+            // Adjust this path to your actual SQLite DB location
+            var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var dbDirectory = System.IO.Path.Combine(localAppData, "WerkzeugMobil");
+            var dbPath = System.IO.Path.Combine(dbDirectory, "WerkzeugMobilDb.sqlite");
+
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+
+            return new WerkzeugDbContext(optionsBuilder.Options);
+        }
         private void ForgotPasswordClick(object sender, MouseButtonEventArgs e)
         {
             string benutzername = BenutzernameInput.Text.Trim();
@@ -123,19 +123,8 @@ namespace WerkzeugMobil
                 return;
             }
 
-            // Optional: prüfen, ob Benutzer existiert
-            //if (!UserExists(benutzername))
-            //{
-            //    MessageBox.Show("Benutzername nicht gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-            //    return;
-            //}
-
-            // Fenster öffnen und Benutzernamen übergeben
             PasswordResetWindow resetWindow = new PasswordResetWindow(benutzername);
             resetWindow.ShowDialog();
         }
     }
-
 }
-
-

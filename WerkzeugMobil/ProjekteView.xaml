@@ -8,6 +8,17 @@
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
+        <!-- Optional: Moderner Flat Button Style -->
+        <Style x:Key="ModernFlatButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#1A3A56"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#66FFFFFF"/>
+            <Setter Property="BorderThickness" Value="2"/>
+
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
     </Window.Resources>
 
     <Window.DataContext>
@@ -18,6 +29,7 @@
         <!-- Header -->
         <Border Height="80" VerticalAlignment="Top" Background="#004D80">
             <Grid>
+                <!-- Logo -->
                 <Image Source="pack://application:,,,/LogoRech.png"
                        Width="150" Height="50"
                        VerticalAlignment="Center"
@@ -36,18 +48,15 @@
                          Padding="10,0"
                          VerticalContentAlignment="Center"
                          TextChanged="TextBox_TextChanged">
-                    <!-- Style for TextBox -->
                     <TextBox.Style>
                         <Style TargetType="TextBox">
                             <Setter Property="Background" Value="#1A3A56"/>
-                            <!-- Darker blue background -->
                             <Setter Property="BorderBrush" Value="#66FFFFFF"/>
                             <Setter Property="BorderThickness" Value="2"/>
                             <Setter Property="Template">
                                 <Setter.Value>
                                     <ControlTemplate TargetType="TextBox">
                                         <Grid>
-                                            <!-- Placeholder Text visible when text is empty -->
                                             <TextBlock Text="Search..."
                                                        Foreground="#88FFFFFF"
                                                        Margin="10,0,0,0"
@@ -61,12 +70,26 @@
                             </Setter>
                         </Style>
                     </TextBox.Style>
-
-                    <!-- Shadow Effect for the TextBox -->
                     <TextBox.Effect>
                         <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5" Opacity="0.5"/>
                     </TextBox.Effect>
                 </TextBox>
+
+                <!-- Machine/Lager Button -->
+                <Button Width="50" Height="50"
+                        Click="Maschine_Lager"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Margin="0,0,20,0"
+                        Background="#1A3A56"
+                        BorderBrush="#66FFFFFF"
+                        BorderThickness="2"
+                        ToolTip="Maschine/Lager öffnen">
+                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE8A5;" FontSize="20" Foreground="White"/>
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.4"/>
+                    </Button.Effect>
+                </Button>
             </Grid>
         </Border>
 

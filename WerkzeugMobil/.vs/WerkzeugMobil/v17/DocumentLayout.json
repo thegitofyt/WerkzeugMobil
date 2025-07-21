@@ -1,237 +1,453 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\",
+  "WorkspaceRootPath": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\projektdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projektdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\werkzeugapi\\controllers\\werkzeugecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugapi\\controllers\\werkzeugecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\projektdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projektdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\werkzeugapi\\werkzeugapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugapi\\werkzeugapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\addwerkzeug.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addwerkzeug.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\addprojekt.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addprojekt.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\addprojekt.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addprojekt.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\passwordresetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:passwordresetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\passwordresetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:passwordresetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\addwerkzeugviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\addwerkzeugviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\dto\\werkzeugdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\werkzeugdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\dtodata\\werkzeugdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dtodata\\werkzeugdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\services\\werkzeugseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\werkzeugseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\migrations\\werkzeugdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:migrations\\werkzeugdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\addprojektviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\addprojektviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\services\\toolsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\toolsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\werkzeug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\werkzeug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\projekteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\projekteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\projekteview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekteview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\projekteview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekteview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\converters\\booltothemeiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:converters\\booltothemeiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\dto\\tooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\tooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\helpers\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:helpers\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\helpers\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:helpers\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\services\\projektservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\projektservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\converters\\ger\u00E4tekennzahluniversalconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:converters\\ger\u00E4tekennzahluniversalconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\lagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\lagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\backgroundimagepran.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:backgroundimagepran.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\converters\\tooltypecounttostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:converters\\tooltypecounttostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\dataentry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dataentry.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\projekt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\benutzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\benutzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\benutzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\services\\werkzeugservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\syncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:syncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\dtodata\\werkzeugdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dtodata\\werkzeugdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\werkzeugapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\werkzeugapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\werkzeugapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projekteview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekteview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projekteview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekteview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projektdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projektdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\werkzeugdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\addwerkzeugviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\addwerkzeugviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\dto\\tooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\tooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\toolsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\toolsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\werkzeugseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\werkzeugseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\projekteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\projekteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\projektservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\projektservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\lagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\lagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\addprojektviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\addprojektviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\werkzeugservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\werkzeugservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\dto\\projektdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\projektdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\smalllogosplash.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:smalllogosplash.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\werkzeugverwaltung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\werkzeugverwaltung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\dto\\ger\u00E4tedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\ger\u00E4tedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\logorech.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:logorech.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\addprojekt.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addprojekt.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\logo.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:logo.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\passwordresetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:passwordresetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\migrations\\20250103153908_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:migrations\\20250103153908_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\smalllogosplash.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:smalllogosplash.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\layal shegaa\\documents\\github\\werkzeugmobil\\werkzeugmobil\\pranbackground.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:pranbackground.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\obj\\Debug\\net8.0-windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0-windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\resources\\werkzeugmobilfull.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:resources\\werkzeugmobilfull.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\resources\\werkzeugmobillogo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:resources\\werkzeugmobillogo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\fulllogosplash.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:fulllogosplash.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\6798c514ed58ed033fc995d095ce9930b7f5589823ff9b7038afcd69c861aad7\\Application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\smalllogosplash.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:smalllogosplash.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\converters\\tooltypecounttostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:converters\\tooltypecounttostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\converters\\projektwerkzeugcountconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:converters\\projektwerkzeugcountconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\addprojekt.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addprojekt.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\converters\\ger\u00E4tekennzahluniversalconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:converters\\ger\u00E4tekennzahluniversalconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\theme\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:theme\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\properties\\symmetric.properties||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:properties\\symmetric.properties||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\changepasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:changepasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\changepasswordwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:changepasswordwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\passwordresetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:passwordresetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projektdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projektdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\customfontresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:customfontresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\addwerkzeug.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addwerkzeug.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\fulllogosplash.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:1:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:fulllogosplash.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\werkzeugapi\\controllers\\werkzeugecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugapi\\controllers\\werkzeugecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:werkzeugmobil.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\theme\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:theme\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\projekteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\projekteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\dtodata\\werkzeugdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dtodata\\werkzeugdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\werkzeugseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\werkzeugseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\syncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:syncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\passwordresetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:passwordresetwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\properties\\symmetric.properties||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:properties\\symmetric.properties||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\lagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\lagerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\changepasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:changepasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\changepasswordwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:changepasswordwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\passwordresetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:passwordresetwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projektdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projektdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\model\\werkzeugmobilcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projekteview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekteview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projektdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projektdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\customfontresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:customfontresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\addwerkzeugviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\addwerkzeugviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\addprojekt.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addprojekt.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\addwerkzeug.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addwerkzeug.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projekteview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekteview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\dto\\tooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:dto\\tooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:addwerkzeug.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:services\\benutzerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mvvm\\viewmodel\\addprojektviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mvvm\\viewmodel\\addprojektviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\fulllogosplash.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:2:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:fulllogosplash.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\fonts\\verdana-bold.ttf||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:fonts\\verdana-bold.ttf||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\lager.xaml||{8D42AE58-4628-4780-AC3C-6B7E6DE7A92A}|",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:lager.xaml||{8D42AE58-4628-4780-AC3C-6B7E6DE7A92A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\mainnavigation.xaml||{8D42AE58-4628-4780-AC3C-6B7E6DE7A92A}|",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:mainnavigation.xaml||{8D42AE58-4628-4780-AC3C-6B7E6DE7A92A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projektdetailsview.xaml||{8D42AE58-4628-4780-AC3C-6B7E6DE7A92A}|",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projektdetailsview.xaml||{8D42AE58-4628-4780-AC3C-6B7E6DE7A92A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|c:\\users\\vicky\\onedrive\\dokumente\\github\\werkzeugmobil\\werkzeugmobil\\projekteview.xaml||{8D42AE58-4628-4780-AC3C-6B7E6DE7A92A}|",
+      "RelativeMoniker": "D:0:0:{CAACD364-44A5-49E8-9C73-6A93FFED6549}|WerkzeugMobil.csproj|solutionrelative:projekteview.xaml||{8D42AE58-4628-4780-AC3C-6B7E6DE7A92A}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -240,8 +456,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 196,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 43,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -254,720 +470,1349 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 229,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProjektDetailsView.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
-              "RelativeDocumentMoniker": "ProjektDetailsView.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
-              "RelativeToolTip": "ProjektDetailsView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-09T17:22:12.533Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProjektDetailsView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml.cs",
-              "RelativeDocumentMoniker": "ProjektDetailsView.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml.cs",
-              "RelativeToolTip": "ProjektDetailsView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Title": "WerkzeugeController.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugApi\\Controllers\\WerkzeugeController.cs",
+              "RelativeDocumentMoniker": "WerkzeugApi\\Controllers\\WerkzeugeController.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugApi\\Controllers\\WerkzeugeController.cs",
+              "RelativeToolTip": "WerkzeugApi\\Controllers\\WerkzeugeController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAGMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:55:36.561Z",
+              "WhenOpened": "2025-06-19T23:27:38.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddWerkzeug.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
-              "RelativeDocumentMoniker": "AddWerkzeug.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
-              "RelativeToolTip": "AddWerkzeug.xaml.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAswH8AAAAJAAAAAAAAAA==",
+              "Title": "Benutzer.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Benutzer.cs",
+              "RelativeDocumentMoniker": "MVVM\\Model\\Benutzer.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Benutzer.cs",
+              "RelativeToolTip": "MVVM\\Model\\Benutzer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T20:02:46.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddWerkzeug.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
-              "RelativeDocumentMoniker": "AddWerkzeug.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
-              "RelativeToolTip": "AddWerkzeug.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-21T16:10:49.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T16:31:12.331Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AddProjekt.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml.cs",
-              "RelativeDocumentMoniker": "AddProjekt.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml.cs",
-              "RelativeToolTip": "AddProjekt.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAAD0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T19:24:32.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:18:15.522Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AddProjekt.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml",
-              "RelativeDocumentMoniker": "AddProjekt.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml",
-              "RelativeToolTip": "AddProjekt.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-17T19:18:44.136Z",
-              "EditorCaption": ""
+              "Title": "SyncService.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SyncService.cs",
+              "RelativeDocumentMoniker": "SyncService.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SyncService.cs",
+              "RelativeToolTip": "SyncService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwDgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T19:49:56.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAiwHUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WerkzeugApi.http",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugApi\\WerkzeugApi.http",
+              "RelativeDocumentMoniker": "WerkzeugApi\\WerkzeugApi.http",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugApi\\WerkzeugApi.http",
+              "RelativeToolTip": "WerkzeugApi\\WerkzeugApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-20T05:18:59.498Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Lager.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
-              "RelativeDocumentMoniker": "Lager.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
-              "RelativeToolTip": "Lager.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwEYAAAAJAAAAAAAAAA==",
+              "Title": "WerkzeugDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTOData\\WerkzeugDbContext.cs",
+              "RelativeDocumentMoniker": "DTOData\\WerkzeugDbContext.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTOData\\WerkzeugDbContext.cs",
+              "RelativeToolTip": "DTOData\\WerkzeugDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T18:40:38.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T09:41:00.789Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Lager.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
-              "RelativeDocumentMoniker": "Lager.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
-              "RelativeToolTip": "Lager.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-04T18:44:58.787Z",
-              "EditorCaption": ""
+              "Title": "Lager.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
+              "RelativeDocumentMoniker": "Lager.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
+              "RelativeToolTip": "Lager.xaml.cs",
+              "ViewState": "AgIAABgBAAAAgHmw0Bzpv2YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T18:32:56.621Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml.cs",
-              "RelativeToolTip": "LoginPage.xaml.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAqwIAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T01:29:22.94Z",
-              "EditorCaption": ""
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WerkzeugApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WerkzeugApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAcAAADi4eHhcXMrwCAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-29T18:20:10.961Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "LoginPage.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
-              "RelativeToolTip": "LoginPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-08T20:31:41.163Z",
-              "EditorCaption": ""
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-29T19:00:04.601Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "PasswordResetWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml.cs",
-              "RelativeDocumentMoniker": "PasswordResetWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml.cs",
-              "RelativeToolTip": "PasswordResetWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "WerkzeugApiService.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugApiService.cs",
+              "RelativeDocumentMoniker": "Services\\WerkzeugApiService.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugApiService.cs",
+              "RelativeToolTip": "Services\\WerkzeugApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T08:08:08.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T05:24:07.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "Lager.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
+              "RelativeDocumentMoniker": "Lager.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
+              "RelativeToolTip": "Lager.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T18:43:40.696Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "PasswordResetWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml",
-              "RelativeDocumentMoniker": "PasswordResetWindow.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml",
-              "RelativeToolTip": "PasswordResetWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-15T08:08:03.08Z",
-              "EditorCaption": ""
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\MainViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\MainViewModel.cs",
+              "ViewState": "AgIAAMABAAAAAAAAAAAcwOUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T10:05:52.832Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\MainViewModel.cs",
-              "RelativeToolTip": "MVVM\\Viewmodel\\MainViewModel.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAAAKsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.181Z",
-              "EditorCaption": ""
+              "Title": "Lager.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
+              "RelativeDocumentMoniker": "Lager.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
+              "RelativeToolTip": "Lager.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-30T18:27:56.432Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "AddWerkzeugViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
-              "RelativeToolTip": "MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAAAOMAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T20:53:53.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "WerkzeugDto.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\WerkzeugDto.cs",
-              "RelativeDocumentMoniker": "DTO\\WerkzeugDto.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\WerkzeugDto.cs",
-              "RelativeToolTip": "DTO\\WerkzeugDto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.148Z"
+              "Title": "ProjekteView.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
+              "RelativeDocumentMoniker": "ProjekteView.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
+              "RelativeToolTip": "ProjekteView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T11:04:19.984Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "MainNavigation.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
-              "RelativeDocumentMoniker": "MainNavigation.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
-              "RelativeToolTip": "MainNavigation.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-06T07:14:11.748Z"
+              "Title": "MainNavigation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml.cs",
+              "RelativeDocumentMoniker": "MainNavigation.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml.cs",
+              "RelativeToolTip": "MainNavigation.xaml.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T11:08:35.485Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "WerkzeugDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTOData\\WerkzeugDbContext.cs",
-              "RelativeDocumentMoniker": "DTOData\\WerkzeugDbContext.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTOData\\WerkzeugDbContext.cs",
-              "RelativeToolTip": "DTOData\\WerkzeugDbContext.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
+              "Title": "MainNavigation.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
+              "RelativeDocumentMoniker": "MainNavigation.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
+              "RelativeToolTip": "MainNavigation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T11:08:32.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProjekteView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml.cs",
+              "RelativeDocumentMoniker": "ProjekteView.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml.cs",
+              "RelativeToolTip": "ProjekteView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T18:08:05.636Z"
+              "WhenOpened": "2025-05-23T11:04:29.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "MainNavigation.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
+              "RelativeDocumentMoniker": "MainNavigation.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
+              "RelativeToolTip": "MainNavigation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T18:29:03.274Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:30:58.591Z"
+              "Title": "ProjektDetailsView.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
+              "RelativeDocumentMoniker": "ProjektDetailsView.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
+              "RelativeToolTip": "ProjektDetailsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T10:14:12.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "App.g.i.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\obj\\Debug\\net8.0-windows\\App.g.i.cs",
-              "RelativeDocumentMoniker": "obj\\Debug\\net8.0-windows\\App.g.i.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\obj\\Debug\\net8.0-windows\\App.g.i.cs",
-              "RelativeToolTip": "obj\\Debug\\net8.0-windows\\App.g.i.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T19:05:59.674Z"
+              "DocumentIndex": 111,
+              "Title": "ProjektDetailsView.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
+              "RelativeDocumentMoniker": "ProjektDetailsView.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
+              "RelativeToolTip": "ProjektDetailsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T18:26:19.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "ProjekteView.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
+              "RelativeDocumentMoniker": "ProjekteView.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
+              "RelativeToolTip": "ProjekteView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-29T18:25:02.114Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "WerkzeugSeeder.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugSeeder.cs",
-              "RelativeDocumentMoniker": "Services\\WerkzeugSeeder.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugSeeder.cs",
-              "RelativeToolTip": "Services\\WerkzeugSeeder.cs",
-              "ViewState": "AgIAAEMDAAAAAAAAAAAAALYCAAATAAAAAAAAAA==",
+              "Title": "WerkzeugDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugDbContextFactory.cs",
+              "RelativeDocumentMoniker": "WerkzeugDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugDbContextFactory.cs",
+              "RelativeToolTip": "WerkzeugDbContextFactory.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T11:00:57.497Z"
+              "WhenOpened": "2025-06-29T17:54:13.581Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\RelayCommand.cs",
-              "RelativeToolTip": "MVVM\\Viewmodel\\RelayCommand.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwCIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.179Z"
+              "Title": "WerkzeugMobil.csproj",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
+              "RelativeDocumentMoniker": "WerkzeugMobil.csproj",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
+              "RelativeToolTip": "WerkzeugMobil.csproj",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwE0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-30T15:18:58.95Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "WerkzeugMobil.csproj",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
-              "RelativeDocumentMoniker": "WerkzeugMobil.csproj",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
-              "RelativeToolTip": "WerkzeugMobil.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-16T21:33:21.368Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "WerkzeugDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Migrations\\WerkzeugDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\WerkzeugDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Migrations\\WerkzeugDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\WerkzeugDbContextModelSnapshot.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AddWerkzeugViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAIwJ8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T16:14:41.931Z"
+              "WhenOpened": "2025-05-30T16:08:16.517Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "WerkzeugMobilContext.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\WerkzeugMobilContext.cs",
-              "RelativeDocumentMoniker": "MVVM\\Model\\WerkzeugMobilContext.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\WerkzeugMobilContext.cs",
-              "RelativeToolTip": "MVVM\\Model\\WerkzeugMobilContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Title": "Tools.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Tools.cs",
+              "RelativeDocumentMoniker": "MVVM\\Model\\Tools.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Tools.cs",
+              "RelativeToolTip": "MVVM\\Model\\Tools.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.183Z"
+              "WhenOpened": "2025-06-20T05:42:39.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AddProjektViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddProjektViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\AddProjektViewModel.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddProjektViewModel.cs",
-              "RelativeToolTip": "MVVM\\Viewmodel\\AddProjektViewModel.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAJ0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "ToolDTO.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\ToolDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ToolDTO.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\ToolDTO.cs",
+              "RelativeToolTip": "DTO\\ToolDTO.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T18:42:18.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ToolsService.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\ToolsService.cs",
-              "RelativeDocumentMoniker": "Services\\ToolsService.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\ToolsService.cs",
-              "RelativeToolTip": "Services\\ToolsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T09:30:37.327Z"
+              "WhenOpened": "2025-06-03T07:26:36.677Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AssemblyInfo.cs",
-              "RelativeToolTip": "AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "WerkzeugSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugSeeder.cs",
+              "RelativeDocumentMoniker": "Services\\WerkzeugSeeder.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugSeeder.cs",
+              "RelativeToolTip": "Services\\WerkzeugSeeder.cs",
+              "ViewState": "AgIAAD8DAAAAAAAAAAAuwGEDAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T08:49:09.993Z"
+              "WhenOpened": "2025-06-19T15:51:12.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ToolsService.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\ToolsService.cs",
+              "RelativeDocumentMoniker": "Services\\ToolsService.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\ToolsService.cs",
+              "RelativeToolTip": "Services\\ToolsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:05:00.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAqwEUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T15:14:17.979Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "MainNavigation.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml.cs",
-              "RelativeDocumentMoniker": "MainNavigation.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml.cs",
-              "RelativeToolTip": "MainNavigation.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAYwCwAAAAIAAAAAAAAAA==",
+              "Title": "ProjekteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "ViewState": "AgIAADABAAAAAAAAAAAAAIIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T20:42:15.397Z"
+              "WhenOpened": "2025-05-23T10:08:59.592Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "Werkzeug.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Werkzeug.cs",
-              "RelativeDocumentMoniker": "MVVM\\Model\\Werkzeug.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Werkzeug.cs",
-              "RelativeToolTip": "MVVM\\Model\\Werkzeug.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Title": "ProjektServices.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\ProjektServices.cs",
+              "RelativeDocumentMoniker": "Services\\ProjektServices.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\ProjektServices.cs",
+              "RelativeToolTip": "Services\\ProjektServices.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:20.745Z"
+              "WhenOpened": "2025-06-29T16:41:13.817Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "ProjekteViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\ProjekteViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\ProjekteViewModel.cs",
-              "RelativeToolTip": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAkwMYAAAAQAAAAAAAAAA==",
+              "Title": "LagerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\LagerViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\LagerViewModel.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\LagerViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\LagerViewModel.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAAAIQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T18:25:34.491Z"
+              "WhenOpened": "2025-05-30T18:30:27.646Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "ProjekteView.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
-              "RelativeDocumentMoniker": "ProjekteView.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
-              "RelativeToolTip": "ProjekteView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-11T18:23:04.025Z"
+              "Title": "AddProjektViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAUwLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T16:56:03.097Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "ProjekteView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml.cs",
-              "RelativeDocumentMoniker": "ProjekteView.xaml.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml.cs",
-              "RelativeToolTip": "ProjekteView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Title": "WerkzeugServices.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugServices.cs",
+              "RelativeDocumentMoniker": "Services\\WerkzeugServices.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugServices.cs",
+              "RelativeToolTip": "Services\\WerkzeugServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T18:25:25.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "BoolToThemeIconConverter.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\BoolToThemeIconConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\BoolToThemeIconConverter.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\BoolToThemeIconConverter.cs",
-              "RelativeToolTip": "Converters\\BoolToThemeIconConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T07:30:29.683Z"
+              "WhenOpened": "2025-06-29T16:41:53.156Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "ToolDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\ToolDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\ToolDTO.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\ToolDTO.cs",
-              "RelativeToolTip": "DTO\\ToolDTO.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwDAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T09:15:46.631Z"
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-30T20:14:10.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "BenutzerServices.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\BenutzerServices.cs",
-              "RelativeDocumentMoniker": "Services\\BenutzerServices.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\BenutzerServices.cs",
-              "RelativeToolTip": "Services\\BenutzerServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "SmallLogoSplash.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SmallLogoSplash.xaml.cs",
+              "RelativeDocumentMoniker": "SmallLogoSplash.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SmallLogoSplash.xaml.cs",
+              "RelativeToolTip": "SmallLogoSplash.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:30:47.42Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Tools.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Tools.cs",
-              "RelativeDocumentMoniker": "MVVM\\Model\\Tools.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Tools.cs",
-              "RelativeToolTip": "MVVM\\Model\\Tools.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T09:15:44.586Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Logger.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Helpers\\Logger.cs",
-              "RelativeDocumentMoniker": "Helpers\\Logger.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Helpers\\Logger.cs",
-              "RelativeToolTip": "Helpers\\Logger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T15:11:30.419Z"
+              "WhenOpened": "2025-06-01T16:00:40.405Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.xaml",
-              "RelativeToolTip": "App.xaml",
+              "Title": "AddProjekt.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml.cs",
+              "RelativeDocumentMoniker": "AddProjekt.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml.cs",
+              "RelativeToolTip": "AddProjekt.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T10:07:24.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-20T07:17:10.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Class1.cs",
+              "RelativeDocumentMoniker": "Class1.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Class1.cs",
+              "RelativeToolTip": "Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:16:52.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PasswordResetWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PasswordResetWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml.cs",
+              "RelativeToolTip": "PasswordResetWindow.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAK8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:32:56.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "DarkTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Theme\\DarkTheme.xaml",
+              "RelativeDocumentMoniker": "Theme\\DarkTheme.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Theme\\DarkTheme.xaml",
+              "RelativeToolTip": "Theme\\DarkTheme.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-16T21:33:20.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T23:36:20.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "WerkzeugMobil.csproj",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
+              "RelativeDocumentMoniker": "WerkzeugMobil.csproj",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugMobil.csproj",
+              "RelativeToolTip": "WerkzeugMobil.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-19T23:36:20.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "WerkzeugeController.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugApi\\Controllers\\WerkzeugeController.cs",
+              "RelativeDocumentMoniker": "WerkzeugApi\\Controllers\\WerkzeugeController.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\WerkzeugApi\\Controllers\\WerkzeugeController.cs",
+              "RelativeToolTip": "WerkzeugApi\\Controllers\\WerkzeugeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "ProjekteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\ProjekteViewModel.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAkwP0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "WerkzeugDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTOData\\WerkzeugDbContext.cs",
+              "RelativeDocumentMoniker": "DTOData\\WerkzeugDbContext.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTOData\\WerkzeugDbContext.cs",
+              "RelativeToolTip": "DTOData\\WerkzeugDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "WerkzeugSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugSeeder.cs",
+              "RelativeDocumentMoniker": "Services\\WerkzeugSeeder.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugSeeder.cs",
+              "RelativeToolTip": "Services\\WerkzeugSeeder.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAIBJwI8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "Services\\DataSeeder.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\DataSeeder.cs",
+              "RelativeToolTip": "Services\\DataSeeder.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAIBJwGQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "SyncService.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SyncService.cs",
+              "RelativeDocumentMoniker": "SyncService.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SyncService.cs",
+              "RelativeToolTip": "SyncService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwCoAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "PasswordResetWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PasswordResetWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml.cs",
+              "RelativeToolTip": "PasswordResetWindow.xaml.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAIBJwLoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "symmetric.properties",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Properties\\symmetric.properties",
+              "RelativeDocumentMoniker": "Properties\\symmetric.properties",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Properties\\symmetric.properties",
+              "RelativeToolTip": "Properties\\symmetric.properties",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-19T23:36:20.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "LagerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\LagerViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\LagerViewModel.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\LagerViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\LagerViewModel.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAIBJwI8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "ChangePasswordWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ChangePasswordWindow.xaml",
+              "RelativeDocumentMoniker": "ChangePasswordWindow.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ChangePasswordWindow.xaml",
+              "RelativeToolTip": "ChangePasswordWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:36:20.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "ChangePasswordWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ChangePasswordWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChangePasswordWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ChangePasswordWindow.xaml.cs",
+              "RelativeToolTip": "ChangePasswordWindow.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAtwCMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "Lager.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
+              "RelativeDocumentMoniker": "Lager.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml.cs",
+              "RelativeToolTip": "Lager.xaml.cs",
+              "ViewState": "AgIAABcBAAAAAAAAAAAAwKMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "PasswordResetWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml",
+              "RelativeDocumentMoniker": "PasswordResetWindow.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml",
+              "RelativeToolTip": "PasswordResetWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:36:20.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "ProjektDetailsView.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
+              "RelativeDocumentMoniker": "ProjektDetailsView.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml",
+              "RelativeToolTip": "ProjektDetailsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:36:20.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAGBrwEwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "LoginPage.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
+              "RelativeToolTip": "LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:36:20.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordHasher.cs",
+              "RelativeToolTip": "PasswordHasher.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBZwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "WerkzeugMobilContext.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\WerkzeugMobilContext.cs",
+              "RelativeDocumentMoniker": "MVVM\\Model\\WerkzeugMobilContext.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\WerkzeugMobilContext.cs",
+              "RelativeToolTip": "MVVM\\Model\\WerkzeugMobilContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "ProjekteView.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
+              "RelativeDocumentMoniker": "ProjekteView.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml",
+              "RelativeToolTip": "ProjekteView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:36:20.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "ProjektDetailsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml.cs",
+              "RelativeDocumentMoniker": "ProjektDetailsView.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml.cs",
+              "RelativeToolTip": "ProjektDetailsView.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBZwB0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "CustomFontResolver.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\CustomFontResolver.cs",
+              "RelativeDocumentMoniker": "CustomFontResolver.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\CustomFontResolver.cs",
+              "RelativeToolTip": "CustomFontResolver.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "verdana-bold.ttf",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Fonts\\verdana-bold.ttf",
+              "RelativeDocumentMoniker": "Fonts\\verdana-bold.ttf",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Fonts\\verdana-bold.ttf",
+              "RelativeToolTip": "Fonts\\verdana-bold.ttf",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMLSURBVEhL7VVLaxNRFP5mkjbGFCumgdQqhSq2xQqC2m7sA\u002BymWChZu8kPcNliNeDvyN4/0KwVQSgouKh9kGqsEJG\u002BiDTGTEwmzcx4z5l7Z5I0EVy48xu\u002BnNe955x7cifBP4XjONr8/Pz4xMTEWCAQkN6/g6Zp0AVqtdrpxsZGdn19fU/klVERX1lZebq6\u002BuSZA008AhQUm2iJ/\u002BlFqSlOKkPcJGmGYVi7u7vZdDqdzGQyH3kxIZVKPTdN0zbNmqBpi07sGklhs95GXsPrfUmsVqu2KGDv7OwUlpaWxrkJAZ0/CdSIOhpJqbaDjy/oj8GVYkro6enB8PBwdHl5\u002BcXi4uIk\u002BzkqQGPwt7gJOtJbJcA2SbZ4dNlslgrdTiaT6UQicSUwMzMzKzhHmwks5QZOpxLLOMU8nUCqOw309/cjHo9jYGBAGxwcjBeLxTCfoD2Jp9u\u002BvxtbIO1gMIhIJALbduJeASVt2/Y221K2U611pasz2cFuBANBBAK6rasgJVbJSVrSbqZlWa5u\u002BT7H8RtiyplpuqCm2WdGpFgq1zv6u1Hl8Y7hutxb1LzAEV1VTQubn6soG6bXqdutPKns2tsjybbMLPPDG5E6Po0mv1/HZs7A9p7RUqCdtIf3d7gMqgSfgBarwI9yA5/yRWzlfuLtZgnlyqkXb16nyD56pE1QksAFFCiwf1zByGUdVsPCy3cn\u002BHb4y9usSEmJCqowQUkFPRaLidvobqqfWsgfVBAJh/Dg3gXkj\u002BrIvDnmmCVvDn1HXEg8ZBMJ7JMkKH/LiA6\u002B13FYMMR3UEIkZGLkagivtk0cnVRF3F2j3g0asUpGejfo5XJZqsDa6wIe3o/i7s0opu/EsDB9CVYohLX3JY5TQpW0Rf9DBV38zOrilcbWlwqOKhYaWi\u002B9gfzrOBTrxa3rYRzXe/G1UPVOyollTlWE4I7FtynE15RwbegcVh8NoS8c5I7ob2ZyLIJU4iIez55HtI/8LpqTMppNoTeb2tTU1NyN0dEFLidxJkEb1J9JJzTHcrncB6n\u002BRzcAvwHDgC\u002Be/YWw1AAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-06-19T23:36:20.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "ButtonBase.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs",
+              "ToolTip": "C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs",
+              "ViewState": "AgIAABABAAAAAAAAAAAtwBQBAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\RelayCommand.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\RelayCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAOwWAAAAAAAAAAAkwPIWAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-19T23:36:20.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "AddWerkzeugViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\AddWerkzeugViewModel.cs",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAiwAIBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "MainNavigation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml.cs",
+              "RelativeDocumentMoniker": "MainNavigation.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml.cs",
+              "RelativeToolTip": "MainNavigation.xaml.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAUwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "MainNavigation.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
+              "RelativeDocumentMoniker": "MainNavigation.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MainNavigation.xaml",
+              "RelativeToolTip": "MainNavigation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:36:20.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "AddProjekt.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml.cs",
+              "RelativeDocumentMoniker": "AddProjekt.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml.cs",
+              "RelativeToolTip": "AddProjekt.xaml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAuwDEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "AddWerkzeug.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
+              "RelativeDocumentMoniker": "AddWerkzeug.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
+              "RelativeToolTip": "AddWerkzeug.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAIBZwCQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:20.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "ProjekteView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml.cs",
+              "RelativeDocumentMoniker": "ProjekteView.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjekteView.xaml.cs",
+              "RelativeToolTip": "ProjekteView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:21.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "ToolDTO.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\ToolDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ToolDTO.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\ToolDTO.cs",
+              "RelativeToolTip": "DTO\\ToolDTO.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:21.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "AddWerkzeug.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
+              "RelativeDocumentMoniker": "AddWerkzeug.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
+              "RelativeToolTip": "AddWerkzeug.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:36:21.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "BenutzerServices.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\BenutzerServices.cs",
+              "RelativeDocumentMoniker": "Services\\BenutzerServices.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\BenutzerServices.cs",
+              "RelativeToolTip": "Services\\BenutzerServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:21.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "AddProjektViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\AddProjektViewModel.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAIBZwEUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T23:36:21.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "Lager.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
+              "RelativeDocumentMoniker": "Lager.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Lager.xaml",
+              "RelativeToolTip": "Lager.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:36:21.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "FullLogoSplash.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\FullLogoSplash.xaml",
+              "RelativeDocumentMoniker": "FullLogoSplash.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\FullLogoSplash.xaml",
+              "RelativeToolTip": "FullLogoSplash.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:36:21.088Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 37,
-              "Title": "PasswordGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Helpers\\PasswordGenerator.cs",
-              "RelativeDocumentMoniker": "Helpers\\PasswordGenerator.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Helpers\\PasswordGenerator.cs",
-              "RelativeToolTip": "Helpers\\PasswordGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T20:18:17.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ProjektServices.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\ProjektServices.cs",
-              "RelativeDocumentMoniker": "Services\\ProjektServices.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\ProjektServices.cs",
-              "RelativeToolTip": "Services\\ProjektServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:56:21.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Ger\u00E4teKennzahlUniversalConverter.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\Ger\u00E4teKennzahlUniversalConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\Ger\u00E4teKennzahlUniversalConverter.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\Ger\u00E4teKennzahlUniversalConverter.cs",
-              "RelativeToolTip": "Converters\\Ger\u00E4teKennzahlUniversalConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:33:42.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "LagerViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\LagerViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\LagerViewModel.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\LagerViewModel.cs",
-              "RelativeToolTip": "MVVM\\Viewmodel\\LagerViewModel.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAswJwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T19:31:31.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "BaseViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\BaseViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\BaseViewModel.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\BaseViewModel.cs",
-              "RelativeToolTip": "MVVM\\Viewmodel\\BaseViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:53:56.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ToolTypeCountToStringConverter.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\ToolTypeCountToStringConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\ToolTypeCountToStringConverter.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\ToolTypeCountToStringConverter.cs",
-              "RelativeToolTip": "Converters\\ToolTypeCountToStringConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:42:55.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "BackgroundImagePran.jpg - Bitmap [1024x1024, 24-Bit, JPG]",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\BackgroundImagePran.jpg",
-              "RelativeDocumentMoniker": "BackgroundImagePran.jpg",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\BackgroundImagePran.jpg - Bitmap [1024x1024, 24-Bit, JPG]",
-              "RelativeToolTip": "BackgroundImagePran.jpg - Bitmap [1024x1024, 24-Bit, JPG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-05-05T16:21:34.543Z",
-              "EditorCaption": " - Bitmap [1024x1024, 24-Bit, JPG]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "DataEntry.xaml",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DataEntry.xaml",
-              "RelativeDocumentMoniker": "DataEntry.xaml",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DataEntry.xaml",
-              "RelativeToolTip": "DataEntry.xaml",
+              "Title": "SmallLogoSplash.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SmallLogoSplash.xaml",
+              "RelativeDocumentMoniker": "SmallLogoSplash.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SmallLogoSplash.xaml",
+              "RelativeToolTip": "SmallLogoSplash.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-26T20:02:36.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Projekt.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Projekt.cs",
-              "RelativeDocumentMoniker": "MVVM\\Model\\Projekt.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Projekt.cs",
-              "RelativeToolTip": "MVVM\\Model\\Projekt.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:21.366Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Benutzer.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Benutzer.cs",
-              "RelativeDocumentMoniker": "MVVM\\Model\\Benutzer.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\Benutzer.cs",
-              "RelativeToolTip": "MVVM\\Model\\Benutzer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:33:21.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "WerkzeugServices.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugServices.cs",
-              "RelativeDocumentMoniker": "Services\\WerkzeugServices.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\WerkzeugServices.cs",
-              "RelativeToolTip": "Services\\WerkzeugServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:37:34.466Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "ProjektDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\ProjektDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\ProjektDTO.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\ProjektDTO.cs",
-              "RelativeToolTip": "DTO\\ProjektDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T16:55:49.947Z"
+              "WhenOpened": "2025-05-31T18:28:28.861Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 50,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\UserDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\UserDTO.cs",
-              "RelativeToolTip": "DTO\\UserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T20:30:16.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "ResourcePart.cs",
-              "DocumentMoniker": "C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
-              "ToolTip": "C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAuwCcAAAAEAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T18:12:54.535Z"
+              "Title": "DarkTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Theme\\DarkTheme.xaml",
+              "RelativeDocumentMoniker": "Theme\\DarkTheme.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Theme\\DarkTheme.xaml",
+              "RelativeToolTip": "Theme\\DarkTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T23:20:05.752Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 51,
-              "Title": "WerkzeugVerwaltung.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\WerkzeugVerwaltung.cs",
-              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\WerkzeugVerwaltung.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\WerkzeugVerwaltung.cs",
-              "RelativeToolTip": "MVVM\\Viewmodel\\WerkzeugVerwaltung.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAEBVwA8AAAA/AAAAAAAAAA==",
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "Services\\DataSeeder.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\DataSeeder.cs",
+              "RelativeToolTip": "Services\\DataSeeder.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAIBJwGQAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T21:55:40.871Z"
+              "WhenOpened": "2025-05-30T15:12:59.182Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 52,
-              "Title": "Ger\u00E4teDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\Ger\u00E4teDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\Ger\u00E4teDTO.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\Ger\u00E4teDTO.cs",
-              "RelativeToolTip": "DTO\\Ger\u00E4teDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T15:49:55.873Z"
+              "Title": "symmetric.properties",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Properties\\symmetric.properties",
+              "RelativeDocumentMoniker": "Properties\\symmetric.properties",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Properties\\symmetric.properties",
+              "RelativeToolTip": "Properties\\symmetric.properties",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-19T19:40:19.444Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 53,
-              "Title": "LogoRech.png - PNG [343x108, 32-Bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LogoRech.png",
-              "RelativeDocumentMoniker": "LogoRech.png",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LogoRech.png - PNG [343x108, 32-Bit, PNG]",
-              "RelativeToolTip": "LogoRech.png - PNG [343x108, 32-Bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-01-04T19:04:03.702Z",
-              "EditorCaption": " - PNG [343x108, 32-Bit, PNG]"
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T19:36:39.111Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 54,
-              "Title": "logo.jpg - Bitmap [448x109, 24-Bit, JPG]",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\logo.jpg",
-              "RelativeDocumentMoniker": "logo.jpg",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\logo.jpg - Bitmap [448x109, 24-Bit, JPG]",
-              "RelativeToolTip": "logo.jpg - Bitmap [448x109, 24-Bit, JPG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-12-27T15:03:34.841Z",
-              "EditorCaption": " - Bitmap [448x109, 24-Bit, JPG]"
+              "Title": "ChangePasswordWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ChangePasswordWindow.xaml",
+              "RelativeDocumentMoniker": "ChangePasswordWindow.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ChangePasswordWindow.xaml",
+              "RelativeToolTip": "ChangePasswordWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-17T17:39:07.69Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 55,
-              "Title": "20250103153908_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Migrations\\20250103153908_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250103153908_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Migrations\\20250103153908_InitialCreate.cs",
-              "RelativeToolTip": "Migrations\\20250103153908_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABXAAAAAAAAAA==",
+              "Title": "ChangePasswordWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ChangePasswordWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChangePasswordWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ChangePasswordWindow.xaml.cs",
+              "RelativeToolTip": "ChangePasswordWindow.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAtwCMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T16:15:16.24Z"
+              "WhenOpened": "2025-06-17T17:42:06.249Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 56,
-              "Title": "PranBackground.jpg - Bitmap [318x159, 24-Bit, JPG]",
-              "DocumentMoniker": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PranBackground.jpg",
-              "RelativeDocumentMoniker": "PranBackground.jpg",
-              "ToolTip": "C:\\Users\\Layal Shegaa\\Documents\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PranBackground.jpg - Bitmap [318x159, 24-Bit, JPG]",
-              "RelativeToolTip": "PranBackground.jpg - Bitmap [318x159, 24-Bit, JPG]",
+              "Title": "PasswordResetWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml",
+              "RelativeDocumentMoniker": "PasswordResetWindow.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordResetWindow.xaml",
+              "RelativeToolTip": "PasswordResetWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-19T13:10:39.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "LoginPage.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\LoginPage.xaml",
+              "RelativeToolTip": "LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-30T15:14:14.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\PasswordHasher.cs",
+              "RelativeToolTip": "PasswordHasher.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBZwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T15:20:21.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "WerkzeugMobilContext.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\WerkzeugMobilContext.cs",
+              "RelativeDocumentMoniker": "MVVM\\Model\\WerkzeugMobilContext.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Model\\WerkzeugMobilContext.cs",
+              "RelativeToolTip": "MVVM\\Model\\WerkzeugMobilContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T11:23:50.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ProjektDetailsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml.cs",
+              "RelativeDocumentMoniker": "ProjektDetailsView.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\ProjektDetailsView.xaml.cs",
+              "RelativeToolTip": "ProjektDetailsView.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBZwB0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T10:51:14.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "CustomFontResolver.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\CustomFontResolver.cs",
+              "RelativeDocumentMoniker": "CustomFontResolver.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\CustomFontResolver.cs",
+              "RelativeToolTip": "CustomFontResolver.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T20:10:47.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ButtonBase.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs",
+              "ToolTip": "C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs [Schreibgesch\u00FCtzt]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4e35507e6a240780c3c9728fdaeaefff1e9ac28fe544bfcf26fa3cc6ba4f1fac\\ButtonBase.cs [Schreibgesch\u00FCtzt]",
+              "ViewState": "AgIAABABAAAAAAAAAAAtwBQBAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T10:54:26.914Z",
+              "EditorCaption": " [Schreibgesch\u00FCtzt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "MVVM\\Viewmodel\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\MVVM\\Viewmodel\\RelayCommand.cs",
+              "RelativeToolTip": "MVVM\\Viewmodel\\RelayCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T16:53:23.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAOwWAAAAAAAAAAAkwPIWAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-17T18:56:24.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "AddWerkzeug.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
+              "RelativeDocumentMoniker": "AddWerkzeug.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml.cs",
+              "RelativeToolTip": "AddWerkzeug.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAIBZwCQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T17:13:45.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "AddWerkzeug.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
+              "RelativeDocumentMoniker": "AddWerkzeug.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddWerkzeug.xaml",
+              "RelativeToolTip": "AddWerkzeug.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-30T16:38:16.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "BenutzerServices.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\BenutzerServices.cs",
+              "RelativeDocumentMoniker": "Services\\BenutzerServices.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Services\\BenutzerServices.cs",
+              "RelativeToolTip": "Services\\BenutzerServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:40:18.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "FullLogoSplash.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\FullLogoSplash.xaml",
+              "RelativeDocumentMoniker": "FullLogoSplash.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\FullLogoSplash.xaml",
+              "RelativeToolTip": "FullLogoSplash.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-31T18:35:35.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T16:52:32.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "WerkzeugMobilFull.png - PNG [2124x484, 32-Bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Resources\\WerkzeugMobilFull.png",
+              "RelativeDocumentMoniker": "Resources\\WerkzeugMobilFull.png",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Resources\\WerkzeugMobilFull.png - PNG [2124x484, 32-Bit, PNG]",
+              "RelativeToolTip": "Resources\\WerkzeugMobilFull.png - PNG [2124x484, 32-Bit, PNG]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-12-17T17:53:16.962Z",
-              "EditorCaption": " - Bitmap [318x159, 24-Bit, JPG]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 76,
-          "SelectedChildIndex": -1,
-          "Children": [
+              "WhenOpened": "2025-06-01T16:07:31.572Z",
+              "EditorCaption": " - PNG [2124x484, 32-Bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "WerkzeugMobilLogo.png - PNG [161x161, 32-Bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Resources\\WerkzeugMobilLogo.png",
+              "RelativeDocumentMoniker": "Resources\\WerkzeugMobilLogo.png",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Resources\\WerkzeugMobilLogo.png - PNG [161x161, 32-Bit, PNG]",
+              "RelativeToolTip": "Resources\\WerkzeugMobilLogo.png - PNG [161x161, 32-Bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-06-01T16:07:33.97Z",
+              "EditorCaption": " - PNG [161x161, 32-Bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "FullLogoSplash.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\FullLogoSplash.xaml.cs",
+              "RelativeDocumentMoniker": "FullLogoSplash.xaml.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\FullLogoSplash.xaml.cs",
+              "RelativeToolTip": "FullLogoSplash.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:53:30.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\6798c514ed58ed033fc995d095ce9930b7f5589823ff9b7038afcd69c861aad7\\Application.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6798c514ed58ed033fc995d095ce9930b7f5589823ff9b7038afcd69c861aad7\\Application.cs",
+              "ToolTip": "C:\\Users\\vicky\\AppData\\Local\\Temp\\.vsdbgsrc\\6798c514ed58ed033fc995d095ce9930b7f5589823ff9b7038afcd69c861aad7\\Application.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6798c514ed58ed033fc995d095ce9930b7f5589823ff9b7038afcd69c861aad7\\Application.cs",
+              "ViewState": "AgIAAP4FAAAAAAAAAAAWwAwGAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:42:33.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "SmallLogoSplash.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SmallLogoSplash.xaml",
+              "RelativeDocumentMoniker": "SmallLogoSplash.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\SmallLogoSplash.xaml",
+              "RelativeToolTip": "SmallLogoSplash.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-31T18:27:42.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "favicon.ico - Icon [16x16, 32-Bit, BMP]",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\favicon.ico",
+              "RelativeDocumentMoniker": "favicon.ico",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\favicon.ico - Icon [16x16, 32-Bit, BMP]",
+              "RelativeToolTip": "favicon.ico - Icon [16x16, 32-Bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-05-30T21:35:01.534Z",
+              "EditorCaption": " - Icon [16x16, 32-Bit, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ToolTypeCountToStringConverter.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\ToolTypeCountToStringConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\ToolTypeCountToStringConverter.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\ToolTypeCountToStringConverter.cs",
+              "RelativeToolTip": "Converters\\ToolTypeCountToStringConverter.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T10:41:42.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ProjektWerkzeugCountConverter.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\ProjektWerkzeugCountConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\ProjektWerkzeugCountConverter.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\ProjektWerkzeugCountConverter.cs",
+              "RelativeToolTip": "Converters\\ProjektWerkzeugCountConverter.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAACBjwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T10:39:07.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AddProjekt.xaml",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml",
+              "RelativeDocumentMoniker": "AddProjekt.xaml",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\AddProjekt.xaml",
+              "RelativeToolTip": "AddProjekt.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-23T10:07:12.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Ger\u00E4teKennzahlUniversalConverter.cs",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\Ger\u00E4teKennzahlUniversalConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\Ger\u00E4teKennzahlUniversalConverter.cs",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Converters\\Ger\u00E4teKennzahlUniversalConverter.cs",
+              "RelativeToolTip": "Converters\\Ger\u00E4teKennzahlUniversalConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T17:16:44.395Z"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
@@ -975,23 +1820,18 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\vicky\\OneDrive\\Dokumente\\GitHub\\WerkzeugMobil\\WerkzeugMobil\\Properties\\Settings.settings",
+              "RelativeToolTip": "Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-05-30T15:28:17.654Z"
             }
           ]
         }

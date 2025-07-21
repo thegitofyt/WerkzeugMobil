@@ -2,63 +2,137 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:viewmodel="clr-namespace:WerkzeugMobil.MVVM.Viewmodel"
-        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
-        Title="Inventory View" Height="750" Width="1200" Background="#F5F5F5">
+        Title="Inventory View"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Height="750" Width="1200"
+        Background="#E6EEF7">
 
     <Window.DataContext>
         <viewmodel:LagerViewModel />
     </Window.DataContext>
 
-    <!-- Define Resources -->
     <Window.Resources>
         <!-- Modern Button Style -->
         <Style x:Key="ModernButtonStyle" TargetType="Button">
-            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="Padding" Value="10,5"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
-            <Setter Property="Background" Value="#004D80"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#C4D7F2"/>
+            <Setter Property="Foreground" Value="#1D2E5B"/>
+            <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Margin" Value="5"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="#888" BlurRadius="5" ShadowDepth="0" Opacity="0.2"/>
+                </Setter.Value>
+            </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#006F8E"/>
+                    <Setter Property="Background" Value="#A7BEE9"/>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect Color="#555" BlurRadius="8" ShadowDepth="0" Opacity="0.3"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Foreground" Value="#1D2E5B"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Cursor" Value="Arrow"/>
+                    <Setter Property="Effect" Value="{x:Null}"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
 
-        <!-- Modern TextBox Style -->
+        <!-- TextBox Style -->
         <Style x:Key="ModernTextBoxStyle" TargetType="TextBox">
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="Padding" Value="10"/>
             <Setter Property="Background" Value="White"/>
-            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderBrush" Value="#A7BEE9"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,10,0"/>
+            <Setter Property="Foreground" Value="#1D2E5B"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="#BBB" BlurRadius="4" ShadowDepth="0" Opacity="0.15"/>
+                </Setter.Value>
+            </Setter>
         </Style>
 
-        <!-- Modern DataGrid Style -->
+        <!-- DataGrid Style -->
         <Style x:Key="ModernDataGridStyle" TargetType="DataGrid">
             <Setter Property="FontSize" Value="14"/>
-            <Setter Property="RowHeight" Value="35"/>
+            <Setter Property="RowHeight" Value="40"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="#D6E1F0"/>
+            <Setter Property="VerticalGridLinesBrush" Value="Transparent"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="#AAA" BlurRadius="6" ShadowDepth="0" Opacity="0.1"/>
+                </Setter.Value>
+            </Setter>
+
             <Setter Property="CellStyle">
                 <Setter.Value>
                     <Style TargetType="DataGridCell">
                         <Setter Property="Padding" Value="10"/>
                         <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Foreground" Value="#1D2E5B"/>
                     </Style>
                 </Setter.Value>
             </Setter>
+
+            <Setter Property="RowStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <Trigger Property="AlternationIndex" Value="1">
+                                <Setter Property="Background" Value="#F3F7FD"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#A7BEE9"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+
             <Setter Property="ColumnHeaderStyle">
                 <Setter.Value>
                     <Style TargetType="DataGridColumnHeader">
-                        <Setter Property="Background" Value="#004D80"/>
-                        <Setter Property="Foreground" Value="White"/>
-                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Background" Value="#B7C9F6"/>
+                        <Setter Property="Foreground" Value="#1D2E5B"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="Padding" Value="10"/>
+                        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                        <Setter Property="BorderBrush" Value="#A7BEE9"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                        <Setter Property="SnapsToDevicePixels" Value="True"/>
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <DropShadowEffect Color="#999" BlurRadius="3" ShadowDepth="0" Opacity="0.05"/>
+                            </Setter.Value>
+                        </Setter>
                     </Style>
                 </Setter.Value>
             </Setter>
@@ -66,49 +140,67 @@
     </Window.Resources>
 
     <Grid>
-        <!-- Header Section -->
-        <Border Height="80" VerticalAlignment="Top" Background="#004D80" BorderBrush="#004D80">
-            <Grid>
-                <!-- Logo -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar -->
+        <Border Background="#E6EEF7" Grid.Column="0" Padding="20">
+            <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                 <Image Source="pack://application:,,,/LogoRech.png"
-                       Width="150" Height="50"
-                       VerticalAlignment="Center" HorizontalAlignment="Left"
-                       Margin="20,0,0,0" UseLayoutRounding="True"/>
+               Width="150" Height="50"
+               Margin="0,0,0,40"
+               HorizontalAlignment="Center"/>
 
-                <!-- Filter Buttons -->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
-                    <Button Content="In Lager"
-                            Width="120" Height="40"
-                            Style="{StaticResource ModernButtonStyle}"
-                            Command="{Binding FilterInLagerCommand}"/>
-                    <Button Content="Mit Adresse"
-                            Width="120" Height="40"
-                            Style="{StaticResource ModernButtonStyle}"
-                            Command="{Binding FilterMitAdresseCommand}"/>
+                <Button Content="Dashboard" Style="{StaticResource ModernButtonStyle}" Click="NavigateDashboard" Margin="0,0,0,10"/>
+                <Button Content="Project" Style="{StaticResource ModernButtonStyle}" Click="NavigateProjekte" Margin="0,0,0,10"/>
+                <Button Content="Werkzeug" Style="{StaticResource ModernButtonStyle}" Click="NavigateAddWerkzeug" Margin="0,0,0,10"/>
 
+                <!-- Lager: current page -->
+                <Button Content="Lager"
+                Style="{StaticResource ModernButtonStyle}"
+                IsEnabled="False"
+                Margin="0,0,0,10"/>
+
+                <!-- Spacer to push "Back" and "Logout" to the bottom -->
+                <StackPanel VerticalAlignment="Stretch">
+                    <StackPanel VerticalAlignment="Bottom" Margin="0,40,0,0">
+                        <!-- Back Button -->
+                        <Button Content="← Zurück"
+                        Style="{StaticResource ModernButtonStyle}"
+                        Click="BackButton_Click"
+                        Margin="0,0,0,10"/>
+
+                        <!-- Logout Button -->
+                        <Button Content="Logout"
+                        Style="{StaticResource ModernButtonStyle}" Click="Logout_Click"/>
+                    </StackPanel>
                 </StackPanel>
-
-
-            </Grid>
+            </StackPanel>
         </Border>
 
-        <!-- Main Content Section -->
-        <Grid Margin="20,100,20,20">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
+        <!-- Main Content -->
+        <!-- Main Content -->
+        <Grid Grid.Column="1" Margin="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
+                <!-- Search -->
+                <RowDefinition Height="Auto"/>
+                <!-- Filter -->
                 <RowDefinition Height="*"/>
+                <!-- DataGrid: takes remaining space -->
             </Grid.RowDefinitions>
+            
 
-            <!-- Search Bar -->
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" Grid.Row="0" Grid.ColumnSpan="2">
+            <!-- Back Button -->
+           
+            <!-- Search -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="0" Margin="0,0,0,10" VerticalAlignment="Center">
                 <TextBox Width="400" Height="40"
                          Style="{StaticResource ModernTextBoxStyle}"
-                         Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
-                         Margin="0,0,10,0"/>
+                         Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" RenderTransformOrigin="0.494,3.933"/>
+
                 <Button Content="Search"
                         Width="100" Height="40"
                         Style="{StaticResource ModernButtonStyle}"
@@ -119,34 +211,43 @@
                         Command="{Binding ResetCommand}"/>
             </StackPanel>
 
-            <Button Width="50" Height="50" Background="#1A3C5F" BorderBrush="#33475B" BorderThickness="1"
-        Cursor="Hand" Click="BackButton_Click" Margin="65,-89,272,99"
-        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1">
-                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE72B;" FontSize="20" Foreground="White"
-               VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            </Button>
+            <!-- Filter -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="1" Margin="0,0,0,10" RenderTransformOrigin="3.346,-0.291">
+                <Button Content="Export to PDF"
+                Width="120" Height="40"
+                Style="{StaticResource ModernButtonStyle}"
+                Click="ExportPdfButton_Click" />
+                <Button Content="In Lager"
+                        Width="120" Height="40"
+                        Style="{StaticResource ModernButtonStyle}"
+                        Command="{Binding FilterInLagerCommand}" Margin="0,0,10,0"/>
+                <Button Content="Mit Adresse"
+                        Width="120" Height="40"
+                        Style="{StaticResource ModernButtonStyle}"
+                        Command="{Binding FilterMitAdresseCommand}"/>
+            </StackPanel>
 
-
-            <!-- Data Grid -->
-            <DataGrid Grid.Row="1"
-                      ItemsSource="{Binding Werkzeuge}"
+            <!-- DataGrid -->
+            <DataGrid ItemsSource="{Binding Werkzeuge}"
+                      SelectedItem="{Binding SelectedWerkzeug}"
                       AutoGenerateColumns="False"
-                      CanUserAddRows="False"
+                      Grid.Row="2"
                       Style="{StaticResource ModernDataGridStyle}"
-                      IsReadOnly="True"
-                      SelectionMode="Single"
-                      SelectionUnit="FullRow"
-                      SelectedItem="{Binding SelectedWerkzeug, Mode=TwoWay}"
-                      Grid.ColumnSpan="2">
+                      AlternationCount="2"
+                      Margin="0,10,0,0"
+                      CanUserResizeRows="False"
+                      CanUserResizeColumns="True"
+                      SelectionChanged="WerkzeugDataGrid_SelectionChanged" 
+                      CanUserSortColumns="True">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Geräte Kennzahl" Binding="{Binding WerkzeugId}" Width="*" />
-                    <DataGridTextColumn Header="Marke" Binding="{Binding Marke}" Width="*" />
-                    <DataGridTextColumn Header="Art" Binding="{Binding Art}" Width="*" />
-                    <DataGridTextColumn Header="Projekt Adresse" Binding="{Binding ProjektAdresse}" Width="*" />
-                    <DataGridTextColumn Header="Beschreibung" Binding="{Binding Beschreibung}" Width="*" />
+                    <DataGridTextColumn Header="Werkzeug ID" Binding="{Binding WerkzeugId}" Width="*"/>
+                    <DataGridTextColumn Header="Art" Binding="{Binding Art}" Width="*"/>
+                    <DataGridTextColumn Header="Marke" Binding="{Binding Marke}" Width="*"/>
+                    <DataGridTextColumn Header="Projekt Adresse" Binding="{Binding ProjektAdresse}" Width="2*"/>
+                    <DataGridTextColumn Header="Beschreibung" Binding="{Binding Beschreibung}" Width="2*"/>
+                    
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>
     </Grid>
-
 </Window>

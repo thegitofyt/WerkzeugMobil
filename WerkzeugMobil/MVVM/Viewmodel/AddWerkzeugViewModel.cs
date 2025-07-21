@@ -9,6 +9,7 @@ using System.Windows.Input;
 using WerkzeugMobil.DTO;
 using WerkzeugMobil.MVVM.Model;
 using WerkzeugMobil.Services;
+using WerkzeugMobil.Converters;
 using ListDemo.ViewModels;
 using System.Windows;
 using System.Collections.ObjectModel;
@@ -17,11 +18,42 @@ using System.Text.Json;
 using System.Diagnostics;
 using WerkzeugMobil.MVVM.Viewmodel;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace WerkzeugMobil.MVVM.Viewmodel
 {
     public class AddWerkzeugViewModel : INotifyPropertyChanged
     {
+        // This should be your binding target
+        private ProjektDTO _selectedProjektAdresse;
+        public ProjektDTO SelectedProjektAdresse
+        {
+            get => _selectedProjektAdresse;
+            set
+            {
+                _selectedProjektAdresse = value;
+                OnPropertyChanged();
+
+                // Optional: update Werkzeug.ProjektAdresse if needed
+                if (Werkzeug != null)
+                {
+                    Werkzeug.ProjektAdresse = value?.ProjektAddresse; // or null if "None"
+                }
+            }
+        }
+
+        private ObservableCollection<ProjektDTO> _projectAddresses;
+        public ObservableCollection<ProjektDTO> ProjectAddresses
+        {
+            get => _projectAddresses;
+            set
+            {
+                _projectAddresses = value;
+                OnPropertyChanged();
+            }
+        }
+
         private readonly WerkzeugServices _werkzeugService;
 
         public event PropertyChangedEventHandler? PropertyChanged;
@@ -29,6 +61,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         private ObservableCollection<ToolDTO> _tools;
 
         public ICommand DeleteToolCommand { get; }
+
 
         public ICommand UpdateCommand { get; }
 
@@ -56,49 +89,28 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
         private ToolDTO _selectedTool;
 
-        private object _selectedToolss;
-        public object SelectedToolss
+        private async Task RefreshProjekteFromApiAsync()
         {
-            get => _selectedToolss;
-            set
+            try
             {
-                if (_selectedToolss != value)
+                var api = new WerkzeugApiService();
+                var neueProjekte = await api.GetProjekteAsync();
+
+                ProjectAddresses.Clear();
+                foreach (var projekt in neueProjekte)
                 {
-                    _selectedToolss = value;
-                    OnPropertyChanged(nameof(SelectedToolss));
+                    ProjectAddresses.Add(projekt);
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Laden der Projekte von der API: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
 
-        //public ToolDTO SelectedTool
-        //{
-        //    get => _selectedTool;
-        //    set
-        //    {
-        //        if (_selectedTool != value)
-        //        {
-        //            _selectedTool = value;
-        //            OnPropertyChanged(nameof(SelectedTool));
-
-        //            if (_selectedTool != null)
-        //            {
-        //                if (Werkzeug == null)
-        //                    Werkzeug = new Werkzeug();
-
-        //                Werkzeug.WerkzeugId = _selectedTool.Id.ToString(); // <-- wichtig!
-        //                Werkzeug.Art = _selectedTool.Name;
-
-        //                // NICHT resetten: Marke, ProjektAdresse etc.
-
-        //                OnPropertyChanged(nameof(Werkzeug));
-        //            }
 
 
-        //            OnPropertyChanged(nameof(SelectedTool)); // Notify UI about the change
-        //        }
-        //    }
-        //}
 
         public ToolDTO SelectedTool
         {
@@ -122,55 +134,112 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                     }
 
                     OnPropertyChanged(nameof(Werkzeug));
+                    ((RelayCommand)DeleteToolCommand).RaiseCanExecuteChanged();
                 }
             }
         }
+        private WerkzeugDbContext CreateDbContext()
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
 
+            // Adjust path if needed - example using local app data folder
+            var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var dbPath = System.IO.Path.Combine(localAppData, "WerkzeugMobil", "WerkzeugMobilDb.sqlite");
+
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+
+            return new WerkzeugDbContext(optionsBuilder.Options);
+        }
 
         public AddWerkzeugViewModel()
         {
             // Dependency Injection
-            _werkzeugService = new WerkzeugServices();
+            var context = CreateDbContext();
+            _werkzeugService = new WerkzeugServices(context);
 
             Werkzeug = new Werkzeug();
             AddNewCommand = new RelayCommand(AddNew);
             SubmitCommand = new RelayCommand(Submit);
             DeleteToolCommand = new RelayCommand(DeleteTool);
+            LoadProjectAddresses();
             UpdateCommand = new RelayCommand(UpdateWerkzeug);
 
             LoadTools(); // Tools beim Initialisieren laden
         }
 
-        private void DeleteTool(object parameter)
-        {
-            if (!(parameter is ToolDTO tool))
-                return;
 
+        private async void DeleteTool()
+        {
             try
             {
-                using (var ctx = new WerkzeugDbContext())
+                using (var ctx = CreateDbContext())
                 {
-                    // Suche das Tool in der DB
-                    var entity = ctx.Tools.FirstOrDefault(t => t.Id == tool.Id);
-                    if (entity == null)
+                    // Wenn ein Tool ausgewählt ist
+                    if (SelectedTool != null)
                     {
-                        MessageBox.Show("Tool nicht in der Datenbank gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
-                        return;
+                        var entity = ctx.Tools.FirstOrDefault(t => t.Id == SelectedTool.Id);
+
+                        if (entity == null)
+                        {
+                            MessageBox.Show("Tool nicht in der Datenbank gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
+                            return;
+                        }
+
+                        // Werkzeug anhand WerkzeugId löschen
+                        if (!string.IsNullOrWhiteSpace(Werkzeug?.WerkzeugId))
+                        {
+                            string id = Werkzeug.WerkzeugId.Trim();
+                            var werkzeugEntity = ctx.Werkzeuge.FirstOrDefault(w => w.WerkzeugId == id);
+
+                            if (werkzeugEntity != null)
+                            {
+                                ctx.Werkzeuge.Remove(werkzeugEntity);
+                            }
+                        }
+
+                        ctx.Tools.Remove(entity);
+                        int changes = ctx.SaveChanges();
+
+                        if (changes > 0)
+                        {
+                            Tools.Remove(SelectedTool);
+                            SelectedTool = null;
+                            await RefreshToolsFromApiAsync();
+                            MessageBox.Show("Tool und zugehöriges Werkzeug erfolgreich gelöscht!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Das Tool konnte nicht gelöscht werden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
                     }
-
-                    // Lösche es und speichere
-                    ctx.Tools.Remove(entity);
-                    int changes = ctx.SaveChanges();
-
-                    if (changes > 0)
+                    // Kein Tool ausgewählt, aber evtl. ein Werkzeug vorhanden
+                    else if (!string.IsNullOrWhiteSpace(Werkzeug?.WerkzeugId))
                     {
-                        // UI-Liste aktualisieren
-                        Tools.Remove(tool);
-                        MessageBox.Show("Tool erfolgreich gelöscht!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
+                        string id = Werkzeug.WerkzeugId.Trim();
+                        var werkzeugEntity = ctx.Werkzeuge.FirstOrDefault(w => w.WerkzeugId == id);
+
+                        if (werkzeugEntity != null)
+                        {
+                            ctx.Werkzeuge.Remove(werkzeugEntity);
+                            int changes = ctx.SaveChanges();
+
+                            if (changes > 0)
+                            {
+                                MessageBox.Show("Werkzeug erfolgreich gelöscht!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Werkzeug konnte nicht gelöscht werden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Werkzeug mit dieser ID nicht gefunden!", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Das Tool konnte nicht gelöscht werden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                        MessageBox.Show("Bitte wählen Sie ein Tool oder geben Sie eine gültige Werkzeug-ID ein.", "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
                 }
             }
@@ -180,7 +249,29 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             }
         }
 
-        private void UpdateAddressHistory(Werkzeug werkzeug)
+        private async void LoadProjectAddresses()
+        {
+            using (var ctx = CreateDbContext())
+            {
+                var projekts = ctx.Projekte
+                    .Select(p => new ProjektDTO
+                    {
+                        ProjektAddresse = p.ProjektAddresse
+                    }).ToList();
+
+                // Add 'None' at the top (optional: make it null internally if needed)
+                projekts.Insert(0, new ProjektDTO { ProjektAddresse = "None" });
+
+                ProjectAddresses = new ObservableCollection<ProjektDTO>(projekts);
+            }
+            
+            // Optionally set the selected item to "None"
+            SelectedProjektAdresse = ProjectAddresses.FirstOrDefault();
+            await RefreshProjekteFromApiAsync();
+                }
+
+
+        private async void UpdateAddressHistory(Werkzeug werkzeug)
         {
             if (string.IsNullOrWhiteSpace(werkzeug.ProjektAdresse))
                 return;
@@ -214,13 +305,14 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             }
 
             // Save changes to the database (assuming you're using Entity Framework)
-            using (var context = new WerkzeugDbContext())
+            using (var context = CreateDbContext())
             {
                 context.Entry(werkzeug).State = EntityState.Modified;
                 context.SaveChanges();
             }
+            await FetchWerkzeugeAsync();
         }
-        private void UpdateWerkzeug()
+        private async void UpdateWerkzeug()
         {
             try
             {
@@ -235,7 +327,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 UpdateAddressHistory(Werkzeug);
 
                 // Now update the Werkzeug itself
-                using (var context = new WerkzeugDbContext())
+                using (var context = CreateDbContext())
                 {
                     // Fetch the existing Werkzeug from the database
                     var existingWerkzeug = context.Werkzeuge
@@ -260,7 +352,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
                     // Save changes to the database
                     var result = context.SaveChanges();
-
+                    await FetchWerkzeugeAsync();
                     if (result > 0)
                     {
                         MessageBox.Show("Werkzeug erfolgreich aktualisiert!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -281,386 +373,166 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
 
 
-        // Laden der Werkzeuge aus der Datenbank
-        //private void LoadTools()
-        //{
-        //    try
-        //    {
-        //        using (var context = new WerkzeugDbContext())
-        //        {
-        //            var toolsFromDb = context.Tools.ToList(); // Tools aus der DB holen
+        
 
-        //            // Umwandeln der Tools aus der DB in ToolDTO und deserialisieren der ToolTypeCounts
-        //            _tools = new ObservableCollection<ToolDTO>(toolsFromDb.Select(t => new ToolDTO
-        //            {
-        //                Id = t.Id,
-        //                Name = t.Name,
-        //                ToolTypeCounts = JsonSerializer.Deserialize<List<Tuple<string, int>>>(t.ToolTypeCountsSerialized)
-        //            }));
-
-        //            Tools = new ObservableCollection<ToolDTO>(_tools); // Setze Tools in die ObservableCollection
-
-        //            OnPropertyChanged(nameof(Tools)); // Notify UI about the changes
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Fehler beim Laden der Werkzeuge: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-        //    }
-        //}
-
-
-        //private void LoadTools()
-        //{
-        //    try
-        //    {
-        //        using (var context = new WerkzeugDbContext())
-        //        {
-        //            var toolsFromDb = context.Tools.ToList();
-
-        //            _tools = new ObservableCollection<ToolDTO>(toolsFromDb.Select(t => new ToolDTO
-        //            {
-        //                Id = t.Id,
-        //                Name = t.Name,
-        //                ToolTypeCounts = JsonSerializer.Deserialize<List<Tuple<string, int>>>(t.ToolTypeCountsSerialized)
-        //            }));
-
-        //            Tools = new ObservableCollection<ToolDTO>(_tools);
-        //            OnPropertyChanged(nameof(Tools));
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Fehler beim Laden der Werkzeuge: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-        //    }
-        //}
-
-        //private void LoadTools()
-        //{
-        //    try
-        //    {
-        //        using (var context = new WerkzeugDbContext())
-        //        {
-        //            var toolsFromDb = context.Tools.ToList();
-
-        //            // Debugging: Ausgabe der geladenen Tools
-        //            foreach (var tool in toolsFromDb)
-        //            {
-        //                Debug.WriteLine($"Tool loaded: {tool.Name}");
-        //            }
-
-        //            _tools = new ObservableCollection<ToolDTO>(toolsFromDb.Select(t => new ToolDTO
-        //            {
-        //                Id = t.Id,
-        //                Name = t.Name,
-        //                ToolTypeCounts = JsonSerializer.Deserialize<List<Tuple<string, int>>>(t.ToolTypeCountsSerialized)
-        //            }));
-
-        //            Tools = _tools;
-        //            OnPropertyChanged(nameof(Tools)); // UI benachrichtigen
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Fehler beim Laden der Werkzeuge: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-        //    }
-        //}
-
-
-
-        //private void AddNew()
-        //{
-        //    Werkzeug = new Werkzeug(); // Reset the form
-        //    OnPropertyChanged(nameof(Werkzeug));
-        //}
-        //public string GeraeteKennzahl
-        //{
-        //    get => SelectedTool?.ToolTypeCounts?.FirstOrDefault()?.Item1 ?? string.Empty;
-        //}
-        //private void AddNew()
-        //{
-        //    Werkzeug = new Werkzeug();
-        //    SelectedTool = null;
-        //    IsEditing = false; // ← hier
-        //    OnPropertyChanged(nameof(Werkzeug));
-        //}
-
-        private void AddNew()
+        private async void AddNew()
         {
             Werkzeug = new Werkzeug();
             SelectedTool = null;
             IsEditing = false; // ← hier
             OnPropertyChanged(nameof(Werkzeug));
+            await FetchWerkzeugeAsync();
         }
 
+        private bool TryParseWerkzeugId(string input, out string toolType, out int quantity)
+        {
+            toolType = null;
+            quantity = 0;
 
+            if (string.IsNullOrWhiteSpace(input))
+                return false;
 
-        private void Submit()
+            input = input.Trim();
+
+            if (input.Contains("-"))
+            {
+                var parts = input.Split('-');
+                if (parts.Length == 2 && !string.IsNullOrWhiteSpace(parts[0]) && int.TryParse(parts[1], out quantity))
+                {
+                    toolType = parts[0];
+                    return true;
+                }
+            }
+            else
+            {
+                // Match letters followed by digits, e.g., H1, Bohr200
+                var match = Regex.Match(input, @"^([A-Za-z]+)(\d+)$");
+                if (match.Success && int.TryParse(match.Groups[2].Value, out quantity))
+                {
+                    toolType = match.Groups[1].Value;
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private async void Submit()
         {
             try
             {
+                if (Werkzeug == null)
+                {
+                    MessageBox.Show("Werkzeugdaten fehlen.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(Werkzeug.WerkzeugId))
+                {
+                    MessageBox.Show("Werkzeug-ID darf nicht leer sein.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                // WerkzeugId in standardisiertes Format bringen, falls noch nicht formatiert
+                Werkzeug.WerkzeugId = EnsureWerkzeugIdFormatted(Werkzeug.WerkzeugId);
+
+                if (!TryParseWerkzeugId(Werkzeug.WerkzeugId, out string toolType, out int quantity))
+                {
+                    MessageBox.Show("Werkzeug-ID muss wie 'Bohr200', 'Bohr-200', 'H1' oder 'H-1' formatiert sein.", "Formatfehler", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(Werkzeug.Art))
+                {
+                    MessageBox.Show("Bitte gib eine Werkzeug-Art ein.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                // Nur zur History hinzufügen, wenn vorhanden
+                if (!string.IsNullOrWhiteSpace(Werkzeug.ProjektAdresse))
+                {
+                    if (Werkzeug.History == null)
+                        Werkzeug.History = new List<string>();
+
+                    if (!Werkzeug.History.Contains(Werkzeug.ProjektAdresse))
+                        Werkzeug.History.Add(Werkzeug.ProjektAdresse);
+                }
+                if (Werkzeug.ProjektAdresse == "None")
+                {
+                    Werkzeug.Lager = true; // Set Lager to true
+                }
+                else
+                {
+                    Werkzeug.Lager = false; // Set Lager to false for other addresses
+                }
+
+                // DTO erstellen
                 var werkzeugDto = new WerkzeugDto
                 {
                     WerkzeugId = Werkzeug.WerkzeugId,
-                    Marke = Werkzeug.Marke,
                     Art = Werkzeug.Art,
+                    Marke = Werkzeug.Marke,
                     ProjektAdresse = Werkzeug.ProjektAdresse,
                     Beschreibung = Werkzeug.Beschreibung,
-                    History = new List<string>(Werkzeug.History)
+                    History = Werkzeug.History != null ? new List<string>(Werkzeug.History) : null,
+                    
                 };
 
-
-                // Add current project address to history (if not already in it)
-                if (!string.IsNullOrWhiteSpace(Werkzeug.ProjektAdresse) && !Werkzeug.History.Contains(Werkzeug.ProjektAdresse))
-                {
-                    Werkzeug.History.Add(Werkzeug.ProjektAdresse);
-                }
-
-                // Save to database
                 _werkzeugService.AddWerkzeug(werkzeugDto);
+                await FetchWerkzeugeAsync();
 
-                // Also add to Tools table
                 var newTool = new ToolDTO
                 {
                     Name = Werkzeug.Art,
                     ToolTypeCounts = new List<Tuple<string, int>>
             {
-                new Tuple<string, int>(Werkzeug.Art, 1)
+                new Tuple<string, int>(toolType, quantity)
             }
                 };
 
-                using (var context = new WerkzeugDbContext())
+                using (var context = CreateDbContext())
                 {
                     context.Tools.Add(newTool);
                     context.SaveChanges();
+                    await RefreshToolsFromApiAsync();
                 }
 
                 Tools.Add(newTool);
-                MessageBox.Show("Werkzeug erfolgreich hinzugefügt!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                AddNew(); // reset form
+                MessageBox.Show("Werkzeug erfolgreich hinzugefügt!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
+                AddNew(); // Formular zurücksetzen
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Fehler beim Hinzufügen des Werkzeugs: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        private string EnsureWerkzeugIdFormatted(string input)
+        {
+            if (string.IsNullOrWhiteSpace(input)) return input;
 
-        //private void Submit()
-        //{
-        //    try
-        //    {
-        //        var werkzeugDto = new WerkzeugDto
-        //        {
-        //            WerkzeugId = Werkzeug.WerkzeugId,
-        //            Marke = Werkzeug.Marke,
-        //            Art = Werkzeug.Art,
-        //            ProjektAdresse = Werkzeug.ProjektAdresse,
-        //            Beschreibung = Werkzeug.Beschreibung
-        //        };
+            // Wenn schon ein Bindestrich vorhanden ist, nichts tun
+            if (input.Contains("-")) return input;
 
-        //        using (var context = new WerkzeugDbContext())
-        //        {
-        //            // Wandeln der int WerkzeugId zu string, um mit der string Id von existingTool zu vergleichen
-        //            var existingTool = context.Tools.FirstOrDefault(t => t.Id.ToString() == Werkzeug.WerkzeugId);
+            // Trenne Buchstaben und Zahlen automatisch
+            int index = input.TakeWhile(char.IsLetter).Count();
+            if (index == 0 || index == input.Length) return input; // Kein Format erkennbar
 
-        //            if (existingTool != null)
-        //            {
-        //                // ID existiert – aktualisiere die Felder
-        //                existingTool.Name = Werkzeug.Art;
-        //                existingTool.ToolTypeCounts = new List<Tuple<string, int>>
-        //        {
-        //            new Tuple<string, int>(Werkzeug.Art, 1)
-        //        };
+            string letters = input.Substring(0, index);
+            string numbers = input.Substring(index);
 
-        //                context.SaveChanges();
-        //                MessageBox.Show("Werkzeug wurde aktualisiert!", "Update", MessageBoxButton.OK, MessageBoxImage.Information);
-        //            }
-        //            else
-        //            {
-        //                // Fix for CS0029: Convert Werkzeug.WerkzeugId to int before assigning to ToolDTO.Id  
-        //                var newTool = new ToolDTO
-        //                {
-        //                    Id = int.Parse(Werkzeug.WerkzeugId), // Explicitly convert string to int  
-        //                    Name = Werkzeug.Art,
-        //                    ToolTypeCounts = new List<Tuple<string, int>>
-        //                   {
-        //                       new Tuple<string, int>(Werkzeug.Art, 1)
-        //                   }
-        //                };
+            return $"{letters}-{numbers}";
+        }
 
-        //                context.Tools.Add(newTool);
-        //                context.SaveChanges();
-        //                Tools.Add(newTool); // UI-Liste aktualisieren
-        //                MessageBox.Show("Werkzeug erfolgreich hinzugefügt!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
-        //            }
-        //        }
-
-        //        // Werkzeug auch im Service aktualisieren oder neu hinzufügen
-        //        _werkzeugService.AddWerkzeug(werkzeugDto);
-
-        //        // Formular zurücksetzen
-        //        AddNew();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Fehler beim Hinzufügen des Werkzeugs: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-        //    }
-        //}
-
-
-        //private void Submit()
-        //{
-        //    try
-        //    {
-        //        var werkzeugDto = new WerkzeugDto
-        //        {
-        //            WerkzeugId = Werkzeug.WerkzeugId,
-        //            Marke = Werkzeug.Marke,
-        //            Art = Werkzeug.Art,
-        //            ProjektAdresse = Werkzeug.ProjektAdresse,
-        //            Beschreibung = Werkzeug.Beschreibung
-        //        };
-
-        //        using (var context = new WerkzeugDbContext())
-        //        {
-        //            // Überprüfe, ob ein Werkzeug mit derselben WerkzeugId bereits existiert
-        //            var existingTool = context.Tools.FirstOrDefault(t => t.Id.ToString() == Werkzeug.WerkzeugId);
-
-        //            if (existingTool != null)
-        //            {
-        //                // Wenn die WerkzeugId bereits existiert, aktualisiere die anderen Felder
-        //                existingTool.Name = Werkzeug.Art;
-
-        //                // Speichern der Änderungen
-        //                context.SaveChanges();
-        //                MessageBox.Show("Werkzeug wurde aktualisiert!", "Update", MessageBoxButton.OK, MessageBoxImage.Information);
-        //            }
-        //            else
-        //            {
-        //                // Fix for CS0029: Convert Werkzeug.WerkzeugId (string) to int before assigning to ToolDTO.Id  
-        //                var newTool = new ToolDTO
-        //                {
-        //                    Id = int.Parse(Werkzeug.WerkzeugId), // Explicitly convert string to int  
-        //                    Name = Werkzeug.Art
-        //                };
-
-        //                context.Tools.Add(newTool);
-        //                context.SaveChanges();
-        //                Tools.Add(newTool); // UI-Liste aktualisieren
-        //                MessageBox.Show("Werkzeug erfolgreich hinzugefügt!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
-        //            }
-        //        }
-
-        //        // Werkzeug auch im Service aktualisieren oder neu hinzufügen
-        //        _werkzeugService.AddWerkzeug(werkzeugDto);
-
-        //        // Formular zurücksetzen
-        //        AddNew();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Fehler beim Hinzufügen des Werkzeugs: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-        //    }
-        //}
+       
 
 
 
-        //private void Submit()
-        //{
-        //    try
-        //    {
-        //        var werkzeugDto = new WerkzeugDto
-        //        {
-        //            WerkzeugId = Werkzeug.WerkzeugId,
-        //            Marke = Werkzeug.Marke,
-        //            Art = Werkzeug.Art,
-        //            ProjektAdresse = Werkzeug.ProjektAdresse,
-        //            Beschreibung = Werkzeug.Beschreibung
-        //        };
-
-        //        using (var context = new WerkzeugDbContext())
-        //        {
-        //            using (var transaction = context.Database.BeginTransaction())
-        //            {
-        //                // Prüfen, ob das Werkzeug mit der ID schon existiert  
-        //                var existingTool = context.Tools.FirstOrDefault(t => t.Id == int.Parse(werkzeugDto.WerkzeugId));
-
-        //                if (existingTool != null)
-        //                {
-        //                    // Update der Felder  
-        //                    existingTool.Name = werkzeugDto.Art;
-        //                    // Hier weitere Felder ergänzen, falls nötig  
-        //                    context.SaveChanges();
-        //                }
-        //                else
-        //                {
-        //                    // Neues Werkzeug hinzufügen  
-        //                    var newTool = new ToolDTO
-        //                    {
-        //                        Id = int.Parse(werkzeugDto.WerkzeugId), // Explizite Konvertierung von string zu int  
-        //                        Name = werkzeugDto.Art,
-        //                        ToolTypeCounts = new List<Tuple<string, int>>
-        //                       {
-        //                           new Tuple<string, int>(werkzeugDto.Art, 1)
-        //                       }
-        //                    };
-        //                    context.Tools.Add(newTool);
-        //                    context.SaveChanges();
-
-        //                    Tools.Add(newTool); // UI-Liste aktualisieren  
-        //                }
-
-        //                transaction.Commit(); // Änderungen dauerhaft speichern  
-        //            }
-        //        }
-
-        //        MessageBox.Show("Werkzeug erfolgreich hinzugefügt oder aktualisiert!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
-
-        //        AddNew(); // Formular zurücksetzen  
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Fehler beim Hinzufügen/Aktualisieren des Werkzeugs: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-        //    }
-        //}
-
-
-
-        //private void LoadTools()
-        //{
-        //    try
-        //    {
-        //        using (var context = new WerkzeugDbContext())
-        //        {
-        //            var toolsFromDb = context.Tools.ToList(); // Tools aus der DB holen
-
-        //            // Umwandeln der Tools aus der DB in ToolDTO
-        //            _tools = new ObservableCollection<ToolDTO>(toolsFromDb.Select(t => new ToolDTO
-        //            {
-        //                Id = t.Id,
-        //                Name = t.Name,
-        //                ToolTypeCounts = JsonSerializer.Deserialize<List<Tuple<string, int>>>(t.ToolTypeCountsSerialized)
-        //            }));
-
-        //            Tools = _tools; // Setze die Tools in die ObservableCollection
-
-        //            OnPropertyChanged(nameof(Tools)); // Notify UI about the changes
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Fehler beim Laden der Werkzeuge: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-        //    }
-        //}
-
-
-
-        private void LoadTools()
+        private async void LoadTools()
         {
             try
             {
-                using (var context = new WerkzeugDbContext())
+                using (var context = CreateDbContext())
                 {
                     var toolsFromDb = context.Tools.ToList(); // Tools aus der DB holen
 
@@ -674,6 +546,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
                     Tools = _tools; // Setze die neue Liste in die ObservableCollection
                     OnPropertyChanged(nameof(Tools)); // Notify UI about the changes
+                await  RefreshToolsFromApiAsync();
                 }
             }
             catch (Exception ex)
@@ -681,12 +554,44 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 MessageBox.Show($"Fehler beim Laden der Werkzeuge: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
-        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        private async Task RefreshToolsFromApiAsync()
         {
             try
             {
-                using (var context = new WerkzeugDbContext())
+                var api = new WerkzeugApiService();
+                var neueTools = await api.GetToolsAsync();
+
+                Tools.Clear();
+                foreach (var tool in neueTools)
+                {
+                    Tools.Add(tool);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Laden der Tools von der API: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private async Task<List<WerkzeugDto>> FetchWerkzeugeAsync()
+        {
+            try
+            {
+                var api = new WerkzeugApiService();
+                return await api.GetWerkzeugeAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Abrufen der Werkzeuge: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                return new List<WerkzeugDto>();
+            }
+        }
+
+
+        private async void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                using (var context = CreateDbContext())
                 {
                     var werkzeugInDb = context.Werkzeuge.FirstOrDefault(w => w.WerkzeugId == Werkzeug.WerkzeugId);
                     if (werkzeugInDb != null)
@@ -705,7 +610,9 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                         MessageBox.Show("Werkzeug nicht gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
                 }
+                await FetchWerkzeugeAsync();
             }
+             
             catch (Exception ex)
             {
                 MessageBox.Show($"Fehler beim Aktualisieren des Werkzeugs: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -713,53 +620,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         }
 
 
-        //private void Submit()
-        //{
-        //    try
-        //    {
-        //        // Werkzeug hinzufügen oder aktualisieren (je nach Bedarf)
-        //        using (var context = new WerkzeugDbContext())
-        //        {
-        //            var existingWerkzeug = context.Werkzeuge.FirstOrDefault(w => w.WerkzeugId == Werkzeug.WerkzeugId);
-
-        //            if (existingWerkzeug != null)
-        //            {
-        //                // Aktualisierung
-
-        //                existingWerkzeug.Marke = Werkzeug.Marke;
-        //                existingWerkzeug.Art = Werkzeug.Art;
-        //                existingWerkzeug.ProjektAdresse = Werkzeug.ProjektAdresse;
-        //                existingWerkzeug.Beschreibung = Werkzeug.Beschreibung;
-        //                context.SaveChanges();
-        //                MessageBox.Show("Werkzeug wurde aktualisiert!", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
-        //            }
-        //            else
-        //            {
-        //                // Hinzufügen eines neuen Werkzeugs
-        //                var neuesWerkzeug = new WerkzeugDto
-        //                {
-        //                    WerkzeugId = Werkzeug.WerkzeugId,
-        //                    Marke = Werkzeug.Marke,
-        //                    Art = Werkzeug.Art,
-        //                    ProjektAdresse = Werkzeug.ProjektAdresse,
-        //                    Beschreibung = Werkzeug.Beschreibung
-        //                };
-        //                _werkzeugService.AddWerkzeug(neuesWerkzeug);
-        //                MessageBox.Show("Werkzeug wurde hinzugefügt!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
-        //            }
-        //        }
-
-        //        // Tools nach dem Hinzufügen oder Aktualisieren neu laden
-        //        LoadTools();
-        //        AddNew();  // Formular zurücksetzen
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Fehler beim Speichern des Werkzeugs: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-        //    }
-        //}
-
+   
 
 
         private bool _isEditing;

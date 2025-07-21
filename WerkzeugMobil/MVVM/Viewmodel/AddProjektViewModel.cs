@@ -8,6 +8,7 @@ using WerkzeugMobil.DTO;
 using WerkzeugMobil.Services;
 using System.Collections.ObjectModel;
 using WerkzeugMobil.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace WerkzeugMobil.MVVM.Viewmodel
 {
@@ -49,46 +50,52 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 }
             }
         }
-        private void DeleteProjekt(object parameter)
+        private async void DeleteProjekt()
         {
-            var projekt = parameter as ProjektDTO;
-
-            if (projekt != null)
+            if (SelectedProjekt == null)
             {
-                try
+                MessageBox.Show("Bitte wählen Sie ein Projekt zum Löschen aus.", "Warnung", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            try
+            {
+                using (var context = CreateDbContext())
                 {
-                    using (var context = new WerkzeugDbContext())
+                    var projektToDelete = context.Projekte
+                        .FirstOrDefault(p => p.ProjektAddresse == SelectedProjekt.ProjektAddresse);
+
+                    if (projektToDelete != null)
                     {
-                        // Suche das Projekt in der Datenbank
-                        var projektToDelete = context.Projekte
-                            .FirstOrDefault(p => p.ProjektAddresse == projekt.ProjektAddresse);
+                        context.Projekte.Remove(projektToDelete);
+                        int changes = context.SaveChanges();
 
-                        if (projektToDelete != null)
+                        if (changes > 0)
                         {
-                            context.Projekte.Remove(projektToDelete); // Entferne das Projekt aus der DB
-                            context.SaveChanges(); // Speichere die Änderungen
+                            Projekte.Remove(SelectedProjekt);
+                            SelectedProjekt = null;
+                            context.SaveChanges();
+                            await RefreshProjekteFromApiAsync();
                             MessageBox.Show("Projekt erfolgreich gelöscht.", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                            // Entferne das Projekt aus der ObservableCollection (damit die UI aktualisiert wird)
-                            Projekte.Remove(projekt);
                         }
                         else
                         {
-                            MessageBox.Show("Projekt nicht gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                            MessageBox.Show("Das Projekt konnte nicht gelöscht werden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
                         }
                     }
-                }
-                catch (Exception ex)
-                {
-                    // Fehlerbehandlung
-                    MessageBox.Show($"Fehler beim Löschen des Projekts: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                    else
+                    {
+                        MessageBox.Show("Projekt nicht gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Kein Projekt zum Löschen ausgewählt.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Fehler beim Löschen des Projekts: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+
 
         public ProjektDTO SelectedProjekt
         {
@@ -105,11 +112,14 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                         Projekt.ProjektAddresse = _selectedProjekt.ProjektAddresse;
                         OnPropertyChanged(nameof(Projekt));
                     }
+
+                    // Raise CanExecuteChanged for DeleteProjektCommand
+                    ((RelayCommand)DeleteProjektCommand).RaiseCanExecuteChanged();
                 }
             }
         }
 
-        private void Submit()
+        private async void Submit()
         {
             try
             {
@@ -120,6 +130,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
                 _projektService.AddProjekt(projektDto);
 
+                await RefreshProjekteFromApiAsync();
                 // 🆕 Nach dem Hinzufügen Liste neu laden!
                 projekteViewModel.LoadProjects();
                 OnPropertyChanged(nameof(Projekte));
@@ -136,11 +147,41 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 MessageBox.Show(errorMessage, "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        private async Task RefreshProjekteFromApiAsync()
+        {
+            try
+            {
+                var api = new WerkzeugApiService();
+                var neueProjekte = await api.GetProjekteAsync();
 
-        private void AddNew()
+                Projekte.Clear();
+                foreach (var projekt in neueProjekte)
+                {
+                    Projekte.Add(projekt);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Laden der Projekte von der API: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private WerkzeugDbContext CreateDbContext()
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+
+            // Adjust path if needed - example using local app data folder
+            var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var dbPath = System.IO.Path.Combine(localAppData, "WerkzeugMobil", "WerkzeugMobilDb.sqlite");
+
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+
+            return new WerkzeugDbContext(optionsBuilder.Options);
+        }
+        private async void AddNew()
         {
             Projekt = new Projekt();
             OnPropertyChanged(nameof(Projekt));
+            await RefreshProjekteFromApiAsync();
         }
 
         private void NavigateToWerkzeug()

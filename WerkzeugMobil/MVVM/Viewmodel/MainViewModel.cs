@@ -81,16 +81,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 OnPropertyChanged(nameof(currentWerkzeug));
             }
         }
-        //public Werkzeug SelectedWerkzeug
-        //{
-        //    get => _selectedWerkzeug;
-        //    set
-        //    {
-        //        _selectedWerkzeug = value;
-        //        OnPropertyChanged();
-        //        UpdateAddressHistory();
-        //    }
-        //}
+       
 
 
         public MainViewModel()
@@ -170,9 +161,21 @@ namespace WerkzeugMobil.MVVM.Viewmodel
             Application.Current.Resources.MergedDictionaries.Clear();
             Application.Current.Resources.MergedDictionaries.Add(dict);
         }
-        private void UpdateAddressHistory(Werkzeug werkzeug)
+        private WerkzeugDbContext CreateDbContext()
         {
-            using (var context = new WerkzeugDbContext())
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+
+            // Adjust path if needed - example using local app data folder
+            var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var dbPath = System.IO.Path.Combine(localAppData, "WerkzeugMobil", "WerkzeugMobilDb.sqlite");
+
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+
+            return new WerkzeugDbContext(optionsBuilder.Options);
+        }
+        private async void UpdateAddressHistory(Werkzeug werkzeug)
+        {
+            using (var context = CreateDbContext())
             {
                 if (string.IsNullOrWhiteSpace(werkzeug.ProjektAdresse))
                     return;
@@ -227,13 +230,31 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                             context.Werkzeuge.Update(werkzeugDto);
                             // Save changes
                             context.SaveChanges();
-                        
+                        await RefreshWerkzeugeFromApiAsync();
+
                     }
                 }
             }
         }
 
+        private async Task RefreshWerkzeugeFromApiAsync()
+        {
+            try
+            {
+                var api = new WerkzeugApiService();
+                var neueWerkzeuge = await api.GetWerkzeugeAsync();
 
+                Werkzeuge.Clear();
+                foreach (var werkzeug in neueWerkzeuge)
+                {
+                    Werkzeuge.Add(werkzeug);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Laden der Werkzeuge von der API: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
 
 
         public ProjektDTO SelectedProjekt
@@ -283,7 +304,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 return;
             }
 
-            using (var context = new WerkzeugDbContext())
+            using (var context = CreateDbContext())
             {
                 var werkzeugeList = context.Werkzeuge
                                            .Where(w => w.ProjektAdresse == SelectedProjekt.ProjektAddresse)
@@ -326,7 +347,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         {
             if (selectedProjekt == null || string.IsNullOrEmpty(selectedProjekt.ProjektAddresse)) return;
 
-            using (var context = new WerkzeugDbContext())
+            using (var context = CreateDbContext())
             {
                 var werkzeugeList = context.Werkzeuge
                     .Where(w => w.ProjektAdresse == selectedProjekt.ProjektAddresse)
@@ -343,6 +364,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 }).ToList();
 
                 Werkzeuge = new ObservableCollection<Werkzeug>(mappedWerkzeuge);
+                App.Current.Properties["Werkzeuge"] = Werkzeuge;
                 FilteredWerkzeuge = new ObservableCollection<Werkzeug>(Werkzeuge);
 
                 OnPropertyChanged(nameof(Werkzeuge));
@@ -389,7 +411,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 return;
             }
 
-            using (var context = new WerkzeugDbContext())
+            using (var context = CreateDbContext())
             {
                 var filteredWerkzeuge = context.Werkzeuge
                     .Where(w => w.ProjektAdresse == SelectedProjekt.ProjektAddresse &&

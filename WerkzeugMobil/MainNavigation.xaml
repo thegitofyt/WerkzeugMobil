@@ -4,12 +4,99 @@
         xmlns:viewmodel="clr-namespace:WerkzeugMobil.MVVM.Viewmodel"
         xmlns:local="clr-namespace:WerkzeugMobil.Converters"
         xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
+      
         Title="Device Interface" Height="750" Width="1200"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         Background="{DynamicResource BackgroundBrush}" FontFamily="{DynamicResource AppFont}">
 
     <Window.Resources>
         <local:BoolToThemeIconConverter x:Key="BoolToThemeIconConverter"/>
+        <Style x:Key="ModernFlatButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Padding" Value="10,5" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border x:Name="ButtonBackground" Background="{TemplateBinding Background}" CornerRadius="8">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="ButtonBackground" Property="Background" Value="#FF007ACC" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="ButtonBackground" Property="Background" Value="#FF005A9E" />
+                                <Setter Property="Foreground" Value="#FFE0E0E0" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="ButtonBackground" Property="Background" Value="#FFCCCCCC" />
+                                <Setter Property="Foreground" Value="#FF888888" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ModernButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{DynamicResource InputBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Rectangle x:Name="BackgroundRect" Fill="{TemplateBinding Background}" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" />
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" RecognizesAccessKey="True"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="BackgroundRect" Property="Fill">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                            <GradientStop Color="#FF3A7BD5" Offset="0"/>
+                                            <GradientStop Color="#FF00D2FF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect Color="#7700D2FF" BlurRadius="8" ShadowDepth="0"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="BackgroundRect" Property="Fill" Value="#FF007ACC"/>
+                                <Setter Property="Foreground" Value="#FFE0E0E0"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect Color="#55007ACC" BlurRadius="10" ShadowDepth="0"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="BackgroundRect" Property="Fill" Value="#FF555555"/>
+                                <Setter Property="Foreground" Value="#FFAAAAAA"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
 
     <Window.DataContext>
@@ -62,11 +149,11 @@
 
                     <!-- Search Field -->
                     <DockPanel Margin="0 0 0 20">
-                        <Border Background="{DynamicResource InputBrush}" CornerRadius="5" Height="30" Width="140">
+                        <Border Background="{DynamicResource InputBrush}" CornerRadius="5" Height="37" Width="140">
                             <TextBox Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}"
                                      BorderThickness="0" Background="Transparent"
                                      Foreground="{DynamicResource TextBrush}" FontSize="14"
-                                     VerticalContentAlignment="Center" Padding="5"/>
+                                     VerticalContentAlignment="Center" Padding="5" Margin="4,4,4,0"/>
                         </Border>
                         <Button DockPanel.Dock="Right" Command="{Binding SearchCommand}"
                                 Background="{DynamicResource InputBrush}" BorderBrush="{DynamicResource AccentBrush}" BorderThickness="1"
@@ -75,41 +162,95 @@
                         </Button>
                     </DockPanel>
 
-                    <!-- Werkzeug List -->
                     <ListBox ItemsSource="{Binding FilteredWerkzeuge}"
-                             SelectedItem="{Binding SelectedWerkzeug, Mode=TwoWay}"
-                             Background="{DynamicResource SidebarBrush}" BorderThickness="0" Foreground="{DynamicResource TextBrush}" Margin="0 0 0 20">
+         SelectedItem="{Binding SelectedWerkzeug, Mode=TwoWay}"
+         Background="{DynamicResource SidebarBrush}" BorderThickness="0" Foreground="{DynamicResource TextBrush}" Margin="0 0 0 20"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"
+         Padding="2">
+
+                        <ListBox.Resources>
+                            <!-- Remove default selection highlight -->
+                            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent"/>
+                            <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="Transparent"/>
+                        </ListBox.Resources>
+
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="Margin" Value="0 0 0 6"/>
+                                <Setter Property="Padding" Value="8 4"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ListBoxItem">
+                                            <Border x:Name="Bd"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="6"
+                                SnapsToDevicePixels="True">
+                                                <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter TargetName="Bd" Property="Background" Value="{DynamicResource AccentBrush}" />
+                                                    <Setter Property="Foreground" Value="{DynamicResource BackgroundBrush}" />
+                                                </Trigger>
+                                                <Trigger Property="IsSelected" Value="True">
+                                                    <Setter TargetName="Bd" Property="Background" Value="{DynamicResource AccentBrush}" />
+                                                    <Setter Property="Foreground" Value="{DynamicResource BackgroundBrush}" />
+                                                    <Setter Property="FontWeight" Value="Normal" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal" Margin="0 0 0 10" Background="{DynamicResource InputBrush}">
-                                    <TextBlock Text="{Binding WerkzeugId}" FontWeight="SemiBold"/>
-                                    <TextBlock Text=" - "/>
-                                    <TextBlock Text="{Binding Art}"/>
-                                    <TextBlock Text=" ("/>
-                                    <TextBlock Text="{Binding Marke}"/>
-                                    <TextBlock Text=")"/>
-                                </StackPanel>
+                                <DockPanel LastChildFill="False" VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding WerkzeugId}" FontWeight="SemiBold" FontSize="13" Margin="0 0 4 0" Width="60" />
+                                    <TextBlock Text=" - " FontSize="13" Foreground="{DynamicResource TextBrush}" Margin="0 0 4 0"/>
+                                    <TextBlock Text="{Binding Art}" FontSize="13" Margin="0 0 4 0" Width="80" TextTrimming="CharacterEllipsis"/>
+
+                                </DockPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
                 </StackPanel>
 
-                <!-- Bottom Buttons -->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
-                    <Button Width="50" Height="50" Background="{DynamicResource InputBrush}" BorderBrush="{DynamicResource AccentBrush}" BorderThickness="1"
-                            Cursor="Hand" Click="Projekt_Click" Margin="5">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE77B;" FontSize="20" Foreground="{DynamicResource TextBrush}"/>
-                    </Button>
+                <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
+                    <Button Content="← Zurück"
+        Style="{StaticResource ModernFlatButtonStyle}"
+        Width="100" Height="36" 
+        HorizontalAlignment="center"
+        Margin="10,10,0,0"
+        Click="BackToProjekte_Click"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+    <!-- Check icon button -->
+    <Button Width="50" Height="50" Style="{StaticResource ModernFlatButtonStyle}" Click="Projekt_Click" Margin="5">
+        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE73E;" FontSize="20" />
+    </Button>
 
-                    <Button Width="50" Height="50" Background="{DynamicResource InputBrush}" BorderBrush="{DynamicResource AccentBrush}" BorderThickness="1"
-                            Cursor="Hand" Click="Maschine_Lager" Margin="5">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE8A5;" FontSize="20" Foreground="{DynamicResource TextBrush}"/>
-                    </Button>
+    <!-- Machine/Lager button -->
+    <Button Width="50" Height="50" Style="{StaticResource ModernFlatButtonStyle}" Click="Maschine_Lager" Margin="5">
+        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE8A5;" FontSize="20" />
+    </Button>
 
-                    <Button Width="50" Height="50" Background="{DynamicResource InputBrush}" BorderBrush="{DynamicResource AccentBrush}" BorderThickness="1"
-                            Cursor="Hand" Click="PlusButton_Click" Margin="5" Command="{Binding AddProjektViewModel}">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xECC8;" FontSize="22" Foreground="{DynamicResource TextBrush}"/>
-                    </Button>
+    <!-- Add project button -->
+    <Button Width="50" Height="50" Style="{StaticResource ModernFlatButtonStyle}" Click="PlusButton_Click" Margin="5" Command="{Binding AddProjektViewModel}">
+        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xECC8;" FontSize="22" />
+    </Button>
+</StackPanel>
+
+<!-- Logout button -->
+<Button Width="180" Height="36" Style="{StaticResource ModernFlatButtonStyle}" Click="Logout_Click" Margin="0,20,0,0" HorizontalAlignment="Center">
+    Logout
+</Button>
+
+
                 </StackPanel>
             </Grid>
         </Border>
@@ -153,7 +294,7 @@
                         <TextBox Text="{Binding currentWerkzeug.Beschreibung}" IsReadOnly="True" Height="120" TextWrapping="Wrap"
                                  Background="{DynamicResource  AccentBrush}" BorderThickness="0" Foreground="{DynamicResource TextBrush}" Margin="0 0 0 15"/>
                     </StackPanel>
-
+    
                     <!-- History Section -->
                     <Border Background="{DynamicResource  AccentBrush}" CornerRadius="10" Grid.Column="1" Padding="15" Margin="0,6,0,-6">
                         <StackPanel>

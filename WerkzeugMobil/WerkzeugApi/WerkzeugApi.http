@@ -1,0 +1,9 @@
+@WerkzeugApi_HostAddress = http://localhost:5000
+
+GET {{WerkzeugApi_HostAddress}}/werkzeuge
+Accept: application/json
+
+###
+
+GET {{WerkzeugApi_HostAddress}}/werkzeuge/projekte
+Accept: application/json

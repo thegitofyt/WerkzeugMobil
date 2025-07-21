@@ -11,15 +11,19 @@ namespace WerkzeugMobil.Services
     {
         public Tools _tools;
 
-       
+        private readonly WerkzeugDbContext _context;
         private readonly List<Werkzeug> _werkzeugList = new List<Werkzeug>();
+
+        public WerkzeugServices(WerkzeugDbContext context)
+        {
+            _context = context;
+        }
 
         // Add a new Werkzeug to the list
         public void AddWerkzeug(WerkzeugDto werkzeugDto)
         {
-            using (var context = new WerkzeugDbContext())
-            {
-                var existingWerkzeug = context.Werkzeuge
+            
+                var existingWerkzeug = _context.Werkzeuge
                     .FirstOrDefault(w => w.WerkzeugId == werkzeugDto.WerkzeugId);
 
                 if (existingWerkzeug == null)
@@ -36,9 +40,9 @@ namespace WerkzeugMobil.Services
                         Beschreibung = werkzeugDto.Beschreibung
                     };
 
-                    // Add the new WerkzeugDto to the DbContext
-                    context.Werkzeuge.Add(werkzeugDtoToAdd);
-                    context.SaveChanges();  // Persist to the database
+                // Add the new WerkzeugDto to the DbContext
+                _context.Werkzeuge.Add(werkzeugDtoToAdd);
+                _context.SaveChanges();  // Persist to the database
                 }
                 else
                 {
@@ -48,10 +52,10 @@ namespace WerkzeugMobil.Services
                     existingWerkzeug.ProjektAdresse = werkzeugDto.ProjektAdresse;
                     existingWerkzeug.Beschreibung = werkzeugDto.Beschreibung;
 
-                    context.SaveChanges();  // Persist changes to the database
+                _context.SaveChanges();  // Persist changes to the database
                 }
             }
-        }
+        
         //private string GenerateNextWerkzeugId(string toolName)
         //{
         //    if (!_tools.ToolTypeCounts.ContainsKey(toolName))

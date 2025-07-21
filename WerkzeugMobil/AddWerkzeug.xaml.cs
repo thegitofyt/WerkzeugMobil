@@ -1,130 +1,113 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using WerkzeugMobil.Data;
-using WerkzeugMobil.MVVM.Model;
+using WerkzeugMobil.DTO;
 using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for AddWerkzeug.xaml
     /// </summary>
     public partial class AddWerkzeug : Window
     {
-        private AddProjekt addProjekt; // Declare AddProjekt as a class member to keep track of it
+        private AddProjekt addProjekt;
 
         public AddWerkzeug()
         {
-            //InitializeComponent();
-            //DataContext = new AddWerkzeugViewModel();
             InitializeComponent();
+
             var viewModel = new AddWerkzeugViewModel();
             this.DataContext = viewModel;
 
             this.WindowState = WindowState.Maximized;
-
-            addProjekt = new AddProjekt();  // Initialize the AddProjekt window
+            addProjekt = new AddProjekt(); // Optional: Only if you want to reuse it
         }
 
-
-
-        private void NavigateWerkzeug(object sender, RoutedEventArgs e)
-        {
-            // If the AddWerkzeug window is not open, show it
-            if (!this.IsVisible)
-            {
-                this.Show(); // Show the AddWerkzeug window
-            }
-
-            // If the AddProjekt window is open, close it
-            if (addProjekt.IsVisible)
-            {
-                addProjekt.Close();
-            }
-        }
-
-        //private void UpdateButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    try
-        //    {
-        //        using (var context = new WerkzeugDbContext())
-        //        {
-        //            // Ensure Werkzeug is properly referenced from the DataContext  
-        //            var viewModel = this.DataContext as AddWerkzeugViewModel;
-        //            if (viewModel?.Tools == null)
-        //            {
-        //                MessageBox.Show("Kein Werkzeug zum Aktualisieren gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //                return;
-        //            }
-
-        //            var werkzeugInDb = context.Werkzeuge.FirstOrDefault(w => w.WerkzeugId == viewModel.Werkzeug.WerkzeugId);
-        //            if (werkzeugInDb != null)
-        //            {
-        //                // Update values  
-        //                werkzeugInDb.Marke = viewModel.Werkzeug.Marke;
-        //                werkzeugInDb.Art = viewModel.Werkzeug.Art;
-        //                werkzeugInDb.ProjektAdresse = viewModel.Werkzeug.ProjektAdresse;
-        //                werkzeugInDb.Beschreibung = viewModel.Werkzeug.Beschreibung;
-
-        //                context.SaveChanges();
-        //                MessageBox.Show("Werkzeug erfolgreich aktualisiert!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
-        //            }
-        //            else
-        //            {
-        //                MessageBox.Show("Werkzeug nicht gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show($"Fehler beim Aktualisieren des Werkzeugs: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-        //    }
-        //}
-
-
-
-        public AddWerkzeug(Werkzeug selectedWerkzeug)
-        {
-            InitializeComponent();
-
-            // ViewModel erstellen und das übergebene Werkzeug zuweisen
-            var viewModel = new AddWerkzeugViewModel();
-            viewModel.Werkzeug = selectedWerkzeug; // Werkzeug an ViewModel übergeben
-            DataContext = viewModel;
-        }
-
-        private void NavigateProjekt(object sender, RoutedEventArgs e)
-        {
-            // If the AddProjekt window is not open, show it
-            if (!addProjekt.IsVisible)
-            {
-                addProjekt.Show(); // Show the AddProjekt window
-            }
-
-            // If the AddWerkzeug window is open, close it
-            if (this.IsVisible)
-            {
-                this.Close();
-            }
-        }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            var projekteView = new ProjekteView();
-            projekteView.Show();
-            this.Close(); // Schließt das aktuelle Fenster
+            ReloadMainNavigationWithSelectedProject();
         }
+
+        private void NavigateDashboard(object sender, RoutedEventArgs e)
+        {
+            ReloadMainNavigationWithSelectedProject();
+        }
+        private void ReloadMainNavigationWithSelectedProject()
+        {
+            var proVie = new ProjekteView();
+            var vm = proVie.DataContext as ProjekteViewModel;
+
+            if (vm == null)
+            {
+                MessageBox.Show("ProjekteViewModel ist null!");
+                return;
+            }
+
+            var selectedProjekt = App.Current.Properties["LastSelectedProjekt"] as ProjektDTO;
+            if (selectedProjekt == null)
+            {
+                MessageBox.Show("Kein gespeichertes Projekt gefunden.");
+                return;
+            }
+
+            vm.OpenProjekt(selectedProjekt);
+        }
+
+        private void NavigateLager(object sender, RoutedEventArgs e)
+        {
+            var lager = new Lager();
+            Application.Current.MainWindow = lager; // Set the main window to the Lager window
+            lager.Show();
+            this.Close();
+        }
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            var login=new LoginUser();
+            Application.Current.MainWindow = login; // Set the main window to the login window
+            login.Show();
+            this.Close();
+
+            MessageBox.Show("Logout gedrückt");
+            
+        }
+        private void NavigateAddProjekt(object sender, RoutedEventArgs e)
+        {
+            var addProjekt = new AddProjekt();
+            Application.Current.MainWindow = addProjekt; // Set the main window to the AddProjekt window
+            addProjekt.Show(); // Use the existing instance
+            this.Close();
+        }
+
+        private void ToggleTheme_Click(object sender, RoutedEventArgs e)
+        {
+            var lightTheme = App.Current.Resources.MergedDictionaries
+                .FirstOrDefault(x => x.Source?.OriginalString.Contains("LightTheme.xaml") == true);
+            var darkTheme = App.Current.Resources.MergedDictionaries
+                .FirstOrDefault(x => x.Source?.OriginalString.Contains("DarkTheme.xaml") == true);
+
+            if (lightTheme != null)
+            {
+                // Switch to Dark
+                App.Current.Resources.MergedDictionaries.Remove(lightTheme);
+                App.Current.Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri("Theme/DarkTheme.xaml", UriKind.Relative) });
+            }
+            else if (darkTheme != null)
+            {
+                // Switch to Light
+                App.Current.Resources.MergedDictionaries.Remove(darkTheme);
+                App.Current.Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri("Theme/LightTheme.xaml", UriKind.Relative) });
+            }
+            else
+            {
+                // If neither is present, add light as fallback
+                App.Current.Resources.MergedDictionaries.Add(new ResourceDictionary { Source = new Uri("Theme/LightTheme.xaml", UriKind.Relative) });
+            }
+        }
+
+       
     }
 }

@@ -16,6 +16,7 @@ using System.Windows;
 using System.Net.Mail;
 using System.Net;
 using Microsoft.Data.Sqlite;
+using System.Diagnostics;
 
 namespace WerkzeugMobil
 {
@@ -84,7 +85,9 @@ namespace WerkzeugMobil
         //}
         private string GetPasswordFromDatabase(string benutzername)
         {
-            string connectionString = "Data Source=WerkzeugMobilDb.sqlite;";
+            string dbPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "WerkzeugMobilDb.sqlite");
+            string connectionString = $"Data Source={dbPath};";
+            ShowAllUsernames();
             using (SqliteConnection conn = new SqliteConnection(connectionString))
             {
                 conn.Open();
@@ -97,7 +100,7 @@ namespace WerkzeugMobil
                 }
             }
         }
-         
+
 
         //private void SendResetLink(object sender, RoutedEventArgs e)
         //{
@@ -136,6 +139,38 @@ namespace WerkzeugMobil
         //    }
         //}
 
+        private void ShowAllUsernames()
+        {
+            string localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string dbDirectory = System.IO.Path.Combine(localAppData, "WerkzeugMobil");
+            string dbPath = System.IO.Path.Combine(localAppData, "WerkzeugMobil", "WerkzeugMobilDb.sqlite");
+            string connectionString = $"Data Source={dbPath};";
+
+            try
+            {
+                using (var conn = new SqliteConnection(connectionString))
+                {
+                    conn.Open();
+                    var cmd = conn.CreateCommand();
+                    cmd.CommandText = "SELECT Benutzername FROM Benutzer";
+
+                    var reader = cmd.ExecuteReader();
+                    StringBuilder sb = new StringBuilder("Gefundene Benutzer:\n");
+
+                    while (reader.Read())
+                    {
+                        sb.AppendLine(reader.GetString(0));
+                    }
+
+                    MessageBox.Show(sb.ToString(), "Benutzerliste", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fehler beim Lesen der Benutzernamen:\n" + ex.Message);
+            }
+        }
+
         private void SendResetLink(object sender, RoutedEventArgs e)
         {
             string empfaengerEmail = EmailInput.Text.Trim();
@@ -146,40 +181,89 @@ namespace WerkzeugMobil
                 return;
             }
 
-            string benutzerPasswort = GetPasswordFromDatabase(_benutzername);
-
-            if (string.IsNullOrEmpty(benutzerPasswort))
-            {
-                MessageBox.Show("Kein Passwort für diesen Benutzer gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
             try
             {
-                string absenderEmail = "layal.shegaa23@gmail.com";
-                string absenderPasswort = "guhr ownr ugdc lwkm"; // App-spezifisches Passwort
+                string localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                string dbDirectory = System.IO.Path.Combine(localAppData, "WerkzeugMobil");
+                string dbPath = System.IO.Path.Combine(localAppData, "WerkzeugMobil", "WerkzeugMobilDb.sqlite");
+                string connectionString = $"Data Source={dbPath};";
 
-                MailMessage nachricht = new MailMessage();
-                nachricht.From = new MailAddress(absenderEmail);
-                nachricht.To.Add(empfaengerEmail);
-                nachricht.Subject = "Passwort zurücksetzen";
-                nachricht.Body = $"Hallo {_benutzername},\n\nDein Passwort lautet: {benutzerPasswort}";
+                using (var conn = new SqliteConnection(connectionString))
+                {
+                    conn.Open();
 
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-                client.Credentials = new NetworkCredential(absenderEmail, absenderPasswort);
-                client.EnableSsl = true;
+                    // Check if user exists
+                    var checkCmd = new SqliteCommand("SELECT COUNT(*) FROM Benutzer WHERE Benutzername = @Benutzername", conn);
+                    checkCmd.Parameters.AddWithValue("@Benutzername", _benutzername);
+                    var count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    if (count == 0)
+                    {
+                        MessageBox.Show("Benutzername existiert nicht.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
 
-                client.Send(nachricht);
+                    // Generate temp password
+                    string tempPassword = GenerateTemporaryPassword();
+                    string hashed = BCrypt.Net.BCrypt.HashPassword(tempPassword);
 
-                MessageBox.Show("E-Mail erfolgreich gesendet!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
-                this.Close();
+                    // Update password in DB
+                    var updateCmd = new SqliteCommand("UPDATE Benutzer SET Passwort = @Passwort WHERE Benutzername = @Benutzername", conn);
+                    updateCmd.Parameters.AddWithValue("@Passwort", hashed);
+                    updateCmd.Parameters.AddWithValue("@Benutzername", _benutzername);
+                    updateCmd.ExecuteNonQuery();
+                    int rowsAffected = updateCmd.ExecuteNonQuery();
+                    Debug.WriteLine($"Rows affected by password update: {rowsAffected}");
+                    if (rowsAffected == 0)
+                    {
+                        MessageBox.Show("Update fehlgeschlagen - Benutzername existiert nicht.", "Fehler");
+                    }
+                    else
+                    {
+                        Debug.WriteLine("Password update successful.");
+
+                        // Immediately verify
+                        var verifyCmd = new SqliteCommand("SELECT Passwort FROM Benutzer WHERE Benutzername = @Benutzername", conn);
+                        verifyCmd.Parameters.AddWithValue("@Benutzername", _benutzername);
+                        string updatedPassword = (string)verifyCmd.ExecuteScalar();
+                        Debug.WriteLine($"Updated password hash in DB: {updatedPassword}");
+
+                        MessageBox.Show("Passwort erfolgreich aktualisiert.", "Erfolg");
+                    }
+                    // Send email
+                    string absenderEmail = "layal.shegaa23@gmail.com";
+                    string absenderPasswort = "guhr ownr ugdc lwkm"; // App-spezifisches Passwort
+
+                    MailMessage nachricht = new MailMessage();
+                    nachricht.From = new MailAddress(absenderEmail);
+                    nachricht.To.Add(empfaengerEmail);
+                    nachricht.Subject = "Temporäres Passwort für dein Konto";
+                    nachricht.Body = $"Hallo {_benutzername},\n\nHier ist dein temporäres Passwort: {tempPassword}\nBitte ändere es nach dem Login.";
+
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.Credentials = new NetworkCredential(absenderEmail, absenderPasswort);
+                    client.EnableSsl = true;
+
+                    client.Send(nachricht);
+
+                    MessageBox.Show("Temporäres Passwort gesendet!", "Erfolg", MessageBoxButton.OK, MessageBoxImage.Information);
+                    this.Close();
+                }
+                  App.IsTemporaryLogin = true;
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Fehler beim Senden der E-Mail:\n" + ex.Message, "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
+        private string GenerateTemporaryPassword()
+        {
+            // 8-character alphanumeric password
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var rand = new Random();
+            return new string(Enumerable.Repeat(chars, 8)
+                .Select(s => s[rand.Next(s.Length)]).ToArray());
+        }
 
 
     }

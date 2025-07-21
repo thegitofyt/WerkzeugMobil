@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,10 +15,29 @@ namespace WerkzeugMobil.Services
 
         private readonly List<Projekt> _projektList = new List<Projekt>();
 
+        public static ProjektDTO SelectedProjekt { get; private set; }
+
+        // Select a project
+        public static void SetSelectedProjekt(ProjektDTO projekt)
+        {
+            SelectedProjekt = projekt;
+        }
+        private WerkzeugDbContext CreateDbContext()
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+
+            // Adjust path if needed - example using local app data folder
+            var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var dbPath = System.IO.Path.Combine(localAppData, "WerkzeugMobil", "WerkzeugMobilDb.sqlite");
+
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
+
+            return new WerkzeugDbContext(optionsBuilder.Options);
+        }
         // Add a new Werkzeug to the list
         public void AddProjekt(ProjektDTO projektDto)
         {
-            using (var context = new WerkzeugDbContext())
+            using (var context = CreateDbContext())
             {
                 var existingProjekt = context.Projekte
                     .FirstOrDefault(p => p.ProjektAddresse == projektDto.ProjektAddresse); ;

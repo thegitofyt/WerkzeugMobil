@@ -47,7 +47,7 @@ namespace WerkzeugMobil
         {
             IsDarkMode = !IsDarkMode;
         }
-
+       
         private void ApplyTheme()
         {
             var dict = new ResourceDictionary
@@ -92,6 +92,7 @@ namespace WerkzeugMobil
         private void PlusButton_Click(object sender, RoutedEventArgs e)
         {
             AddWerkzeug addWerkzeug = new AddWerkzeug();
+            Application.Current.MainWindow = addWerkzeug;
             addWerkzeug.Show();
             this.Close();
         }
@@ -99,6 +100,7 @@ namespace WerkzeugMobil
         private void Projekt_Click(object sender, RoutedEventArgs e)
         {
             ProjektDetailsView projektDetailsView = new ProjektDetailsView();
+            Application.Current.MainWindow = projektDetailsView;
             projektDetailsView.Show();
             this.Close();
         }
@@ -106,10 +108,27 @@ namespace WerkzeugMobil
         private void Maschine_Lager(object sender, RoutedEventArgs e)
         {
             Lager lager = new Lager();
+            Application.Current.MainWindow = lager;
             lager.Show();
             this.Close();
         }
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            var login = new LoginUser();
+            Application.Current.MainWindow = login;
+            login.Show();
+            this.Close();
 
+            MessageBox.Show("Logout gedrückt");
+
+        }
+        private void BackToProjekte_Click(object sender, RoutedEventArgs e)
+        {
+            ProjekteView projekteView = new ProjekteView();
+            Application.Current.MainWindow = projekteView;
+            projekteView.Show();
+            this.Close(); 
+        }
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));

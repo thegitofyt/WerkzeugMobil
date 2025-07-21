@@ -1,15 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-
 using System;
 using System.Collections.Generic;
-
-using System.IO;
 using System.Linq;
-using System.Text;
 using WerkzeugMobil.Data;
 using WerkzeugMobil.DTO;
-using WerkzeugMobil.Helpers;
 using WerkzeugMobil.MVVM.Model;
 
 namespace WerkzeugMobil.Services
@@ -20,7 +15,6 @@ namespace WerkzeugMobil.Services
         private readonly ILogger<DataSeeder> _logger;
         private readonly ILoggerFactory _loggerFactory;
 
-
         public DataSeeder(WerkzeugDbContext context, ILogger<DataSeeder> logger, ILoggerFactory loggerFactory)
         {
             _context = context;
@@ -30,24 +24,29 @@ namespace WerkzeugMobil.Services
 
         public void Seed()
         {
+            // Only apply migrations — do NOT recreate or drop database!
             _context.Database.Migrate();
 
             try
             {
                 SeedProjekte();
                 SeedUsers();
-                SeedWerkzeuge(); // 👈 Use this instead of Excel
+                SeedWerkzeuge(); // Call external seeder
             }
             catch (Exception ex)
             {
-                _logger.LogError("DataSeeder failed", ex);
+                _logger.LogError(ex, "❌ DataSeeder failed during execution.");
                 throw;
             }
         }
 
         private void SeedProjekte()
         {
-            if (_context.Projekte.Any()) return;
+            if (_context.Projekte.Any())
+            {
+                _logger.LogInformation("ℹ️ Projekte table already contains data. Skipping seeding.");
+                return;
+            }
 
             _context.Projekte.AddRange(new[]
             {
@@ -58,36 +57,48 @@ namespace WerkzeugMobil.Services
             });
 
             _context.SaveChanges();
-            _logger.LogInformation("Projekte seeded successfully.");
+            _logger.LogInformation("✅ Projekte seeded successfully.");
         }
 
         private void SeedUsers()
         {
-            if (_context.Benutzer.Any()) return;
+            var usersToUpdate = _context.Benutzer.ToList();
 
-            var users = new[] { "admin1", "admin2", "admin3" }
-                .Select(name => new UserDTO
+            if (!usersToUpdate.Any())
+            {
+                var newUsers = new List<UserDTO>
                 {
-                    Benutzername = name,
-                    Passwort = PasswordGenerator.Generate(12)
-                }).ToList();
+                    new UserDTO { Benutzername = "user1", Passwort = BCrypt.Net.BCrypt.HashPassword("password1") },
+                    new UserDTO { Benutzername = "user2", Passwort = BCrypt.Net.BCrypt.HashPassword("password2") },
+                    new UserDTO { Benutzername = "user3", Passwort = BCrypt.Net.BCrypt.HashPassword("password3") }
+                };
 
-            _context.Benutzer.AddRange(users);
+                _context.Benutzer.AddRange(newUsers);
+                _context.SaveChanges();
+                _logger.LogInformation("✅ Benutzer (users) seeded successfully.");
+                return;
+            }
+
+            foreach (var user in usersToUpdate)
+            {
+                if (!(user.Passwort.StartsWith("$2a$") || user.Passwort.StartsWith("$2b$") || user.Passwort.StartsWith("$2y$")))
+                {
+                    user.Passwort = BCrypt.Net.BCrypt.HashPassword(user.Passwort);
+                    _logger.LogWarning($"⚠️ Password for user '{user.Benutzername}' was plaintext. Rehashed.");
+                }
+            }
+
             _context.SaveChanges();
-
-           
+            _logger.LogInformation("✅ Benutzer passwords checked and updated if necessary.");
         }
 
         private void SeedWerkzeuge()
         {
-            // Create a logger specifically for WerkzeugSeeder
             var werkzeugSeederLogger = _loggerFactory.CreateLogger<WerkzeugSeeder>();
-
-            // Pass the logger into WerkzeugSeeder constructor
             var werkzeugSeeder = new WerkzeugSeeder(_context, werkzeugSeederLogger);
 
-            // Perform seeding
             werkzeugSeeder.SeedWerkzeugeAndTools();
+            _logger.LogInformation("✅ Werkzeuge seeding completed.");
         }
     }
 }

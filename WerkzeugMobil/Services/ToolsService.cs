@@ -3,14 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WerkzeugMobil.Data;
 using WerkzeugMobil.MVVM.Model;
 
 namespace WerkzeugMobil.Services
 {
     public class ToolsService
     {
+        private readonly WerkzeugDbContext _context;
+
         public List<Werkzeug> ListeWerkzeuge { get; set; } = new List<Werkzeug>();
         public Dictionary<string, Tools> ToolTypes { get; set; } = new Dictionary<string, Tools>();
+
+        public ToolsService(WerkzeugDbContext context)
+        {
+            _context = context;
+        }
+        public List<Werkzeug> GetWerkzeugeByArt(string art)
+        {
+            return _context.Werkzeuge
+                .Where(w => w.Art == art)
+                .Select(w => new Werkzeug
+                {
+                    WerkzeugId = w.WerkzeugId,
+                    Marke = w.Marke,
+                    Art = w.Art,
+                    ProjektAdresse = w.ProjektAdresse,
+                    Beschreibung = w.Beschreibung
+                })
+                .ToList();
+        }
 
         // Adds a new Werkzeug to the correct tool type
         //public void AddWerkzeug(string name, string art, string marke, string projektAdresse, string beschreibung)

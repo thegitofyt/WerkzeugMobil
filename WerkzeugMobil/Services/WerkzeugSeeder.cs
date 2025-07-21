@@ -107,7 +107,7 @@ namespace WerkzeugMobil.Services
                     Marke = "",
                     ProjektAdresse = null,
                     Beschreibung = "OriginalZeile=Flex HF",
-         Lager=false,
+         Lager=true,
                     History=null
                 },
 new WerkzeugDto
@@ -117,7 +117,7 @@ new WerkzeugDto
     Marke = "",
      ProjektAdresse = null,
     Beschreibung = "OriginalZeile=Säbelsäge HS",
-         Lager=false,
+         Lager=true,
                     History=null
 
 },
@@ -128,7 +128,7 @@ new WerkzeugDto
     Marke = "",
      ProjektAdresse = null,
     Beschreibung = "OriginalZeile=Säbelsäge HS-1",
-         Lager=false,
+         Lager=true,
                     History=null
 },
 new WerkzeugDto
@@ -138,7 +138,7 @@ new WerkzeugDto
     Marke = "",
      ProjektAdresse = null,
     Beschreibung = "OriginalZeile=Säbelsäge HS-2",
-         Lager=false,
+         Lager=true,
                     History=null
 },
 new WerkzeugDto
@@ -148,7 +148,7 @@ new WerkzeugDto
     Marke = "",
      ProjektAdresse = null,
     Beschreibung = "OriginalZeile=Säbelsäge HS-3",
-         Lager=false,
+         Lager=true,
                     History=null
 },
 new WerkzeugDto
@@ -158,7 +158,7 @@ new WerkzeugDto
     Marke = "Hilti",
      ProjektAdresse = null,
     Beschreibung = "OriginalZeile=Abbru…",
-         Lager=false,
+         Lager=true,
                     History=null
 },
 new WerkzeugDto
@@ -168,7 +168,7 @@ new WerkzeugDto
         Marke = "Hilti 500er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=Gerät, Koffer=ja, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -178,7 +178,7 @@ new WerkzeugDto
         Marke = "Hilti 500er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=Gerät, Koffer=ja, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -188,7 +188,7 @@ new WerkzeugDto
         Marke = "Hilti 500er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=Gerät, Koffer=ja, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -198,7 +198,7 @@ new WerkzeugDto
         Marke = "Hilti 500er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -208,7 +208,7 @@ new WerkzeugDto
         Marke = "Hilti 500er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -218,7 +218,7 @@ new WerkzeugDto
         Marke = "Hilti 500er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -228,7 +228,7 @@ new WerkzeugDto
         Marke = "Hilti 800er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=Gerät, Koffer=ja, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -238,7 +238,7 @@ new WerkzeugDto
         Marke = "Hilti 800er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=Gerät, Koffer=ja, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -248,7 +248,7 @@ new WerkzeugDto
         Marke = "Hilti 800er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=Gerät, Koffer=ja, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -258,7 +258,7 @@ new WerkzeugDto
         Marke = "Hilti 800er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=Gerät, Koffer=ja, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -268,7 +268,7 @@ new WerkzeugDto
         Marke = "Hilti 800er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -278,7 +278,7 @@ new WerkzeugDto
         Marke = "Hilti 1000er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -288,7 +288,7 @@ new WerkzeugDto
         Marke = "Hilti 1000er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -298,7 +298,7 @@ new WerkzeugDto
         Marke = "Hilti 1000er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -308,7 +308,7 @@ new WerkzeugDto
         Marke = "Hilti 2000er",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
 
@@ -319,7 +319,7 @@ new WerkzeugDto
         Marke = "Hilti",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Ladegerät=, Batterie=, Sonstiges=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -329,7 +329,7 @@ new WerkzeugDto
         Marke = "Hilti",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Ladegerät=, Batterie=, Sonstiges=",
-         Lager=false
+         Lager=true
     },
     new WerkzeugDto
     {
@@ -338,7 +338,7 @@ new WerkzeugDto
         Marke = "Hilti",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Ladegerät=, Batterie=, Sonstiges=",
-         Lager=false
+         Lager=true
     },
     new WerkzeugDto
     {
@@ -347,7 +347,7 @@ new WerkzeugDto
         Marke = "Einhell",
          ProjektAdresse = null,
         Beschreibung = "Gerät=klein, Koffer=nein, Ladegerät=nein, Batterie=nein, Sonstiges=",
-         Lager=false
+         Lager=true
     },
     new WerkzeugDto
     {
@@ -356,7 +356,7 @@ new WerkzeugDto
         Marke = "Einhell",
          ProjektAdresse = null,
         Beschreibung = "Gerät=klein, Koffer=nein, Ladegerät=nein, Batterie=nein, Sonstiges=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -366,7 +366,7 @@ new WerkzeugDto
         Marke = "Einhell",
          ProjektAdresse = null,
         Beschreibung = "Gerät=klein, Koffer=nein, Ladegerät=nein, Batterie=nein, Sonstiges=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -376,7 +376,7 @@ new WerkzeugDto
         Marke = "Einhell",
          ProjektAdresse = null,
         Beschreibung = "Gerät=Gross, Koffer=ja, Ladegerät=mit Kabel, Batterie=, Sonstiges=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -386,7 +386,7 @@ new WerkzeugDto
         Marke = "Makita",
          ProjektAdresse = null,
         Beschreibung = "Gerät=klein, Koffer=nein, Ladegerät=mit Kabel, Batterie=, Sonstiges=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -396,7 +396,7 @@ new WerkzeugDto
         Marke = "Makita",
          ProjektAdresse = null,
         Beschreibung = "Gerät=klein, Koffer=nein, Ladegerät=mit Kabel, Batterie=, Sonstiges=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
 
@@ -409,7 +409,7 @@ new WerkzeugDto
         Marke = "Hilti",
          ProjektAdresse = null,
         Beschreibung = "Gerät=Gerät, Koffer=ja, Ladegerät=ja, Batterie=2X, Sonstiges=",
-         Lager=false
+         Lager=true
     },
     new WerkzeugDto
     {
@@ -418,7 +418,7 @@ new WerkzeugDto
         Marke = "Hilti",
          ProjektAdresse = null,
         Beschreibung = "Gerät=, Koffer=, Ladegerät=, Batterie=, Sonstiges=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -456,7 +456,7 @@ new WerkzeugDto
         Marke = "Hilti",
         ProjektAdresse = null,
         Beschreibung = "Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
 
@@ -468,7 +468,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
 
@@ -480,7 +480,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     // Kabeltrommel
@@ -491,7 +491,7 @@ new WerkzeugDto
         Marke = "Blau",
         ProjektAdresse = null,
         Beschreibung = "Länge=25m, mm2=1,5, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -501,7 +501,7 @@ new WerkzeugDto
         Marke = "Blau",
         ProjektAdresse = null,
         Beschreibung = "Länge=25m, mm2=1,5, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -511,7 +511,7 @@ new WerkzeugDto
         Marke = "Emos",
         ProjektAdresse = null,
         Beschreibung = "Länge=25m, mm2=1,5, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
    new WerkzeugDto
@@ -521,7 +521,7 @@ new WerkzeugDto
         Marke = "Emos",
         ProjektAdresse = null,
         Beschreibung = "Länge=25m, mm2=1,5, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
 
@@ -538,7 +538,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -548,7 +548,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -558,7 +558,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -568,7 +568,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -578,7 +578,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -588,7 +588,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -598,7 +598,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -608,7 +608,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -618,7 +618,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -628,7 +628,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
    new WerkzeugDto
@@ -638,7 +638,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
    new WerkzeugDto
@@ -648,7 +648,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Länge=, mm2=, Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     // Werkzeugkasten
@@ -659,7 +659,7 @@ new WerkzeugDto
         Marke = "Vigor",
         ProjektAdresse = null,
         Beschreibung = "Bemerkung=Steckschlüsselset",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -669,7 +669,7 @@ new WerkzeugDto
         Marke = "Makita",
         ProjektAdresse = null,
         Beschreibung = "Bemerkung=Komplett Gross",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -699,7 +699,7 @@ new WerkzeugDto
         Marke = "Gedore",
         ProjektAdresse = null,
         Beschreibung = "Bemerkung=Steckschlüsselset",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -709,7 +709,7 @@ new WerkzeugDto
         Marke = "ERBA",
         ProjektAdresse = null,
         Beschreibung = "Bemerkung=",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -719,7 +719,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Schaufel",
-         Lager=false,
+         Lager=true,
                     History=null
     },
      new WerkzeugDto
@@ -729,7 +729,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Krampen",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -739,7 +739,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Krampen",
-         Lager=false
+         Lager=true
     },
     new WerkzeugDto
     {
@@ -748,7 +748,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Krampen",
-         Lager=false,
+         Lager=true,
                     History=null
     },
      new WerkzeugDto
@@ -758,7 +758,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Krampen",
-         Lager=false,
+         Lager=true,
                     History=null
     },
      new WerkzeugDto
@@ -768,7 +768,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Hammer",
-         Lager=false,
+         Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -778,7 +778,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Besen",
-         Lager=false,
+         Lager=true,
                     History=null
     },
      new WerkzeugDto
@@ -788,7 +788,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Schaleisen",
-         Lager=false,
+         Lager=true,
                     History=null
     },
      new WerkzeugDto
@@ -798,7 +798,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Schaber",
-         Lager=false,
+         Lager=true,
                     History=null
     },
      new WerkzeugDto
@@ -808,7 +808,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Stoßscharre",
-         Lager=false,
+         Lager=true,
                     History=null
     },
      new WerkzeugDto
@@ -818,7 +818,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Spitzspaten",
-         Lager=false,
+         Lager=true,
                     History=null
     },
      new WerkzeugDto
@@ -828,7 +828,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Flachspaten",
-        Lager=false,
+        Lager=true,
                     History=null
     },
     new WerkzeugDto
@@ -838,7 +838,7 @@ new WerkzeugDto
         Marke = "",
         ProjektAdresse = null,
         Beschreibung = "Gerät=Flachspaten",
-        Lager=false,
+        Lager=true,
                     History=null
     }
 
