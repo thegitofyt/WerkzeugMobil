@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <None Remove="BackgroundImagePran.jpg" />
+    <None Remove="Dockerfile" />
     <None Remove="favicon.ico" />
     <None Remove="Fonts\verdana-bold-italic.ttf" />
     <None Remove="Fonts\verdana-bold.ttf" />
@@ -27,6 +28,10 @@
     <None Remove="Resources\WerkzeugMobilFull.png" />
     <None Remove="Resources\WerkzeugMobilLogo.png" />
     <None Remove="WerkzeugMobilDb.sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Dockerfile" />
   </ItemGroup>
 
   <ItemGroup>
