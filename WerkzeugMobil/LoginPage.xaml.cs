@@ -6,8 +6,8 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 using WerkzeugMobil.Data;
-using WerkzeugMobil.DTO;
-using WerkzeugMobil.MVVM.Model;
+using WerkzeugShared.DTO;
+using WerkzeugShared.MVVM.Model;
 using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil
@@ -100,9 +100,9 @@ namespace WerkzeugMobil
                 RememberMeCheckbox.IsChecked = true;
             }
         }
-        private WerkzeugDbContext CreateDbContext()
+        private WerkzeugShared.WerkzeugDbContext CreateDbContext()
         {
-            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugShared.WerkzeugDbContext>();
 
             // Adjust this path to your actual SQLite DB location
             var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
@@ -111,7 +111,7 @@ namespace WerkzeugMobil
 
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
 
-            return new WerkzeugDbContext(optionsBuilder.Options);
+            return new WerkzeugShared.WerkzeugDbContext(optionsBuilder.Options);
         }
         private void ForgotPasswordClick(object sender, MouseButtonEventArgs e)
         {

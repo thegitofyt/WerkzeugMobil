@@ -10,10 +10,12 @@ using System.Linq;
 using System.Text;
 using System.Windows;
 using WerkzeugMobil.Data;
-using WerkzeugMobil.Services;
+
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using WerkzeugShared;
+using WerkzeugApi;
 
 namespace WerkzeugMobil
 {
@@ -49,7 +51,7 @@ namespace WerkzeugMobil
                 _apiHost = Host.CreateDefaultBuilder()
                     .ConfigureWebHostDefaults(webBuilder =>
                     {
-                        webBuilder.UseStartup<Startup>();
+                        webBuilder.UseStartup<WerkzeugApi.Startup>();
                         webBuilder.UseUrls("http://localhost:5000"); // Match this in your frontend
                     })
                     .Build();
@@ -58,10 +60,10 @@ namespace WerkzeugMobil
 
                 // ✅ Seed the database
                 using var scope = _apiHost.Services.CreateScope();
-                var context = scope.ServiceProvider.GetRequiredService<WerkzeugDbContext>();
+                var context = scope.ServiceProvider.GetRequiredService<WerkzeugShared.WerkzeugDbContext>();
                 var loggerFactory = LoggerFactory.Create(builder => builder.AddSerilog());
-                var logger = loggerFactory.CreateLogger<DataSeeder>();
-                var seeder = new DataSeeder(context, logger, loggerFactory);
+                var logger = loggerFactory.CreateLogger<WerkzeugApi.Seeder.DataSeeder>();
+                var seeder = new WerkzeugApi.Seeder.DataSeeder(context, logger, loggerFactory);
                 seeder.Seed();
             }
             catch (Exception ex)
@@ -100,7 +102,7 @@ namespace WerkzeugMobil
             base.OnExit(e);
         }
 
-        private void ShowUserInfo(WerkzeugDbContext context)
+        private void ShowUserInfo(WerkzeugShared.WerkzeugDbContext context)
         {
             try
             {

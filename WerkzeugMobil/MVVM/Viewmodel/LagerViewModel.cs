@@ -1,4 +1,4 @@
-﻿using ListDemo.ViewModels;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,13 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
-using WerkzeugMobil.Data;
-using WerkzeugMobil.DTO;
-using WerkzeugMobil.MVVM.Model;
+using WerkzeugShared.DTO;
 
+using WerkzeugShared.MVVM.Model;
+using WerkzeugMobil.MVVM.Viewmodel;
 using System.Diagnostics;
 using System.Linq;
-using WerkzeugMobil.Services;
+using WerkzeugShared.Services;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -119,9 +119,9 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 MessageBox.Show($"Fehler beim Laden der Werkzeuge von der API: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-        private WerkzeugDbContext CreateDbContext()
+        private WerkzeugShared.WerkzeugDbContext CreateDbContext()
         {
-            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugShared.WerkzeugDbContext>();
 
             // Adjust path if needed - example using local app data folder
             var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
@@ -129,7 +129,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
 
-            return new WerkzeugDbContext(optionsBuilder.Options);
+            return new WerkzeugShared.WerkzeugDbContext(optionsBuilder.Options);
         }
         private async void LoadWerkzeugeFromDatabase()
         {

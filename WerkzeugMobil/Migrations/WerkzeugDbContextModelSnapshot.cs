@@ -8,13 +8,13 @@ using WerkzeugMobil.Data;
 
 namespace WerkzeugMobil.Migrations
 {
-    [DbContext(typeof(WerkzeugDbContext))]
+    [DbContext(typeof(WerkzeugShared.WerkzeugDbContext))]
     partial class WerkzeugDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.5");
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.7");
 
             modelBuilder.Entity("ToolDTO", b =>
                 {

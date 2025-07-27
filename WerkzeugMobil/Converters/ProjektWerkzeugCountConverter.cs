@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
-using WerkzeugMobil.DTO;
+using WerkzeugShared.DTO;
 using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil.Converters

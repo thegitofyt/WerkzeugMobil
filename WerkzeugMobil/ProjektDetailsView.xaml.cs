@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 using WerkzeugMobil.Converters;
-using WerkzeugMobil.DTO;
+using WerkzeugShared.DTO;
 using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil

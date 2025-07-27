@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Design;
 using System;
 using System.IO;
-
+using WerkzeugShared;
 namespace WerkzeugMobil.Data
 {
     public class WerkzeugDbContextFactory : IDesignTimeDbContextFactory<WerkzeugDbContext>
@@ -17,7 +17,7 @@ namespace WerkzeugMobil.Data
 
             var dbPath = Path.Combine(dbDirectory, "WerkzeugMobilDb.sqlite");
 
-            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugShared.WerkzeugDbContext>();
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
 
             return new WerkzeugDbContext(optionsBuilder.Options);

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-using WerkzeugMobil.MVVM.Model;
+using WerkzeugShared.MVVM.Model;
 using WerkzeugMobil.MVVM.Viewmodel;
 
 

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WerkzeugMobil.DTO;
-using WerkzeugMobil.MVVM.Model;
+using WerkzeugShared.DTO;
+using WerkzeugShared.MVVM.Model;
 
 
 namespace WerkzeugMobil.MVVM.Viewmodel

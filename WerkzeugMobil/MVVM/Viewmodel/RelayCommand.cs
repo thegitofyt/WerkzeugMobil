@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace ListDemo.ViewModels
+namespace WerkzeugMobil.MVVM.Viewmodel
 {
     /// <summary>
     /// Generische Implementierung des ICommand Interfaces für das Command Binding.

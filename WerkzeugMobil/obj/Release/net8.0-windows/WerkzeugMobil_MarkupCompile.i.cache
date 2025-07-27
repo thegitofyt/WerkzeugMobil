@@ -11,10 +11,10 @@ false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml
 151052456267
-5-1563916602
-632116860015
-412-1522586140
+4586271712
+44-861384879
+4301332535893
 AddProjekt.xaml;AddWerkzeug.xaml;ChangePasswordWindow.xaml;DataEntry.xaml;FullLogoSplash.xaml;Lager.xaml;LoginPage.xaml;MainNavigation.xaml;PasswordResetWindow.xaml;ProjektDetailsView.xaml;ProjekteView.xaml;SmallLogoSplash.xaml;Theme\DarkTheme.xaml;Theme\LightTheme.xaml;Window1.xaml;
 
-False
+True
 

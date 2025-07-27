@@ -1,14 +1,13 @@
-﻿using ListDemo.ViewModels;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Windows;
 using System.Windows.Input;
 using WerkzeugMobil.Data;
-using WerkzeugMobil.DTO;
-using WerkzeugMobil.MVVM.Model;
-using WerkzeugMobil.Services;
+using WerkzeugShared.DTO;
+using WerkzeugShared.MVVM.Model;
+using WerkzeugShared.Services;
 
 
 namespace WerkzeugMobil.MVVM.Viewmodel
@@ -292,9 +291,9 @@ namespace WerkzeugMobil.MVVM.Viewmodel
         {
             FilterProjects();
         }
-        private WerkzeugDbContext CreateDbContext()
+        private WerkzeugShared.WerkzeugDbContext CreateDbContext()
         {
-            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugShared.WerkzeugDbContext>();
 
             // Adjust path if needed - example using local app data folder
             var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
@@ -302,7 +301,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
 
-            return new WerkzeugDbContext(optionsBuilder.Options);
+            return new WerkzeugShared.WerkzeugDbContext(optionsBuilder.Options);
         }
         private void FilterProjects()
         {

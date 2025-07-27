@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
-using WerkzeugMobil.DTO;
-using WerkzeugMobil.MVVM.Model;
-using WerkzeugMobil.Services;
+using WerkzeugShared.DTO;
+using WerkzeugShared.MVVM.Model;
+using WerkzeugShared.Services;
 using WerkzeugMobil.Converters;
-using ListDemo.ViewModels;
 using System.Windows;
 using System.Collections.ObjectModel;
 using WerkzeugMobil.Data;
 using System.Text.Json;
 using System.Diagnostics;
-using WerkzeugMobil.MVVM.Viewmodel;
 using Microsoft.EntityFrameworkCore;
 using System.Text.RegularExpressions;
 using System.Globalization;
@@ -138,9 +136,9 @@ namespace WerkzeugMobil.MVVM.Viewmodel
                 }
             }
         }
-        private WerkzeugDbContext CreateDbContext()
+        private WerkzeugShared.WerkzeugDbContext CreateDbContext()
         {
-            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugShared.WerkzeugDbContext>();
 
             // Adjust path if needed - example using local app data folder
             var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
@@ -148,7 +146,7 @@ namespace WerkzeugMobil.MVVM.Viewmodel
 
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
 
-            return new WerkzeugDbContext(optionsBuilder.Options);
+            return new WerkzeugShared.WerkzeugDbContext(optionsBuilder.Options);
         }
 
         public AddWerkzeugViewModel()

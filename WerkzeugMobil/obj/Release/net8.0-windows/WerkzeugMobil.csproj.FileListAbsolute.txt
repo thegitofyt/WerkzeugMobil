@@ -1,7 +1,12 @@
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugApi.deps.json
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugApi.runtimeconfig.json
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\appsettings.Development.json
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\appsettings.json
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\Data\WerkzeugMobilDb.sqlite
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugApi.exe
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\BackgroundImagePran.jpg
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\logo.jpg
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\LogoRech.png
-C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugMobilDb.sqlite
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugMobil.exe
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugMobil.dll.config
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugMobil.deps.json
@@ -237,6 +242,10 @@ C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugApi.dll
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugShared.dll
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugShared.pdb
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\bin\Release\net8.0-windows\WerkzeugApi.pdb
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Release\net8.0-windows\WerkzeugMobil.csproj.AssemblyReference.cache
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Release\net8.0-windows\ChangePasswordWindow.baml
 C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\obj\Release\net8.0-windows\DataEntry.baml

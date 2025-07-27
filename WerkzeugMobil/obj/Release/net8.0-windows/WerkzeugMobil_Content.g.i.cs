@@ -12,6 +12,5 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("favicon.ico")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("logo.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("logorech.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("werkzeugmobildb.sqlite")]
 
 

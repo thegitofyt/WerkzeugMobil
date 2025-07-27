@@ -2,23 +2,16 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+	 <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
+	  
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="MVVM\View\**" />
-    <EmbeddedResource Remove="MVVM\View\**" />
-    <None Remove="MVVM\View\**" />
-    <Page Remove="MVVM\View\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="BackgroundImagePran.jpg" />
-    <None Remove="Dockerfile" />
     <None Remove="favicon.ico" />
     <None Remove="Fonts\verdana-bold-italic.ttf" />
     <None Remove="Fonts\verdana-bold.ttf" />
@@ -27,13 +20,13 @@
     <None Remove="LogoRech.png" />
     <None Remove="Resources\WerkzeugMobilFull.png" />
     <None Remove="Resources\WerkzeugMobilLogo.png" />
-    <None Remove="WerkzeugMobilDb.sqlite" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Dockerfile" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\WerkzeugShared\WerkzeugShared.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\WerkzeugApi\WerkzeugApi.csproj" />
+	</ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
@@ -47,9 +40,9 @@
     <PackageReference Include="MaterialDesignThemes.MahApps" Version="5.2.1" />
     
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.5">
       <PrivateAssets>all</PrivateAssets>
@@ -65,7 +58,7 @@
     <PackageReference Include="Serilog.Extensions.Logging" Version="9.0.1" />
     <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -77,9 +70,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="LogoRech.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="WerkzeugMobilDb.sqlite">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

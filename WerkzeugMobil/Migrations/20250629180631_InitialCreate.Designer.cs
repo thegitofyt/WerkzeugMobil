@@ -9,7 +9,7 @@ using WerkzeugMobil.Data;
 
 namespace WerkzeugMobil.Migrations
 {
-    [DbContext(typeof(WerkzeugDbContext))]
+    [DbContext(typeof(WerkzeugShared.WerkzeugDbContext))]
     [Migration("20250629180631_InitialCreate")]
     partial class InitialCreate
     {

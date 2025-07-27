@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using WerkzeugMobil.DTO;
+using WerkzeugShared.DTO;
 using WerkzeugMobil.MVVM.Viewmodel;
 using Microsoft.Win32;
 using WerkzeugMobil.Data;
@@ -262,9 +262,9 @@ namespace WerkzeugMobil
                 ExportToPdf(dlg.FileName);
             }
         }
-        private WerkzeugDbContext CreateDbContext()
+        private WerkzeugShared.WerkzeugDbContext CreateDbContext()
         {
-            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugDbContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<WerkzeugShared.WerkzeugDbContext>();
 
             var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
             var dbDirectory = System.IO.Path.Combine(localAppData, "WerkzeugMobil");
@@ -272,7 +272,7 @@ namespace WerkzeugMobil
 
             optionsBuilder.UseSqlite($"Data Source={dbPath}");
 
-            return new WerkzeugDbContext(optionsBuilder.Options);
+            return new WerkzeugShared.WerkzeugDbContext(optionsBuilder.Options);
         }
         private void ReloadMainNavigationWithSelectedProject()
         {

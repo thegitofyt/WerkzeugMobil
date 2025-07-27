@@ -1,11 +1,11 @@
-﻿using ListDemo.ViewModels;
+﻿
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using WerkzeugMobil.DTO;
+using WerkzeugShared.DTO;
 using WerkzeugMobil.MVVM.Viewmodel;
 
 namespace WerkzeugMobil
