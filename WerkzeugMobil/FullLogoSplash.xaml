@@ -1,0 +1,29 @@
+﻿<Window x:Class="WerkzeugMobil.FullLogoSplash"
+        xmlns:local="clr-namespace:WerkzeugMobil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Topmost="True"
+        Width="600"
+        Height="600"
+        WindowStartupLocation="CenterScreen">
+
+    <Image Source="Resources/WerkzeugMobilFull.png"
+           Width="500" Height="500"
+           Opacity="0">
+        <Image.Triggers>
+            <EventTrigger RoutedEvent="Image.Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                         From="0" To="1" Duration="0:0:1.5"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Image.Triggers>
+    </Image>
+</Window>

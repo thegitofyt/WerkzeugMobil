@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\Properties\PublishProfiles\WerkzeugmobilApi.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddWerkzeug.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ChangePasswordWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FullLogoSplash.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Lager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SmallLogoSplash.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddProjekt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FullLogoSplash.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddWerkzeug.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Lager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PasswordResetWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjektDetailsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjekteView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SmallLogoSplash.xaml">
+      <SubType>Component</SubType>
+    </Page>
+    <Page Update="Theme\DarkTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\LightTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

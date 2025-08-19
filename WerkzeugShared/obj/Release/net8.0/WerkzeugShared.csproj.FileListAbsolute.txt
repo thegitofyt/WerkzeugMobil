@@ -1,0 +1,15 @@
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\bin\Release\net8.0\WerkzeugShared.deps.json
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\bin\Release\net8.0\WerkzeugShared.runtimeconfig.json
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\bin\Release\net8.0\WerkzeugShared.dll
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\bin\Release\net8.0\WerkzeugShared.pdb
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\WerkzeugShared.csproj.AssemblyReference.cache
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\WerkzeugShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\WerkzeugShared.AssemblyInfoInputs.cache
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\WerkzeugShared.AssemblyInfo.cs
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\WerkzeugShared.csproj.CoreCompileInputs.cache
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\WerkzeugShared.sourcelink.json
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\WerkzeugShared.dll
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\refint\WerkzeugShared.dll
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\WerkzeugShared.pdb
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\WerkzeugShared.genruntimeconfig.cache
+C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugShared\obj\Release\net8.0\ref\WerkzeugShared.dll

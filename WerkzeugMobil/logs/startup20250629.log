@@ -1,0 +1,63 @@
+2025-06-29 19:18:56.388 +02:00 [ERR] Startup failed
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 49
+2025-06-29 19:20:23.694 +02:00 [ERR] Startup failed
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 49
+2025-06-29 19:28:37.744 +02:00 [ERR] Startup failed
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 49
+2025-06-29 19:29:53.391 +02:00 [ERR] Startup failed
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 49
+2025-06-29 19:30:41.058 +02:00 [ERR] Startup failed
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 49
+2025-06-29 19:38:21.603 +02:00 [ERR] Startup failed
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 49
+2025-06-29 19:39:31.254 +02:00 [ERR] Startup failed
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at WerkzeugMobil.App.OnStartup(StartupEventArgs e) in C:\Users\vicky\OneDrive\Dokumente\GitHub\WerkzeugMobil\WerkzeugMobil\App.xaml.cs:line 49
