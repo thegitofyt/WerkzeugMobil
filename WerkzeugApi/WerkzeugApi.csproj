@@ -1,35 +1,51 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
 
-  <ItemGroup>
-    <None Remove="WerkzeugMobilDb.sqlite" />
-  </ItemGroup>
+		<!-- Swagger-Steuerung -->
+		<GenerateSwaggerOnBuild>true</GenerateSwaggerOnBuild>
+		<SwaggerDocumentName>v1</SwaggerDocumentName>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Content Include="Data\WerkzeugMobilDb.sqlite">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+	<!-- SQLite: sicherstellen, dass die DB-Datei kopiert wird -->
+	<ItemGroup>
+		<None Remove="WerkzeugMobilDb.sqlite" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.7" />
-  </ItemGroup>
-<Target Name="GenerateSwagger" AfterTargets="Build">
-  <Exec Command="dotnet swagger tofile --output $(OutputPath)\swagger.json $(TargetPath) v1" />
-</Target>
+	<ItemGroup>
+		<Content Include="Data\WerkzeugMobilDb.sqlite">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<!-- Pakete -->
+	<ItemGroup>
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.7" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+	</ItemGroup>
+
+	<Target Name="GenerateSwagger" AfterTargets="Build"
+			Condition="'$(GenerateSwaggerOnBuild)' == 'true'
+                     AND Exists('$(TargetPath)')
+                     AND Exists('$(MSBuildProjectDirectory)\.config\dotnet-tools.json')">
+
+		<Exec Command='dotnet tool run swagger tofile --output "$(TargetDir)swagger.json" "$(TargetPath)" $(SwaggerDocumentName)'
+			  WorkingDirectory="$(MSBuildProjectDirectory)"
+			  ConsoleToMSBuild="true" />
+		<Message Importance="high" Text="Swagger JSON generiert: $(TargetDir)swagger.json" />
+	</Target>
+
 	<ItemGroup>
 		<ProjectReference Include="..\WerkzeugShared\WerkzeugShared.csproj" />
 	</ItemGroup>
-
 
 </Project>

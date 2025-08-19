@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "WerkzeugMobil API",
+    "description": "API für Werkzeugverwaltung",
+    "version": "v1"
+  },
+  "paths": {
+    "/Werkzeuge": {
+      "get": {
+        "tags": [
+          "Werkzeuge"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Werkzeuge/projekte": {
+      "get": {
+        "tags": [
+          "Werkzeuge"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Werkzeuge/{id}": {
+      "get": {
+        "tags": [
+          "Werkzeuge"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Werkzeuge/tools": {
+      "get": {
+        "tags": [
+          "Werkzeuge"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Werkzeuge/benutzer": {
+      "get": {
+        "tags": [
+          "Werkzeuge"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

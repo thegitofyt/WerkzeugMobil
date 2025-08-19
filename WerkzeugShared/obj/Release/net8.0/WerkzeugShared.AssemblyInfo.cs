@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WerkzeugShared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e13d48a3765afb77fc075f5ff512481b4b6439c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47d794d5c9829dddac04d8f144177af3fe0bb557")]
 [assembly: System.Reflection.AssemblyProductAttribute("WerkzeugShared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WerkzeugShared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

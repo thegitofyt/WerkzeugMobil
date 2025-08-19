@@ -13,8 +13,7 @@ namespace WerkzeugApi
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            var dbDirectory = Path.Combine(localAppData, "WerkzeugMobil");
+            var dbDirectory = Path.Combine("/home", "WerkzeugMobil");
 
             if (!Directory.Exists(dbDirectory))
                 Directory.CreateDirectory(dbDirectory);
@@ -66,22 +65,25 @@ namespace WerkzeugApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseHttpsRedirection();
             }
 
-            app.UseHttpsRedirection();
+            // 🔹 Stelle sicher, dass die DB-Migrationen angewendet werden
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                var db = scope.ServiceProvider.GetRequiredService<WerkzeugDbContext>();
+                db.Database.Migrate();
+            }
 
             app.UseRouting();
-
-            app.UseCors("AllowLocalhost");
-
+            app.UseCors("AllowAll");
             app.UseAuthorization();
 
-            // ✅ Swagger aktivieren
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "WerkzeugMobil API v1");
-               
+                c.RoutePrefix = string.Empty;
             });
 
             app.UseEndpoints(endpoints =>
@@ -89,5 +91,6 @@ namespace WerkzeugApi
                 endpoints.MapControllers();
             });
         }
+
     }
 }

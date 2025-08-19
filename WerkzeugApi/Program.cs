@@ -24,6 +24,9 @@ public class Program
         Host.CreateDefaultBuilder(args)
             .ConfigureWebHostDefaults(webBuilder =>
             {
-                webBuilder.UseStartup<Startup>();
+                // Force Kestrel to listen on the port Azure expects (8080)
+                var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+                webBuilder.UseStartup<Startup>()
+                          .UseUrls($"http://*:{port}");
             });
 }
